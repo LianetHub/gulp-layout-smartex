@@ -1,0 +1,97 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	speak: never;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+.icon-burger:before {
+	content: "\e919";
+}
+.icon-phone-alternate:before {
+	content: "\e918";
+}
+.icon-search:before {
+	content: "\e917";
+}
+.icon-arrow:before {
+	content: "\e900";
+}
+.icon-arrow-right:before {
+	content: "\e901";
+}
+.icon-career:before {
+	content: "\e902";
+}
+.icon-chevron:before {
+	content: "\e903";
+}
+.icon-close:before {
+	content: "\e904";
+}
+.icon-docs:before {
+	content: "\e905";
+}
+.icon-heart:before {
+	content: "\e906";
+}
+.icon-heart-fill:before {
+	content: "\e907";
+}
+.icon-home:before {
+	content: "\e908";
+}
+.icon-info:before {
+	content: "\e909";
+}
+.icon-location:before {
+	content: "\e90a";
+}
+.icon-next:before {
+	content: "\e90b";
+}
+.icon-phone:before {
+	content: "\e90c";
+}
+.icon-phone-fill:before {
+	content: "\e90d";
+}
+.icon-prev:before {
+	content: "\e90e";
+}
+.icon-print:before {
+	content: "\e90f";
+}
+.icon-question-mark:before {
+	content: "\e910";
+}
+.icon-remove:before {
+	content: "\e911";
+}
+.icon-telegram:before {
+	content: "\e912";
+}
+.icon-whatsapp:before {
+	content: "\e913";
+}
+.icon-xlsx:before {
+	content: "\e914";
+}
+.icon-zoom:before {
+	content: "\e915";
+}
+.icon-zoom-bold:before {
+	content: "\e916";
+}

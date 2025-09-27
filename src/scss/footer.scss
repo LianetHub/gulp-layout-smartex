@@ -1,0 +1,160 @@
+.footer {
+	background: #a3083f;
+	padding: 2.5rem 0;
+	color: #fff;
+	// .footer__main
+	&__main {
+		border-bottom: rem(1) solid #fff;
+		.row {
+			--gutter-x: 3rem;
+		}
+		.col-4 {
+			padding-bottom: 2.5rem;
+			&:not(:last-child) {
+				border-right: rem(1) solid #fff;
+			}
+		}
+	}
+	// .footer__logo
+	&__logo {
+		margin-bottom: 1.25rem;
+		display: inline-block;
+	}
+	// .footer__caption
+	&__caption {
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+	// .footer__contacts
+	&__contacts {
+		margin-top: 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	// .footer__contacts-links
+	&__contacts-links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: rem(15);
+	}
+	// .footer__contacts-link
+	&__contacts-link {
+		display: flex;
+		align-items: center;
+		gap: 0.57rem;
+		font-size: 1rem;
+		font-weight: 500;
+		&::before {
+			width: 1rem;
+			height: 1rem;
+			flex-shrink: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		transition: color 0.3s ease;
+		color: #fff;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #ebebeb;
+			}
+		}
+	}
+	// .footer__link
+	&__link {
+		margin-top: 0.75rem;
+		display: inline-block;
+		color: #c3c3c3;
+		font-size: 1rem;
+		transition: color 0.3s ease;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+	// .footer__address
+	&__address {
+		margin-top: 1rem;
+		& + .footer__link {
+			margin-top: 0.5rem;
+		}
+	}
+	// .footer__email
+	&__email {
+		margin-top: 1rem;
+		transition: color 0.3s ease;
+		color: #fff;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #ebebeb;
+			}
+		}
+	}
+	// .footer__menu
+	&__menu {
+		margin-top: 1.5rem;
+		font-size: 1rem;
+	}
+	// .footer__menu-list
+	&__menu-list {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1rem;
+	}
+	// .footer__menu-item
+	&__menu-item {
+	}
+	// .footer__menu-link
+	&__menu-link {
+		transition: color 0.3s ease;
+		color: #fff;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #ebebeb;
+			}
+		}
+	}
+	// .footer__text
+	&__text {
+		margin-top: 2rem;
+		& img {
+			width: 100%;
+		}
+	}
+	// .footer__public
+	&__public {
+		margin-top: 1.75rem;
+		text-align: center;
+		font-size: 1rem;
+		line-height: 140%;
+	}
+	// .footer__bottom
+	&__bottom {
+		margin-top: 1.06rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	// .footer__privacy
+	&__privacy {
+	}
+	// .footer__copyright
+	&__copyright {
+	}
+	// .footer__prod
+	&__prod {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		transition: color 0.3s ease;
+		color: #fff;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #ebebeb;
+			}
+		}
+	}
+}

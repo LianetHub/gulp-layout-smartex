@@ -1,0 +1,48 @@
+<header class="header">
+    <nav class="header__navbar menu">
+        <div class="container">
+            <div class="menu__body">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="" class="menu__link">О компании</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Каталог</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Доставка</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Объекты</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Бренды</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Для проектировщиков</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+                </ul>
+                <address class="menu__address icon-location">Москва, д. Десна, ул. Строительная, д. 11с1</address>
+            </div>
+        </div>
+    </nav>
+    <div class="header__body">
+        <div class="container">
+            <div class="header__content">
+                <a href="/" class="header__logo">
+                    <img src="@img/logo.png" alt="Логотип">
+                </a>
+                @@include('./_header-catalog.html')
+                <form action="#" class="header__search search">
+                    <input type="text" name="s" class="search__input" placeholder="Например: WIS Дозатор 300 мл">
+                    <button type="submit" class="search__btn icon-search">Найти</button>
+                </form>
+                <div class="header__actions">
+                    <a href="" class="header__action icon-heart" data-quantity="1">Избранное</a>
+                    <a href="" class="header__action icon-docs" data-quantity="1">Смета</a>
+                </div>
+                <div class="header__contacts">
+                    <div class="header__contacts-header">
+                        <a href="tel:88007700033" class="header__phone">8-800-770-00-33</a>
+                        <div class="header__info">
+                            <button type="button" class="header__info-btn icon-question-mark"></button>
+                        </div>
+                    </div>
+                    <a href="#callback" data-fancybox class="header__callback icon-phone-alternate">
+                        <span>Заказать звонок</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
