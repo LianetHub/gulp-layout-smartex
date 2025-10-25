@@ -160,15 +160,28 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
 
-    if (document.querySelector('.reviews__items')) {
-        initializeConditionalSwiper('.reviews__items', {
+    if (document.querySelector('.about__menu')) {
+        const menuContainer = document.querySelector('.about__menu');
+        const activeItem = menuContainer.querySelector('.about__menu-item.active');
+        const allItems = menuContainer.querySelectorAll('.about__menu-item');
+
+        let initialIndex = 0;
+
+        if (activeItem) {
+            initialIndex = Array.from(allItems).indexOf(activeItem);
+
+            if (initialIndex === -1) {
+                initialIndex = 0;
+            }
+        }
+
+        initializeConditionalSwiper('.about__menu', {
             watchOverflow: true,
-            spaceBetween: 12,
-            slidesPerView: 1.05,
-
-        }, 991.98)
+            spaceBetween: 8,
+            slidesPerView: "auto",
+            initialSlide: initialIndex,
+        }, 991.98);
     }
-
 
     if (document.querySelector('.blog__slider')) {
         new Swiper('.blog__slider .swiper', {
@@ -260,6 +273,16 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
 
+    if (document.querySelector('.reviews__items')) {
+        initializeConditionalSwiper('.reviews__items', {
+            watchOverflow: true,
+            spaceBetween: 12,
+            slidesPerView: 1.05,
+
+        }, 991.98)
+    }
+
+
 
     function initializeConditionalSwiper(sliderSelector, swiperOptions, maxWidth = 575.98) {
         let isInitialized = false;
@@ -289,6 +312,36 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         };
     }
+
+
+    // floating Labels
+    const formControls = document.querySelectorAll('.form__field > .form__control');
+
+    const toggleInputClass = (element) => {
+        if (element.value.length > 0) {
+            element.classList.add('_input');
+        } else {
+            element.classList.remove('_input');
+        }
+    };
+
+    formControls?.forEach(control => {
+        toggleInputClass(control);
+
+        const events = ['input', 'blur', 'focus', 'change', 'keyup', 'mouseup'];
+        events.forEach(event => {
+            control.addEventListener(event, () => toggleInputClass(control));
+        });
+    });
+
+    formControls?.forEach(control => {
+        control.addEventListener('animationstart', (e) => {
+            if (e.animationName === 'onAutoFillStart' || e.animationName === 'onAutoFillCancel') {
+                control.classList.add('_input');
+            }
+        });
+    });
+
 
 })
 

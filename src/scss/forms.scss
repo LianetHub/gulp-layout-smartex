@@ -1,4 +1,26 @@
 .form {
+	// .form__field
+	&__field {
+		position: relative;
+		display: block;
+		&._error {
+			& + .form__error {
+				display: flex;
+			}
+		}
+	}
+	// .form__field-placeholder
+	&__field-placeholder {
+		position: absolute;
+		top: 1rem;
+		left: 0.8rem;
+		color: #939393;
+		display: block;
+		transition: all 0.3s ease;
+		font-size: 1.125rem;
+		line-height: 120%;
+		user-select: none;
+	}
 	// .form__control
 	&__control {
 		text-overflow: ellipsis;
@@ -14,6 +36,21 @@
 		color: $black;
 		font-size: 1.125rem;
 		line-height: 120%;
+		&:-webkit-autofill,
+		&:not(:placeholder-shown) {
+			padding: 1.125rem 0.75rem 0.625rem;
+			& + .form__field-placeholder {
+				font-size: 0.625rem;
+				top: 0.5rem;
+			}
+		}
+		&._input {
+			padding: 1.125rem 0.75rem 0.625rem;
+			& + .form__field-placeholder {
+				font-size: 0.625rem;
+				top: 0.5rem;
+			}
+		}
 		&::placeholder {
 			color: #939393;
 			opacity: 1;

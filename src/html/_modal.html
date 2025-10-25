@@ -4,13 +4,22 @@
     <form action="#" class="popup__form">
         <div class="row">
             <div class="col-md-6">
-                <input type="text" name="name" class="form__control" placeholder="Имя">
+                <div class="form__field">
+                    <input type="text" name="name" class="form__control" placeholder="">
+                    <div class="form__field-placeholder">Имя</div>
+                </div>
             </div>
             <div class="col-md-6">
-                <input type="text" name="name" class="form__control" placeholder="Телефон">
+                <div class="form__field">
+                    <input type="tel" name="phone" class="form__control" placeholder="">
+                    <div class="form__field-placeholder">Телефон</div>
+                </div>
             </div>
             <div class="col-12">
-                <textarea name="message" class="form__control" placeholder="Ваше сообщение"></textarea>
+                <div class="form__field">
+                    <textarea name="message" class="form__control" placeholder=""></textarea>
+                    <div class="form__field-placeholder">Ваше сообщение</div>
+                </div>
             </div>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary btn-fullwidth">Отправить</button>
