@@ -269,13 +269,24 @@
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 1rem;
-	min-height: 100%;
+	height: 100%;
 
 	// .card--white
 	&.card--white {
 		background: #fff;
 		.card__icon {
 			background: #f2f2f2;
+		}
+	}
+	&__header {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		.card__icon {
+			background: $accent;
+			width: 2.5rem;
+			height: 2.5rem;
+			border-radius: 0.5rem;
 		}
 	}
 	// .card__icon
@@ -300,6 +311,23 @@
 		color: #666;
 		font-size: 1rem;
 		line-height: 130%;
+		& p,
+		ul {
+			font-size: 1rem;
+		}
+		& ul {
+			list-style: disc;
+			padding-left: 1.5em;
+			& li {
+				padding-left: 0;
+				&:not(:last-child) {
+					margin-bottom: 0;
+				}
+				&::before {
+					display: none;
+				}
+			}
+		}
 	}
 }
 
@@ -414,6 +442,55 @@
 				}
 			}
 		}
+		&--small {
+			background: #f9f9f9;
+			border-radius: rem(14);
+			overflow: hidden;
+			.object__card-image {
+				z-index: 2;
+				width: 100%;
+				height: 14.375rem;
+				border-radius: 1.25rem;
+			}
+			.object__card-name {
+				position: relative;
+				z-index: 1;
+				font-size: 1rem;
+				top: auto;
+				left: auto;
+				box-shadow: none;
+				transition: background-color 0.3s ease, color 0.3s ease;
+				margin-top: rem(-30);
+				padding-top: rem(40);
+				padding-bottom: rem(12);
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				&::after {
+					display: none;
+				}
+				&::before {
+					position: static;
+					z-index: 1;
+					order: 1;
+					transform: none;
+					opacity: 0;
+					background: transparent;
+					transition: opacity 0.3s ease;
+				}
+			}
+			@media (any-hover: hover) {
+				&:hover {
+					.object__card-name {
+						background: $accent;
+						color: #fff;
+						&::before {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
 		@media (any-hover: hover) {
 			&:hover {
 				.object__card-name {
@@ -485,13 +562,16 @@
 }
 
 .delivery {
-	.row {
-		--gutter-y: 0;
-	}
 	.container {
 		@media (max-width: $md4) {
 			padding: 0;
 		}
+		& > .row {
+			--gutter-y: 0;
+		}
+	}
+	.card__description {
+		color: #242020;
 	}
 	// .delivery__banner
 	&__banner {
@@ -572,6 +652,11 @@
 
 		@media (min-width: $md3) {
 			border-radius: rem(30);
+		}
+	}
+	&__block {
+		&:not(:last-child) {
+			margin-bottom: 1.5rem;
 		}
 	}
 }

@@ -1098,6 +1098,10 @@
     --gutter-y: 3rem;
   }
 }
+.color-accent {
+  color: #d21e44;
+}
+
 .title {
   font-weight: 600;
   line-height: 120%;
@@ -1167,6 +1171,43 @@
     padding: 1.5rem;
     border-radius: 1.875rem;
   }
+}
+
+.grey-block {
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  background: #f4f5f6;
+}
+
+.red-block {
+  background: #d21e44;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.offest-top {
+  position: relative;
+  z-index: 1 !important;
+  margin-top: -4.5rem;
+  padding-top: 4.5rem;
+}
+
+.offest-bottom {
+  position: relative;
+  z-index: 1 !important;
+  margin-bottom: -3rem !important;
+  padding-bottom: 3.75rem;
+}
+
+.swiper-pagination.swiper-pagination-progressbar {
+  margin-top: 0.75rem;
+  position: static;
+  border-radius: 0.625rem;
+}
+
+.h-100 {
+  height: 100%;
 }
 
 .copy-btn {
@@ -1482,7 +1523,7 @@
   align-items: center;
   text-align: center;
   user-select: none;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
   padding: 0.875rem 1.5rem;
   line-height: 110%;
   letter-spacing: -0.0225rem;
@@ -1522,6 +1563,13 @@
 }
 .btn.btn-white:hover, .btn.btn-white:active {
   color: #d21e44;
+}
+.btn.btn-dark {
+  color: #fff;
+  background: linear-gradient(275deg, #1b2439 0%, #52555c 100%);
+}
+.btn.btn-dark:hover, .btn.btn-dark:active {
+  opacity: 0.9;
 }
 .btn.btn-large {
   font-size: 1.5rem;
@@ -1622,6 +1670,9 @@
   --swiper-scrollbar-size: 0.125rem;
   --swiper-scrollbar-bg-color: #f2f2f2;
   --swiper-scrollbar-drag-bg-color: #666;
+  --swiper-pagination-color: #666666;
+  --swiper-pagination-progressbar-size: 0.125rem;
+  --swiper-pagination-progressbar-bg-color: #f2f2f2;
 }
 @media (min-width: 575.98px) {
   :root {
@@ -1717,6 +1768,7 @@ body {
 .breadcrumbs__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 .breadcrumbs__item {
@@ -1819,8 +1871,8 @@ body {
   font-size: 1rem;
 }
 .typography-block p:not(:first-child) {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 @media (min-width: 575.98px) {
   .typography-block p {
@@ -1829,8 +1881,7 @@ body {
 }
 .typography-block ul {
   line-height: 150%;
-  list-style: disc;
-  padding-left: 1.25em;
+  padding-left: 1em;
   font-size: 0.875rem;
 }
 @media (min-width: 575.98px) {
@@ -1843,8 +1894,55 @@ body {
     font-size: 1.125rem;
   }
 }
-.typography-block ul li::marker {
-  font-size: 0.75em;
+.typography-block ul li {
+  padding-left: 1.25em;
+  position: relative;
+}
+.typography-block ul li:has(h4) {
+  padding-left: 0;
+}
+.typography-block ul li:has(h4)::before {
+  display: none;
+}
+.typography-block ul li:has(h4)::after {
+  display: none;
+}
+.typography-block ul li:has(h4) h4 {
+  position: relative;
+  padding-left: 1.25em;
+}
+.typography-block ul li:has(h4) h4:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.typography-block ul li:has(h4) h4::before {
+  content: "";
+  position: absolute;
+  top: 0.3125rem;
+  left: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='5.5' stroke='%23D21E44'/%3E%3Ccircle cx='5.9999' cy='6.00039' r='3.6' fill='%23D21E44'/%3E%3C/svg%3E");
+}
+.typography-block ul li:has(h4) p:not(:first-child) {
+  margin-top: 0.5rem;
+}
+.typography-block ul li:has(h4) p, .typography-block ul li:has(h4) ul {
+  font-size: 1rem;
+}
+.typography-block ul li::before {
+  content: "";
+  position: absolute;
+  top: 0.4375rem;
+  left: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Ccircle cx='6' cy='6' r='5.5' stroke='%23D21E44'/%3E%3Ccircle cx='5.9999' cy='6.00039' r='3.6' fill='%23D21E44'/%3E%3C/svg%3E");
 }
 .typography-block ul li:not(:last-child) {
   margin-bottom: 0.75rem;
@@ -1856,6 +1954,7 @@ body {
 }
 .typography-block a:hover {
   color: #a51836;
+  text-decoration: none;
 }
 .typography-block strong, .typography-block b {
   font-weight: 700;
@@ -1919,7 +2018,7 @@ body {
 }
 @media (min-width: 575.98px) {
   .typography-block h2:not(:first-child) {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 .typography-block h2:not(:last-child) {
@@ -1936,7 +2035,7 @@ body {
   }
 }
 .typography-block h3 {
-  font-weight: 700;
+  font-weight: 500;
   line-height: 120%;
 }
 .typography-block h3:not(:first-child) {
@@ -1979,8 +2078,24 @@ body {
 .typography-block ol {
   font-size: 1.125rem;
   line-height: 150%;
+  padding-left: 1.5rem;
   list-style: decimal;
-  padding-left: 1.5em;
+}
+.typography-block ol li h4 ~ * {
+  margin-left: -1.25rem;
+}
+.typography-block ol li h4:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.typography-block ol li:has(h4) p:not(:first-child) {
+  margin-top: 0.5rem;
+}
+.typography-block ol li:has(h4) p, .typography-block ol li:has(h4) ul {
+  font-size: 1rem;
+}
+.typography-block ol li::marker {
+  color: #d21e44;
+  font-weight: 500;
 }
 .typography-block ol li:not(:last-child) {
   margin-bottom: 0.75rem;
@@ -3236,13 +3351,24 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
-  min-height: 100%;
+  height: 100%;
 }
 .card.card--white {
   background: #fff;
 }
 .card.card--white .card__icon {
   background: #f2f2f2;
+}
+.card__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.card__header .card__icon {
+  background: #d21e44;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
 }
 .card__icon {
   width: 3.75rem;
@@ -3263,6 +3389,23 @@ body {
   color: #666;
   font-size: 1rem;
   line-height: 130%;
+}
+.card__description p,
+.card__description ul {
+  font-size: 1rem;
+}
+.card__description ul {
+  list-style: disc;
+  padding-left: 1.5em;
+}
+.card__description ul li {
+  padding-left: 0;
+}
+.card__description ul li:not(:last-child) {
+  margin-bottom: 0;
+}
+.card__description ul li::before {
+  display: none;
 }
 
 .marquee__slider {
@@ -3365,6 +3508,53 @@ body {
     height: 31.25rem;
   }
 }
+.object__card--small {
+  background: #f9f9f9;
+  border-radius: 0.875rem;
+  overflow: hidden;
+}
+.object__card--small .object__card-image {
+  z-index: 2;
+  width: 100%;
+  height: 14.375rem;
+  border-radius: 1.25rem;
+}
+.object__card--small .object__card-name {
+  position: relative;
+  z-index: 1;
+  font-size: 1rem;
+  top: auto;
+  left: auto;
+  box-shadow: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: -1.875rem;
+  padding-top: 2.5rem;
+  padding-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.object__card--small .object__card-name::after {
+  display: none;
+}
+.object__card--small .object__card-name::before {
+  position: static;
+  z-index: 1;
+  order: 1;
+  transform: none;
+  opacity: 0;
+  background: transparent;
+  transition: opacity 0.3s ease;
+}
+@media (any-hover: hover) {
+  .object__card--small:hover .object__card-name {
+    background: #d21e44;
+    color: #fff;
+  }
+  .object__card--small:hover .object__card-name::before {
+    opacity: 1;
+  }
+}
 @media (any-hover: hover) {
   .object__card:hover .object__card-name::before {
     transform: none;
@@ -3431,13 +3621,16 @@ body {
   z-index: -1;
 }
 
-.delivery .row {
-  --gutter-y: 0;
-}
 @media (max-width: 575.98px) {
   .delivery .container {
     padding: 0;
   }
+}
+.delivery .container > .row {
+  --gutter-y: 0;
+}
+.delivery .card__description {
+  color: #242020;
 }
 .delivery__banner {
   min-height: 100%;
@@ -3523,6 +3716,9 @@ body {
   .delivery__image {
     border-radius: 1.875rem;
   }
+}
+.delivery__block:not(:last-child) {
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width: 575.98px) {
@@ -3995,6 +4191,9 @@ body {
     margin: 0;
   }
 }
+.about__block:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
 @media (min-width: 767.98px) {
   .about__sidebar {
     border-radius: 1.25rem;
@@ -4076,4 +4275,59 @@ body {
   .about__menu-link:hover {
     color: #d21e44;
   }
+}
+.about__nums {
+  margin-top: 1.25rem;
+}
+.about__num-value {
+  font-size: 2rem;
+  font-weight: 600;
+}
+@media (min-width: 1239.98px) {
+  .about__num-value {
+    white-space: nowrap;
+  }
+}
+.about__num-desc {
+  margin-top: 0.75rem;
+  line-height: 120%;
+}
+
+.certs-slider {
+  overflow: visible;
+}
+@media (min-width: 575.98px) {
+  .certs-slider {
+    overflow: hidden;
+  }
+}
+.certs-slider__slide {
+  width: 10rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: auto;
+}
+
+.product__block {
+  position: relative;
+  z-index: 2;
+}
+.product__block:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.product__block .sm-block {
+  max-width: 59.375rem;
+  width: fit-content;
+}
+.product__block .sm-block ul {
+  max-width: 45.5rem;
+}
+.product__more-btn {
+  margin-top: 1.5rem;
+  margin-left: auto;
+  display: flex;
+  width: fit-content;
+}
+.product__more-btn::before {
+  order: 1;
 }

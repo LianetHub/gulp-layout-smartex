@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'О компании'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {})
+            <main class="page">
+                @@include('./html/_heading.html', {
+                "title": "О компании",
+                "hasTitle": false
+                })
+                <section class="about">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-4 col-md-5">
+                                @@include('./html/_about-sidebar.html', {
+                                'active': 1
+                                })
+                            </div>
+                            <div class="col-xl-9 col-lg-8 col-md-7">
+                                <div class="about__body">
+                                    <div class="about__block white-block typography-block">
+                                        <h1>О компании</h1>
+                                        <p>Компания Смартекс работает на рынке инженерного оборудования с 2012 года. За это время нами накоплен обширный опыт комплектации современными инженерными решениями объектов самого разного масштаба: от квартир и коттеджей до многофункциональных высотных зданий и высокотехнологичных заводов и производств. Мы успели зарекомендовать себя как надёжного поставщика, который соблюдает взятые на себя обязательства и неукоснительно действует в интересах своего клиента.</p>
+                                        <p>Коллектив компании насчитывает более 30 высококлассных специалистов, готовых оказать помощь в подборе оборудования и решить любые возникающие вопросы. К услугам клиентов более 5500 м2 складских площадей, расположенных на территории Новой Москвы, а также собственный парк автомобилей для оперативной доставки заказов.</p>
+                                        <p>Наша деятельность осуществляется не только на территории России, мы принимаем участие в крупных инфраструктурных проектах на территории стран СНГ и ближнего зарубежья.</p>
+                                    </div>
+                                    <div class="about__block white-block typography-block">
+                                        <h2>S-Fire: высококачественное оборудование для систем пожаротушения, соответствующее стандартам и требованиям рынка</h2>
+                                    </div>
+                                    <div class="about__block white-block">
+                                        <h2 class="title-sm">13 лет успеха в цифрах</h2>
+                                        <div class="about__nums">
+                                            <div class="row">
+                                                @@loop('./html/templates/_about-num.html', './html/json/_about-nums.json')
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="about__block white-block typography-block">
+                                        <h2>Сертификаты</h2>
+                                        <div class="certs-slider swiper">
+                                            <div class="swiper-wrapper">
+                                                <a href="@img/certs/01.png" data-fancybox="cert" class="certs-slider__slide swiper-slide">
+                                                    <img src="@img/certs/01.png" alt="Сертификат">
+                                                </a>
+                                                <a href="@img/certs/02.png" data-fancybox="cert" class="certs-slider__slide swiper-slide">
+                                                    <img src="@img/certs/02.png" alt="Сертификат">
+                                                </a>
+                                                <a href="@img/certs/03.png" data-fancybox="cert" class="certs-slider__slide swiper-slide">
+                                                    <img src="@img/certs/03.png" alt="Сертификат">
+                                                </a>
+                                                <a href="@img/certs/04.png" data-fancybox="cert" class="certs-slider__slide swiper-slide">
+                                                    <img src="@img/certs/04.png" alt="Сертификат">
+                                                </a>
+                                                <a href="@img/certs/05.png" data-fancybox="cert" class="certs-slider__slide swiper-slide">
+                                                    <img src="@img/certs/05.png" alt="Сертификат">
+                                                </a>
+                                            </div>
+                                            <div class="certs-slider__progress swiper-pagination"></div>
+                                        </div>
+                                        <p>ООО "Смартекс" рекомендует своего IT Партнёра, компанию
+                                            <a href="">
+                                                <img src="@img/prod-logo.png" alt="Moscow Dynamics Logotype">
+                                                Dynamics.Moscow
+                                            </a>, <br> для продвижения бизнеса Ремонтно-строительным организациям.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

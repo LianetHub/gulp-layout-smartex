@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Доставка'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {})
+            <main class="page">
+                @@include('./html/_heading.html', {
+                "title": "Доставка",
+                "hasTitle": false
+                })
+                <section class="delivery">
+                    <div class="container">
+                        <div class="delivery__block white-block typography-block">
+                            <h1>Доставка</h1>
+                            <p>Для удобства наших клиентов мы осуществляем доставку заказов по Москве, а так же во все регионы РФ, Республику Беларусь и в Казахстан. У нас действует отлаженная система отправки продукции, как с помощью транспортных компаний, так и отдельными автомашинами различной грузоподъёмности.</p>
+                            <p>Наши специалисты подберут наиболее подходящий именно вам способ доставки, рассчитают стоимость, и проконтролируют весь процесс. Просто сообщите необходимый адрес для доставки при размещении заказа.</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card__header">
+                                            <div class="card__icon">
+                                                <img src="@img/icons/clock.svg" alt="Иконка">
+                                            </div>
+                                            <div class="card__caption">Сроки доставки</div>
+                                        </div>
+                                        <div class="card__description">
+                                            <p>
+                                                Доставка по Москве, ближайшему Подмосковью и до ТК возможна на следующий день после поступления оплаты.
+                                            </p>
+                                            <p>
+                                                Конкретные условия определяются при размещении заказа с персональным менеджером.
+                                            </p>
+                                            <p>
+                                                Если у вас есть особые пожелания или срочный заказ, сообщите об этом менеджеру — мы постараемся найти оптимальное решение!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card__header">
+                                            <div class="card__icon">
+                                                <img src="@img/icons/price.svg" alt="Иконка">
+                                            </div>
+                                            <div class="card__caption">Стоимость доставки</div>
+                                        </div>
+                                        <div class="card__description">
+                                            <p>Доставка до ТК Деловые Линии, ПЭК – бесплатно.</p>
+                                            <p>Доставка по Москве при сумме заказа</p>
+                                            <ul>
+                                                <li>
+                                                    До 50 000 ₽ – 2000 ₽
+                                                </li>
+                                                <li>
+                                                    От 50 000 ₽ до 100 000 ₽ – 1000 ₽
+                                                </li>
+                                                <li>
+                                                    Свыше 100 000 ₽ – бесплатно.
+                                                </li>
+                                            </ul>
+                                            <p>
+                                                Полные условия доставки уточняйте у Вашего менеджера. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Мы сделаем всё возможное, чтобы нашим партнерам было комфортно работать с нами.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery__block white-block typography-block">
+                            <h2>Наши основные партнеры</h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="grey-block"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="grey-block"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

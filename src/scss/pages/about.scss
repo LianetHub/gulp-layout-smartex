@@ -6,6 +6,12 @@
 			margin: 0;
 		}
 	}
+	// .about__block
+	&__block {
+		&:not(:last-child) {
+			margin-bottom: rem(24);
+		}
+	}
 	// .about__sidebar
 	&__sidebar {
 		@media (min-width: $md3) {
@@ -84,5 +90,39 @@
 				color: #d21e44;
 			}
 		}
+	}
+	// .about__nums
+	&__nums {
+		margin-top: rem(20);
+	}
+	// .about__num
+	&__num {
+	}
+	// .about__num-value
+	&__num-value {
+		font-size: 2rem;
+		font-weight: 600;
+		@media (min-width: $md1) {
+			white-space: nowrap;
+		}
+	}
+	// .about__num-desc
+	&__num-desc {
+		margin-top: 0.75rem;
+		line-height: 120%;
+	}
+}
+
+.certs-slider {
+	overflow: visible;
+	@media (min-width: $md4) {
+		overflow: hidden;
+	}
+	// .certs-slider__slide
+	&__slide {
+		width: rem(160);
+		border-radius: rem(8);
+		overflow: hidden;
+		height: auto;
 	}
 }

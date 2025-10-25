@@ -1,0 +1,27 @@
+.product {
+	// .product__block
+	&__block {
+		position: relative;
+		z-index: 2;
+		&:not(:last-child) {
+			margin-bottom: 1.5rem;
+		}
+		.sm-block {
+			max-width: rem(950);
+			width: fit-content;
+			& ul {
+				max-width: rem(728);
+			}
+		}
+	}
+	// .product__more-btn
+	&__more-btn {
+		margin-top: 1.5rem;
+		margin-left: auto;
+		display: flex;
+		width: fit-content;
+		&::before {
+			order: 1;
+		}
+	}
+}

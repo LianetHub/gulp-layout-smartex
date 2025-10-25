@@ -1,5 +1,6 @@
 "use strict";
 
+
 // init Fancybox
 
 if (typeof Fancybox !== "undefined" && Fancybox !== null) {
@@ -280,6 +281,22 @@ document.addEventListener("DOMContentLoaded", function () {
             slidesPerView: 1.05,
 
         }, 991.98)
+    }
+    if (document.querySelector('.certs-slider')) {
+        new Swiper('.certs-slider', {
+            slidesPerView: "auto",
+            spaceBetween: 8,
+            watchOverflow: true,
+            pagination: {
+                type: "progressbar",
+                el: ".certs-slider__progress"
+            },
+            breakpoints: {
+                767.98: {
+                    spaceBetween: 12,
+                }
+            }
+        })
     }
 
 
