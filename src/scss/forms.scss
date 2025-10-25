@@ -1,25 +1,4 @@
 .form {
-	// .form__field
-	&__field {
-		position: relative;
-		display: block;
-		&._error {
-			& + .form__error {
-				display: flex;
-			}
-		}
-	}
-	// .form__field-placeholder
-	&__field-placeholder {
-		position: absolute;
-		top: 1.5rem;
-		left: 0;
-		color: #717680;
-		display: block;
-		transition: all 0.3s ease;
-		font-size: 1.125rem;
-		line-height: 122.222%;
-	}
 	// .form__control
 	&__control {
 		text-overflow: ellipsis;
@@ -28,43 +7,15 @@
 		border-radius: 0;
 		background: transparent;
 		color: $black;
-		border-bottom: rem(1) solid #d5d7da;
+		border-radius: 0.75rem;
+		padding: 0.875rem 0.75rem;
+		border: 1px solid #bbb;
+		color: $black;
 		font-size: 1.125rem;
-		padding: 1.37rem 0 0.5rem;
-		line-height: 122.222%;
-		&:-webkit-autofill,
-		&:not(:placeholder-shown) {
-			& + .form__field-placeholder {
-				font-size: 0.875rem;
-				top: 0;
-			}
-		}
-		&.form__control--grey {
-			min-height: rem(38);
-			border-radius: 0.375rem;
-			background: #414651;
-			border: rem(1) solid #414651;
-			color: #d5d7da;
-			font-size: 0.9375rem;
-			line-height: 146.667%;
-			letter-spacing: -0.0125rem;
-			padding: 0.25rem 0.63rem;
-			&:hover,
-			&:focus {
-				border-color: #ff7dbc;
-			}
-			&._error {
-				border: rem(1) solid #f04438;
-				&::placeholder {
-					color: #f04438;
-				}
-			}
-		}
-		&._input {
-			& + .form__field-placeholder {
-				font-size: rem(12);
-				top: rem(4) !important;
-			}
+		line-height: 120%;
+		&::placeholder {
+			color: #bbb;
+			opacity: 1;
 		}
 		&:hover,
 		&:focus {
@@ -81,7 +32,7 @@
 			}
 		}
 		&:is(textarea) {
-			height: 7.5rem;
+			height: ren(94);
 			resize: none;
 		}
 	}
@@ -222,12 +173,14 @@
 	text-align: center;
 	user-select: none;
 	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-	border-radius: rem(30);
+
 	padding: 0.875rem 1.5rem;
 	line-height: 110%;
 	letter-spacing: -0.0225rem;
 	gap: 0.75rem;
 	font-size: 1rem;
+	border-radius: rem(12);
+	min-height: rem(50);
 
 	@media (min-width: $md4) {
 		font-size: 1.125rem;
@@ -263,6 +216,14 @@
 	&.btn-large {
 		font-size: 1.5rem;
 		letter-spacing: normal;
+	}
+
+	&.btn-fullwidth {
+		width: 100%;
+	}
+
+	&.btn-rounded {
+		border-radius: rem(30);
 	}
 
 	&.btn-sm {

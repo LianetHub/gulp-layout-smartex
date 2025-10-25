@@ -1,7 +1,16 @@
 "use strict";
 
-document.addEventListener("DOMContentLoaded", function () {
+// init Fancybox
 
+if (typeof Fancybox !== "undefined" && Fancybox !== null) {
+    Fancybox.bind("[data-fancybox]", {
+        dragToClose: false,
+        closeClick: "outside",
+    });
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
 
 
 
@@ -93,11 +102,14 @@ document.addEventListener("DOMContentLoaded", function () {
         // ========= catalog =========
 
         if (target.matches('.footer__caption')) {
-            const content = target.nextElementSibling;
+            if (window.innerWidth < 991.98) {
 
-            if (content && content.matches('.footer__accordion')) {
-                target.classList.toggle('footer__caption--active');
-                content.slideToggle()
+                const content = target.nextElementSibling;
+
+                if (content && content.matches('.footer__accordion')) {
+                    target.classList.toggle('footer__caption--active');
+                    content.slideToggle()
+                }
             }
         }
 
@@ -277,7 +289,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         };
     }
-
 
 })
 

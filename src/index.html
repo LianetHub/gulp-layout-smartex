@@ -16,7 +16,7 @@
                                     <div class="promo__description-caption">Надежность, проверенная временем — с 2012 года</div>
                                     <div class="promo__description-text">Большой ассортимент под любые требования. Собственное производство и индивидуальные условия сотрудничества.</div>
                                 </div>
-                                <a href="" class="promo__btn btn btn-primary btn-large">В каталог</a>
+                                <a href="/catalog.html" class="promo__btn btn btn-primary btn-large btn-rounded">В каталог</a>
                             </div>
                             <video class="promo__video" playsinline autoplay muted loop poster="@img/promo-poster.jpg">
                                 <source src="./files/promo.mp4" type="video/mp4">
@@ -46,37 +46,14 @@
                     <div class="container">
                         <div class="marquee__slider swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="@img/logotypes/Smart-SML.png" alt="Логотип">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="@img/logotypes/Smart-BML.png" alt="Логотип">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="@img/logotypes/Smart-KML.png" alt="Логотип">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="@img/logotypes/rapidrop.png" alt="Логотип">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="@img/logotypes/lsr.png" alt="Логотип">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="@img/logotypes/a101.png" alt="Логотип">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="@img/logotypes/kortros.png" alt="Логотип">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="@img/logotypes/pick.png" alt="Логотип">
-                                </div>
+                                @@loop('./html/templates/_logo-markquee.html', './html/json/_brands.json')
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="objects">
                     <div class="container">
-                        <a href="" class="objects__btn btn btn-primary">Все объекты</a>
+                        <a href="" class="objects__btn btn btn-primary btn-rounded">Все объекты</a>
                         <div class="objects__slider swiper">
                             <div class="swiper-wrapper">
                                 <div class="objects__slide swiper-slide">
@@ -177,11 +154,11 @@
                                 </div>
                             </div>
                             <div class="objects__slider-controls">
-                                <button type="button" class="objects__slider-prev btn btn-white icon-prev">
+                                <button type="button" class="objects__slider-prev btn btn-white btn-rounded icon-prev">
                                     <span class="pc-only">Предыдущие объекты</span>
                                     <span class="mobile-only">Предыдущий</span>
                                 </button>
-                                <button type="button" class="objects__slider-next btn btn-white icon-next">
+                                <button type="button" class="objects__slider-next btn btn-white btn-rounded icon-next">
                                     <span class="pc-only">Следующие объекты</span>
                                     <span class="mobile-only">Следующий</span>
                                 </button>
@@ -193,30 +170,7 @@
                     <div class="container">
                         <div class="marquee__slider swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="@img/logotypes/lsr.png" alt="Логотип">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="@img/logotypes/a101.png" alt="Логотип">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="@img/logotypes/kortros.png" alt="Логотип">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="@img/logotypes/pick.png" alt="Логотип">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="@img/logotypes/Smart-SML.png" alt="Логотип">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="@img/logotypes/Smart-BML.png" alt="Логотип">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="@img/logotypes/Smart-KML.png" alt="Логотип">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="@img/logotypes/rapidrop.png" alt="Логотип">
-                                </div>
+                                @@loop('./html/templates/_logo-markquee.html', './html/json/_clients.json')
                             </div>
                         </div>
                     </div>
@@ -272,7 +226,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <a href="" class="reviews__btn btn btn-primary">Смотреть все отзывы</a>
+                                    <a href="" class="reviews__btn btn btn-primary btn-rounded">Смотреть все отзывы</a>
                                 </div>
                             </div>
                             <div class="col-lg-5">
@@ -316,7 +270,7 @@
                     <div class="container">
                         <div class="blog__header">
                             <h2 class="blog__title title">Последние новости</h2>
-                            <a href="" class="blog__btn btn btn-primary">Все новости</a>
+                            <a href="/blog.html" class="blog__btn btn btn-primary btn-rounded">Все новости</a>
                         </div>
                         <div class="blog__slider">
                             <div class="swiper">
