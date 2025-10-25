@@ -7,19 +7,18 @@
         <div class="wrapper">
             @@include('html/_header.html', {})
             <main class="page">
-
-                <section class="blog">
+                @@include('./html/_heading.html', {
+                "title": "Новости"
+                })
+                <div class="blog">
                     <div class="container">
-                        @@include('./html/_heading.html', {
-                        "title": "Новости"
-                        })
                         <div class="blog__grid">
                             <ul class="row">
                                 @@loop('./html/templates/_blog-item.html', './html/json/_blog-grid.json')
                             </ul>
                         </div>
                     </div>
-                </section>
+                </div>
             </main>
             @@include('html/_footer.html', {})
             @@include('html/_modal.html', {})

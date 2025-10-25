@@ -21,13 +21,17 @@
 	}
 	// .blog__grid
 	&__grid {
-		margin-top: rem(36);
+		&:not(:first-child) {
+			margin-top: rem(36);
+		}
 	}
 	// .blog__slider
 	&__slider {
-		margin-top: rem(36);
 		position: relative;
 		margin-bottom: rem(24);
+		&:not(:first-child) {
+			margin-top: rem(36);
+		}
 		.swiper {
 			overflow: visible;
 			@media (min-width: $md4) {

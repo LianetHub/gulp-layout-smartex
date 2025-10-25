@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Отзывы'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {})
+            <main class="page">
+                @@include('./html/_heading.html', {
+                "title": "Отзывы",
+                "hasTitle": false
+                })
+                <div class="reviews">
+                    <div class="container">
+                        <div class="reviews__wrapper white-block">
+                            <h2 class="reviews__caption title-md">Отзывы</h2>
+                            <p class="reviews__subtitle subtitle">Ничто не расскажет о нас лучше, чем честные отзывы наших клиентов:</p>
+                            <ul class="reviews__list">
+                                @@loop('./html/templates/_review.html', './html/json/_reviews.json')
+                            </ul>
+                        </div>
+                        <div class="reviews__footer">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="reviews__wrapper white-block">
+                                        <h3 class="reviews__caption title-sm">Оставьте отзыв о работе с нашей компанией</h3>
+                                        <p class="reviews__subtitle subtitle">Оставьте ваши контакты и текст отзыва, и наш модератор проверит его перед публикацией на сайте</p>
+                                        <form action="" class="reviews__form">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <input type="text" name="name" class="form__control" placeholder="Имя">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="text" name="name" class="form__control" placeholder="Телефон">
+                                                </div>
+                                                <div class="col-12">
+                                                    <textarea name="review" class="form__control" placeholder="Текст отзыва"></textarea>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn btn-primary btn-or btn-fullwidth">Отправить</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="reviews__wrapper white-block">
+                                        <h3 class="reviews__caption title-sm">Больше отзывов смотрите на Яндексе</h3>
+                                        <div class="reviews__widget">
+                                            <img src="@img/widget.png" alt="widget">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

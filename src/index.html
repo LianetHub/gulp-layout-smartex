@@ -186,7 +186,7 @@
                                         <p>Осуществляем доставку по Москве, РФ, а также в Беларусь и&nbsp;Казахстан. Специалисты подберут оптимальный способ доставки, рассчитают стоимость и проконтролируют процесс.</p>
                                         <p>Просто укажите адрес — мы сделаем все остальное!</p>
                                     </div>
-                                    <a href="" class="delivery__btn btn btn-primary">Подробнее о доставке</a>
+                                    <a href="" class="delivery__btn btn btn-primary btn-rounded">Подробнее о доставке</a>
                                 </div>
                             </div>
                             <div class="col-lg-4">
@@ -205,28 +205,10 @@
                                 <div class="reviews__content">
                                     <div class="reviews__items swiper">
                                         <ul class="swiper-wrapper">
-                                            <li class="reviews__item swiper-slide">
-                                                <div class="reviews__item-logo">
-                                                    <img src="@img/logotypes/airplane-logo.svg" alt="Airplane">
-                                                </div>
-                                                <div class="reviews__item-caption">Самолет Девелопмент</div>
-                                                <blockquote class="reviews__item-text">
-                                                    <p>ООО «Самолёт Девелопмент» выражает благодарность коллективу компании ООО «Смартекс Групп» за плодотворное сотрудничество в сфере поставок чугунной трубы SML на объект строительства КА «Спутник».</p>
-                                                    <p>Чёткое выполнение договорных обязательств по поставке качественной продукции позволяет нашей компании обеспечить бесперебойную работу строительного объекта. Надеемся на продолжение успешного сотрудничества, а так же на дальнейшее увеличение достигнутых показателей совместной работы.</p>
-                                                </blockquote>
-                                            </li>
-                                            <li class="reviews__item swiper-slide">
-                                                <div class="reviews__item-logo">
-                                                    <img src="@img/logotypes/ant-yapi.svg" alt="Airplane">
-                                                </div>
-                                                <div class="reviews__item-caption">Ant Yapi</div>
-                                                <blockquote class="reviews__item-text">
-                                                    Выражаем благодарность коллективу компании Смартекс за своевременные поставки высококачественных строительных материалов. Хотим отметить высокий профессиональный уровень
-                                                </blockquote>
-                                            </li>
+                                            @@loop('./html/templates/_review.html', './html/json/_home-reviews.json')
                                         </ul>
                                     </div>
-                                    <a href="" class="reviews__btn btn btn-primary btn-rounded">Смотреть все отзывы</a>
+                                    <a href="/reviews.html" class="reviews__btn btn btn-primary btn-rounded">Смотреть все отзывы</a>
                                 </div>
                             </div>
                             <div class="col-lg-5">

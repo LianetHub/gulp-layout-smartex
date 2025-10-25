@@ -9,12 +9,13 @@
 		color: $black;
 		border-radius: 0.75rem;
 		padding: 0.875rem 0.75rem;
-		border: 1px solid #bbb;
+		border: 1px solid #f3f3f3;
+		background: #f3f3f3;
 		color: $black;
 		font-size: 1.125rem;
 		line-height: 120%;
 		&::placeholder {
-			color: #bbb;
+			color: #939393;
 			opacity: 1;
 		}
 		&:hover,
@@ -197,6 +198,14 @@
 		&:hover,
 		&:active {
 			background: darken($color: #d21e44, $amount: 10);
+		}
+	}
+
+	&.btn-primary-outline {
+		border: rem(2) solid #d21e44;
+		&::before {
+			color: #d21e44;
+			font-size: 1.25rem;
 		}
 	}
 

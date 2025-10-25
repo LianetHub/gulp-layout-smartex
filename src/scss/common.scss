@@ -89,10 +89,12 @@ body {
 
 @import "./modules/breads";
 // @import "./modules/animation";
-@import "./modules/pagination";
+// @import "./modules/pagination";
 @import "./modules/popup";
 // =============== MODULES ====================
 .heading {
+	padding-bottom: 0;
+
 	// .heading__title
 	&__title {
 		margin-top: 1rem;

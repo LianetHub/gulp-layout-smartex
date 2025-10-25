@@ -474,23 +474,26 @@
                 </div>
             </header>
             <main class="page">
-
-                <section class="blog">
+                <div class="heading">
                     <div class="container">
-                        <div class="heading">
-                            <nav aria-label="Хлебные крошки" class="breadcrumbs">
-                                <ul class="breadcrumbs__list">
+                        <nav aria-label="Хлебные крошки" class="breadcrumbs">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item">
+                                    <a href="" class="breadcrumbs__link icon-home">Главная</a>
+                                </li>
+                                
                                     <li class="breadcrumbs__item">
-                                        <a href="" class="breadcrumbs__link icon-home">Главная</a>
+                                        <span class="breadcrumbs__link active">Новости</span>
                                     </li>
-                                    
-                                        <li class="breadcrumbs__item">
-                                            <span class="breadcrumbs__link active">Новости</span>
-                                        </li>
-                                </ul>
-                            </nav>
-                            <h1 class="heading__title title">Новости</h1>
-                        </div>
+                            </ul>
+                        </nav>
+                        
+                        <h1 class="heading__title title">Новости</h1>
+                        
+                    </div>
+                </div>
+                <div class="blog">
+                    <div class="container">
                         <div class="blog__grid">
                             <ul class="row">
                                 <li class="blog__item  col-lg-4 col-md-6">
@@ -665,7 +668,7 @@
                             </ul>
                         </div>
                     </div>
-                </section>
+                </div>
             </main>
             <footer class="footer">
                 <div class="container">
@@ -739,8 +742,8 @@
                     </div>
             </footer>
             <div id="callback" class="popup">
-                <div class="popup__title">Заказать звонок</div>
-                <p class="popup__subtitle">Заполните форму, чтобы мы могли связаться с вами.</p>
+                <div class="popup__title title-sm">Заказать звонок</div>
+                <p class="popup__subtitle subtitle">Заполните форму, чтобы мы могли связаться с вами.</p>
                 <form action="#" class="popup__form">
                     <div class="row">
                         <div class="col-md-6">
