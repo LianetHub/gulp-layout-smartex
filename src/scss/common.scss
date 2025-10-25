@@ -92,3 +92,12 @@ body {
 @import "./modules/pagination";
 @import "./modules/popup";
 // =============== MODULES ====================
+.heading {
+	// .heading__title
+	&__title {
+		margin-top: 1rem;
+		@media (min-width: $md4) {
+			margin-top: 1.5rem;
+		}
+	}
+}
