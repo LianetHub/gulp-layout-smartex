@@ -1,40 +1,23 @@
-.color-accent {
-	color: #ff7dbc;
-}
-
-.color-red {
-	color: #f04438;
-}
-
-.hint {
-	color: #ff7dbc;
-	text-align: center;
-	line-height: 140%;
-	font-size: 0.875rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: rem(8);
-	@media (min-width: $md4) {
-		font-size: 1.125rem;
-	}
-	&::before {
-		content: "";
-		width: 0.75rem;
-		height: 0.75rem;
-		border-radius: 50%;
-		background: currentColor;
-	}
-}
-
 .title {
-	font-size: 2.5rem;
 	font-weight: 600;
 	line-height: 120%;
+	font-size: 1.5rem;
+	@media (min-width: $md3) {
+		font-size: 2rem;
+	}
+	@media (min-width: $md1) {
+		font-size: 2.5rem;
+	}
 }
 
-.desktop-only {
-	@media (max-width: $md2) {
+.pc-only {
+	@media (max-width: $md4) {
+		display: none;
+	}
+}
+
+.mobile-only {
+	@media (min-width: $md4) {
 		display: none;
 	}
 }

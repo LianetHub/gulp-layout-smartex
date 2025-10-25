@@ -1,0 +1,42 @@
+[
+    {
+        "size": "col-6",
+        "name": "Чугунные безраструбные трубы SML",
+        "image": "@img/categories/chugunnye_bezrastrubnye_truby_sml"
+    },
+    {
+        "size": "col-6",
+        "name": "Противопожарное оборудование",
+        "image": "@img/categories/fire-fighting-equipment"
+    },
+    {
+        "size": "col-lg-4 col-6",
+        "name": "Трапы, воронки, <br> лотки",
+        "image": "@img/categories/traps_funnels_trays"
+    },
+    {
+        "size": "col-lg-4 col-6",
+        "name": "Крепежные <br> системы",
+        "image": "@img/categories/fastening-systems"
+    },
+    {
+        "size": "col-lg-4 col-6",
+        "name": "Полимерные <br> трубы",
+        "image": "@img/categories/polymer-pipes"
+    },
+    {
+        "size": "col-lg-4 col-6",
+        "name": "Трубопроводная <br> арматура",
+        "image": "@img/categories/pipeline-fittings"
+    },
+    {
+        "size": "col-lg-4 col-6",
+        "name": "Соединительные <br> муфты для труб",
+        "image": "@img/categories/pipe-couplings"
+    },
+    {
+        "size": "col-lg-4 col-6",
+        "name": "Грувлочные <br> соединения труб",
+        "image": "@img/categories/grooved-pipe-connections"
+    }
+]

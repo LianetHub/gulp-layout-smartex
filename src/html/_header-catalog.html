@@ -1,20 +1,31 @@
 <div class="header__catalog catalog">
-    <button type="button" class="catalog__button">Каталог</button>
+    <button type="button" data-catalog-toggler class="catalog__button"><span>Каталог</span></button>
     <div class="catalog__content">
+        <div class="catalog__header">
+            <div class="catalog__header-row">
+                <button type="button" aria-label="Назад" class="catalog__back icon-arrow-right"></button>
+                <div class="catalog__current">Каталог товаров</div>
+                <button type="button" aria-label="Закрыть каталог" class="catalog__close icon-close"></button>
+            </div>
+            <form action="#" class="catalog__search">
+                <button type="submit" class="catalog__search-submit icon-search"></button>
+                <input type="text" name="s" class="catalog__search-input" placeholder="Поиск по каталогу и сайту">
+            </form>
+        </div>
         <ul class="catalog__categories">
-            <li class="catalog__category"><button type="button" class="catalog__category-btn active">Чугунные безраструбные трубы SML</button></li>
-            <li class="catalog__category"><button type="button" class="catalog__category-btn">Противопожарное оборудование</button></li>
-            <li class="catalog__category"><button type="button" class="catalog__category-btn">Трапы, воронки, лотки</button></li>
-            <li class="catalog__category"><button type="button" class="catalog__category-btn">Крепежные системы</button></li>
-            <li class="catalog__category"><button type="button" class="catalog__category-btn">Полимерные трубы</button></li>
-            <li class="catalog__category"><button type="button" class="catalog__category-btn">Трубопроводная арматура</button></li>
-            <li class="catalog__category"><button type="button" class="catalog__category-btn">Соединительные муфты для труб</button></li>
-            <li class="catalog__category"><button type="button" class="catalog__category-btn">Грувлочные соединения труб</button></li>
+            <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right active">Чугунные безраструбные трубы SML</button></li>
+            <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Противопожарное оборудование</button></li>
+            <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Трапы, воронки, лотки</button></li>
+            <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Крепежные системы</button></li>
+            <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Полимерные трубы</button></li>
+            <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Трубопроводная арматура</button></li>
+            <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Соединительные муфты для труб</button></li>
+            <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Грувлочные соединения труб</button></li>
         </ul>
         <div class="catalog__body">
             <div class="catalog__block active">
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Хомуты для труб SML</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Хомуты для труб SML</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты соединительные SML Rapid</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты переходные SML Konfix</a></li>
@@ -23,7 +34,7 @@
                     </ul>
                 </div>
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Безраструбные чугунные трубы Smart SML</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Smart SML</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Чугунные трубы Smart SML</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие чугунные отводы Smart SML</a></li>
@@ -40,7 +51,7 @@
                     </ul>
                 </div>
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Безраструбные чугунные трубы Smart KML</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Smart KML</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы Smart KML</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы Smart KML</a></li>
@@ -57,7 +68,7 @@
                     </ul>
                 </div>
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Безраструбные чугунные трубы Smart BML</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Smart BML</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы Smart BML</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы</a></li>
@@ -71,7 +82,7 @@
                     </ul>
                 </div>
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Безраструбные чугунные трубы Duker SML</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Duker SML</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Чугунные трубы Duker</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы Duker</a></li>
@@ -88,7 +99,7 @@
                     </ul>
                 </div>
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Безраструбные чугунные трубы Duker MLB</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Duker MLB</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы MLB</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Отводы MLB</a></li>
@@ -100,7 +111,7 @@
                     </ul>
                 </div>
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Безраструбные чугунные трубы Duker TML</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Duker TML</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы</a></li>
@@ -111,7 +122,7 @@
                     </ul>
                 </div>
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Безраструбные чугунные трубы Duker MLK-protek</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Duker MLK-protek</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы MLK-protek</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы MLK-protek</a></li>
@@ -129,7 +140,7 @@
                     </ul>
                 </div>
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Безраструбные трубы SML RSP</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные трубы SML RSP</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Безраструбные трубы SML RSP</a></li>
                     </ul>
@@ -137,7 +148,7 @@
             </div>
             <div class="catalog__block">
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Rapidrop</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Rapidrop</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Обратные межфланцевые клапаны</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Затворы дисковые межфланцевые</a></li>
@@ -152,7 +163,7 @@
                     </ul>
                 </div>
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">S-Fire</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">S-Fire</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Обратные клапаны</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Дисковые затворы</a></li>
@@ -162,7 +173,7 @@
                     </ul>
                 </div>
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Reliable</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Reliable</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Reliable</a></li>
                     </ul>
@@ -170,7 +181,7 @@
             </div>
             <div class="catalog__block">
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">HL (Hutterer Lechner)</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">HL (Hutterer Lechner)</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Воронки водосточные кровельные HL (Hutterer Lechner)</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трапы</a></li>
@@ -183,7 +194,7 @@
                     </ul>
                 </div>
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">AlcaPlast</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">AlcaPlast</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Инсталляции</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Кнопки для инсталляций</a></li>
@@ -195,7 +206,7 @@
                     </ul>
                 </div>
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Татполимер</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Татполимер</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Кровельные воронки</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Канализационные трапы</a></li>
@@ -203,7 +214,7 @@
                     </ul>
                 </div>
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Sita</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Sita</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Вакуумные системы</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Воронки для балконов и террас</a></li>
@@ -217,7 +228,7 @@
             </div>
             <div class="catalog__block">
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Walraven</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Walraven</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Блоки для термоизолированных труб</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Дюбельная техника Walraven</a></li>
@@ -237,7 +248,7 @@
                     </ul>
                 </div>
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">NORMA</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">NORMA</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты CV/CE Normaconnect</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты GRIP E Normaconnect</a></li>
@@ -250,7 +261,7 @@
             </div>
             <div class="catalog__block">
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Smart PEX</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Smart PEX</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы Полимерные</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Муфты QE (PPSU)</a></li>
@@ -265,13 +276,13 @@
                     </ul>
                 </div>
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Полимерные трубы Girpi</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Полимерные трубы Girpi</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Полимерные трубы Girpi</a></li>
                     </ul>
                 </div>
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Канализационные трубы Ostendorf</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Канализационные трубы Ostendorf</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы Ostendorf HT (PPs) для внутренней канализации</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Наружная канализация KGEM Ostendorf KG</a></li>
@@ -283,7 +294,7 @@
             </div>
             <div class="catalog__block">
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Запорная арматура</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Запорная арматура</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Компенсационные вставки</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Шаровые краны резьбовые</a></li>
@@ -296,7 +307,7 @@
                     </ul>
                 </div>
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Радиаторная и термостатическая арматура</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Радиаторная и термостатическая арматура</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Редукторы давления</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Распр. коллекторы SR латунь (водоснабжение)</a></li>
@@ -311,13 +322,13 @@
             </div>
             <div class="catalog__block">
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Соединительные муфты SmartLink и SmartQuick</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Соединительные муфты SmartLink и SmartQuick</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Соединительные муфты SmartLink и SmartQuick</a></li>
                     </ul>
                 </div>
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Муфты переходные SmartVario</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Муфты переходные SmartVario</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Муфты переходные SmartVario</a></li>
                     </ul>
@@ -325,7 +336,7 @@
             </div>
             <div class="catalog__block">
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Красные</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Красные</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки грувлочные</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Колена</a></li>
@@ -342,7 +353,7 @@
                     </ul>
                 </div>
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Оцинкованные</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Оцинкованные</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки грувлочные</a></li>
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Фитинги грувлочные (оцинкованные)</a></li>
@@ -355,7 +366,7 @@
             </div>
             <div class="catalog__block">
                 <div class="catalog__brand">
-                    <button type="button" class="catalog__brand-caption">Насосное оборудование Grundfos</button>
+                    <button type="button" class="catalog__brand-caption icon-arrow-right">Насосное оборудование Grundfos</button>
                     <ul class="catalog__brand-list">
                         <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Насосное оборудование Grundfos</a></li>
                     </ul>

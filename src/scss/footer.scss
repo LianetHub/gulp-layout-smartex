@@ -1,33 +1,83 @@
 .footer {
 	background: #a3083f;
-	padding: 2.5rem 0;
 	color: #fff;
+	padding: 0 0 1.5rem;
+	@media (min-width: $md3) {
+		padding: 2.5rem 0;
+	}
 	// .footer__main
 	&__main {
-		border-bottom: rem(1) solid #fff;
-		.row {
-			--gutter-x: 3rem;
+		@media (min-width: $md3) {
+			border-bottom: rem(1) solid #fff;
+			.row {
+				--gutter-x: 3rem;
+			}
 		}
-		.col-4 {
-			padding-bottom: 2.5rem;
-			&:not(:last-child) {
-				border-right: rem(1) solid #fff;
+		@media (max-width: $md3) {
+			margin: 0 -1rem;
+			.row {
+				--gutter-y: 0;
+				--gutter-x: 0;
+			}
+			.col-md-4 {
+				padding: 0 1rem;
+				border-bottom: 0.0625rem solid #fff;
+			}
+		}
+		.col-md-4 {
+			@media (min-width: $md3) {
+				padding-bottom: 2.5rem;
+				&:not(:last-child) {
+					border-right: rem(1) solid #fff;
+				}
 			}
 		}
 	}
 	// .footer__logo
 	&__logo {
-		margin-bottom: 1.25rem;
-		display: inline-block;
+		display: none;
+		@media (min-width: $md3) {
+			margin-bottom: 1.25rem;
+			display: inline-block;
+		}
 	}
 	// .footer__caption
 	&__caption {
 		font-size: 1.5rem;
 		font-weight: 600;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1.25rem 0;
+		&.footer__caption--active {
+			&::before {
+				transform: rotate(180deg);
+			}
+		}
+		&::before {
+			font-size: 1.25rem;
+			order: 1;
+			transition: transform 0.3s ease;
+			@media (min-width: $md3) {
+				display: none;
+			}
+		}
+		@media (min-width: $md3) {
+			padding: 0;
+		}
+	}
+	// .footer__accordion
+	&__accordion {
+		display: none;
+		margin-top: 1rem;
+		padding-bottom: 1rem;
+		@media (min-width: $md4) {
+			padding-bottom: 0;
+			display: block !important;
+		}
 	}
 	// .footer__contacts
 	&__contacts {
-		margin-top: 1rem;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -94,7 +144,6 @@
 	}
 	// .footer__menu
 	&__menu {
-		margin-top: 1.5rem;
 		font-size: 1rem;
 	}
 	// .footer__menu-list
@@ -135,8 +184,15 @@
 	&__bottom {
 		margin-top: 1.06rem;
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 2rem;
+		text-align: center;
+		@media (min-width: $md3) {
+			justify-content: space-between;
+			text-align: left;
+		}
 	}
 	// .footer__privacy
 	&__privacy {

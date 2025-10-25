@@ -1,5 +1,10 @@
 :root {
 	--swiper-pagination-bottom: #{rem(12)};
+	--swiper-scrollbar-bottom: #{rem(8)};
+	--swiper-scrollbar-sides-offset: 4.5%;
+	--swiper-scrollbar-size: 0.125rem;
+	--swiper-scrollbar-bg-color: #f2f2f2;
+	--swiper-scrollbar-drag-bg-color: #666;
 	@media (min-width: $md4) {
 		--swiper-pagination-bottom: #{rem(42)};
 	}
@@ -24,96 +29,10 @@ body {
 	margin-right: 0 !important;
 	background: #f2f2f2;
 
-	&.catalog-lock {
-		overflow: hidden;
-		position: relative;
-		.wrapper {
-			&::before {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background: rgba($color: #000, $alpha: 0.6);
-				z-index: 7;
-				cursor: pointer;
-			}
-		}
-	}
-	&.menu-lock {
-		overflow: hidden;
-		position: relative;
-		.wrapper {
-			&::before {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background: rgba($color: #000, $alpha: 0.6);
-				z-index: 6;
-				cursor: pointer;
-			}
-		}
-		.header {
-			&::before {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background: rgba($color: #000, $alpha: 0.6);
-				z-index: 6;
-				cursor: pointer;
-			}
-		}
-	}
-	&.lock {
-		overflow: hidden;
-	}
-	&.filters-lock {
+	&.lock-catalog {
 		@media (max-width: $md3) {
 			overflow: hidden;
-			position: relative;
-			.wrapper {
-				&::before {
-					content: "";
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					background: rgba($color: #000, $alpha: 0.6);
-					z-index: 7;
-					cursor: pointer;
-				}
-			}
 		}
-	}
-	&.article-lock {
-		@media (max-width: $md3) {
-			overflow: hidden;
-			position: relative;
-			.wrapper {
-				&::before {
-					content: "";
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					background: rgba($color: #000, $alpha: 0.6);
-					z-index: 7;
-					cursor: pointer;
-				}
-			}
-		}
-	}
-	&.preloading {
-		overflow: hidden;
 	}
 }
 
@@ -126,16 +45,16 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
-	@media (max-width: $md3) {
-		overflow-x: hidden;
-	}
 }
 
 .page {
 	flex: 1 1 auto;
 	overflow-x: clip;
 	& > * {
-		padding: rem(45) 0;
+		padding: rem(26) 0;
+		@media (min-width: $md4) {
+			padding: rem(45) 0;
+		}
 		&:last-child {
 			padding-bottom: rem(60);
 		}

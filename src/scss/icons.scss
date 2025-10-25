@@ -17,6 +17,13 @@
 		display: block;
 	}
 }
+
+.icon-contacts:before {
+	content: "\e91a";
+}
+.icon-search-catalog:before {
+	content: "\e91b";
+}
 .icon-burger:before {
 	content: "\e919";
 }

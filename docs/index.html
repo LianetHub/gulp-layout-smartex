@@ -70,22 +70,33 @@
                                 <img src="img/logo.png" alt="Логотип">
                             </a>
                             <div class="header__catalog catalog">
-                                <button type="button" class="catalog__button">Каталог</button>
+                                <button type="button" data-catalog-toggler class="catalog__button"><span>Каталог</span></button>
                                 <div class="catalog__content">
+                                    <div class="catalog__header">
+                                        <div class="catalog__header-row">
+                                            <button type="button" aria-label="Назад" class="catalog__back icon-arrow-right"></button>
+                                            <div class="catalog__current">Каталог товаров</div>
+                                            <button type="button" aria-label="Закрыть каталог" class="catalog__close icon-close"></button>
+                                        </div>
+                                        <form action="#" class="catalog__search">
+                                            <button type="submit" class="catalog__search-submit icon-search"></button>
+                                            <input type="text" name="s" class="catalog__search-input" placeholder="Поиск по каталогу и сайту">
+                                        </form>
+                                    </div>
                                     <ul class="catalog__categories">
-                                        <li class="catalog__category"><button type="button" class="catalog__category-btn active">Чугунные безраструбные трубы SML</button></li>
-                                        <li class="catalog__category"><button type="button" class="catalog__category-btn">Противопожарное оборудование</button></li>
-                                        <li class="catalog__category"><button type="button" class="catalog__category-btn">Трапы, воронки, лотки</button></li>
-                                        <li class="catalog__category"><button type="button" class="catalog__category-btn">Крепежные системы</button></li>
-                                        <li class="catalog__category"><button type="button" class="catalog__category-btn">Полимерные трубы</button></li>
-                                        <li class="catalog__category"><button type="button" class="catalog__category-btn">Трубопроводная арматура</button></li>
-                                        <li class="catalog__category"><button type="button" class="catalog__category-btn">Соединительные муфты для труб</button></li>
-                                        <li class="catalog__category"><button type="button" class="catalog__category-btn">Грувлочные соединения труб</button></li>
+                                        <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right active">Чугунные безраструбные трубы SML</button></li>
+                                        <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Противопожарное оборудование</button></li>
+                                        <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Трапы, воронки, лотки</button></li>
+                                        <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Крепежные системы</button></li>
+                                        <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Полимерные трубы</button></li>
+                                        <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Трубопроводная арматура</button></li>
+                                        <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Соединительные муфты для труб</button></li>
+                                        <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Грувлочные соединения труб</button></li>
                                     </ul>
                                     <div class="catalog__body">
                                         <div class="catalog__block active">
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Хомуты для труб SML</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Хомуты для труб SML</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты соединительные SML Rapid</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты переходные SML Konfix</a></li>
@@ -94,7 +105,7 @@
                                                 </ul>
                                             </div>
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Безраструбные чугунные трубы Smart SML</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Smart SML</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Чугунные трубы Smart SML</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие чугунные отводы Smart SML</a></li>
@@ -111,7 +122,7 @@
                                                 </ul>
                                             </div>
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Безраструбные чугунные трубы Smart KML</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Smart KML</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы Smart KML</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы Smart KML</a></li>
@@ -128,7 +139,7 @@
                                                 </ul>
                                             </div>
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Безраструбные чугунные трубы Smart BML</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Smart BML</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы Smart BML</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы</a></li>
@@ -142,7 +153,7 @@
                                                 </ul>
                                             </div>
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Безраструбные чугунные трубы Duker SML</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Duker SML</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Чугунные трубы Duker</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы Duker</a></li>
@@ -159,7 +170,7 @@
                                                 </ul>
                                             </div>
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Безраструбные чугунные трубы Duker MLB</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Duker MLB</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы MLB</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Отводы MLB</a></li>
@@ -171,7 +182,7 @@
                                                 </ul>
                                             </div>
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Безраструбные чугунные трубы Duker TML</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Duker TML</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы</a></li>
@@ -182,7 +193,7 @@
                                                 </ul>
                                             </div>
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Безраструбные чугунные трубы Duker MLK-protek</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Duker MLK-protek</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы MLK-protek</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы MLK-protek</a></li>
@@ -200,7 +211,7 @@
                                                 </ul>
                                             </div>
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Безраструбные трубы SML RSP</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные трубы SML RSP</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Безраструбные трубы SML RSP</a></li>
                                                 </ul>
@@ -208,7 +219,7 @@
                                         </div>
                                         <div class="catalog__block">
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Rapidrop</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Rapidrop</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Обратные межфланцевые клапаны</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Затворы дисковые межфланцевые</a></li>
@@ -223,7 +234,7 @@
                                                 </ul>
                                             </div>
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">S-Fire</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">S-Fire</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Обратные клапаны</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Дисковые затворы</a></li>
@@ -233,7 +244,7 @@
                                                 </ul>
                                             </div>
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Reliable</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Reliable</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Reliable</a></li>
                                                 </ul>
@@ -241,7 +252,7 @@
                                         </div>
                                         <div class="catalog__block">
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">HL (Hutterer Lechner)</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">HL (Hutterer Lechner)</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Воронки водосточные кровельные HL (Hutterer Lechner)</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трапы</a></li>
@@ -254,7 +265,7 @@
                                                 </ul>
                                             </div>
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">AlcaPlast</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">AlcaPlast</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Инсталляции</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Кнопки для инсталляций</a></li>
@@ -266,7 +277,7 @@
                                                 </ul>
                                             </div>
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Татполимер</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Татполимер</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Кровельные воронки</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Канализационные трапы</a></li>
@@ -274,7 +285,7 @@
                                                 </ul>
                                             </div>
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Sita</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Sita</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Вакуумные системы</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Воронки для балконов и террас</a></li>
@@ -288,7 +299,7 @@
                                         </div>
                                         <div class="catalog__block">
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Walraven</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Walraven</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Блоки для термоизолированных труб</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Дюбельная техника Walraven</a></li>
@@ -308,7 +319,7 @@
                                                 </ul>
                                             </div>
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">NORMA</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">NORMA</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты CV/CE Normaconnect</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты GRIP E Normaconnect</a></li>
@@ -321,7 +332,7 @@
                                         </div>
                                         <div class="catalog__block">
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Smart PEX</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Smart PEX</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы Полимерные</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Муфты QE (PPSU)</a></li>
@@ -336,13 +347,13 @@
                                                 </ul>
                                             </div>
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Полимерные трубы Girpi</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Полимерные трубы Girpi</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Полимерные трубы Girpi</a></li>
                                                 </ul>
                                             </div>
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Канализационные трубы Ostendorf</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Канализационные трубы Ostendorf</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы Ostendorf HT (PPs) для внутренней канализации</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Наружная канализация KGEM Ostendorf KG</a></li>
@@ -354,7 +365,7 @@
                                         </div>
                                         <div class="catalog__block">
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Запорная арматура</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Запорная арматура</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Компенсационные вставки</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Шаровые краны резьбовые</a></li>
@@ -367,7 +378,7 @@
                                                 </ul>
                                             </div>
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Радиаторная и термостатическая арматура</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Радиаторная и термостатическая арматура</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Редукторы давления</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Распр. коллекторы SR латунь (водоснабжение)</a></li>
@@ -382,13 +393,13 @@
                                         </div>
                                         <div class="catalog__block">
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Соединительные муфты SmartLink и SmartQuick</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Соединительные муфты SmartLink и SmartQuick</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Соединительные муфты SmartLink и SmartQuick</a></li>
                                                 </ul>
                                             </div>
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Муфты переходные SmartVario</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Муфты переходные SmartVario</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Муфты переходные SmartVario</a></li>
                                                 </ul>
@@ -396,7 +407,7 @@
                                         </div>
                                         <div class="catalog__block">
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Красные</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Красные</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки грувлочные</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Колена</a></li>
@@ -413,7 +424,7 @@
                                                 </ul>
                                             </div>
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Оцинкованные</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Оцинкованные</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки грувлочные</a></li>
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Фитинги грувлочные (оцинкованные)</a></li>
@@ -426,7 +437,7 @@
                                         </div>
                                         <div class="catalog__block">
                                             <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption">Насосное оборудование Grundfos</button>
+                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Насосное оборудование Grundfos</button>
                                                 <ul class="catalog__brand-list">
                                                     <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Насосное оборудование Grundfos</a></li>
                                                 </ul>
@@ -440,10 +451,14 @@
                                 <button type="submit" class="search__btn icon-search">Найти</button>
                             </form>
                             <div class="header__actions">
+                                <a href="" class="header__action header__action--mobile icon-home">Главная</a>
+                                <button type="button" data-catalog-toggler class="header__action header__action--mobile icon-search-catalog">Каталог</button>
                                 <a href="" class="header__action icon-heart" data-quantity="1">Избранное</a>
                                 <a href="" class="header__action icon-docs" data-quantity="1">Смета</a>
+                                <a href="" class="header__action header__action--mobile icon-contacts">Контакты</a>
                             </div>
                             <div class="header__contacts">
+                                <a href="tel:88007700033" class="header__contacts-phone icon-phone-fill"></a>
                                 <div class="header__contacts-header">
                                     <a href="tel:88007700033" class="header__phone">8-800-770-00-33</a>
                                     <div class="header__info">
@@ -461,8 +476,8 @@
             <main class="page">
                 <section class="promo">
                     <div class="container">
-                        <div class="promo__banner" style="background-image: url('../img/fire-safety-check-valves.jpg');">
-                            <h1 class="promo__title">Оборудование для инженерных систем и сетей</h1>
+                        <div class="promo__banner">
+                            <h1 class="promo__title">Оборудование для&nbsp;инженерных систем и сетей</h1>
                             <div class="promo__footer">
                                 <div class="promo__description">
                                     <div class="promo__description-caption">Надежность, проверенная временем — с 2012 года</div>
@@ -470,6 +485,9 @@
                                 </div>
                                 <a href="" class="promo__btn btn btn-primary btn-large">В каталог</a>
                             </div>
+                            <video class="promo__video" playsinline autoplay muted loop poster="img/promo-poster.jpg">
+                                <source src="./files/promo.mp4" type="video/mp4">
+                            </video>
                         </div>
                     </div>
                 </section>
@@ -479,65 +497,66 @@
                             <div class="col-6">
                                 <a href="" class="categories__card">
                                     <span class="categories__card-name">Чугунные безраструбные трубы SML</span>
-                                    <span class="categories__card-image">
-                                        <img src="img/categories/chugunnye_bezrastrubnye_truby_sml.png" alt="Фото категории товара">
-                                    </span>
+                                    <picture class="categories__card-image">
+                                        <source media="(min-width: 575.98px)" srcset="img/categories/chugunnye_bezrastrubnye_truby_sml.png">
+                                        <img src="img/categories/chugunnye_bezrastrubnye_truby_sml-mobile.png" alt="Фото категории товара">
+                                    </picture>
                                 </a>
-                            </div>
-                            <div class="col-6">
+                            </div><div class="col-6">
                                 <a href="" class="categories__card">
                                     <span class="categories__card-name">Противопожарное оборудование</span>
-                                    <span class="categories__card-image">
-                                        <img src="img/categories/fire-fighting-equipment.png" alt="Фото категории товара">
-                                    </span>
+                                    <picture class="categories__card-image">
+                                        <source media="(min-width: 575.98px)" srcset="img/categories/fire-fighting-equipment.png">
+                                        <img src="img/categories/fire-fighting-equipment-mobile.png" alt="Фото категории товара">
+                                    </picture>
                                 </a>
-                            </div>
-                            <div class="col-4">
+                            </div><div class="col-lg-4 col-6">
                                 <a href="" class="categories__card">
                                     <span class="categories__card-name">Трапы, воронки, <br> лотки</span>
-                                    <span class="categories__card-image">
-                                        <img src="img/categories/traps_funnels_trays.png" alt="Фото категории товара">
-                                    </span>
+                                    <picture class="categories__card-image">
+                                        <source media="(min-width: 575.98px)" srcset="img/categories/traps_funnels_trays.png">
+                                        <img src="img/categories/traps_funnels_trays-mobile.png" alt="Фото категории товара">
+                                    </picture>
                                 </a>
-                            </div>
-                            <div class="col-4">
+                            </div><div class="col-lg-4 col-6">
                                 <a href="" class="categories__card">
                                     <span class="categories__card-name">Крепежные <br> системы</span>
-                                    <span class="categories__card-image">
-                                        <img src="img/categories/fastening-systems.png" alt="Фото категории товара">
-                                    </span>
+                                    <picture class="categories__card-image">
+                                        <source media="(min-width: 575.98px)" srcset="img/categories/fastening-systems.png">
+                                        <img src="img/categories/fastening-systems-mobile.png" alt="Фото категории товара">
+                                    </picture>
                                 </a>
-                            </div>
-                            <div class="col-4">
+                            </div><div class="col-lg-4 col-6">
                                 <a href="" class="categories__card">
                                     <span class="categories__card-name">Полимерные <br> трубы</span>
-                                    <span class="categories__card-image">
-                                        <img src="img/categories/polymer-pipes.png" alt="Фото категории товара">
-                                    </span>
+                                    <picture class="categories__card-image">
+                                        <source media="(min-width: 575.98px)" srcset="img/categories/polymer-pipes.png">
+                                        <img src="img/categories/polymer-pipes-mobile.png" alt="Фото категории товара">
+                                    </picture>
                                 </a>
-                            </div>
-                            <div class="col-4">
+                            </div><div class="col-lg-4 col-6">
                                 <a href="" class="categories__card">
                                     <span class="categories__card-name">Трубопроводная <br> арматура</span>
-                                    <span class="categories__card-image">
-                                        <img src="img/categories/pipeline-fittings.png" alt="Фото категории товара">
-                                    </span>
+                                    <picture class="categories__card-image">
+                                        <source media="(min-width: 575.98px)" srcset="img/categories/pipeline-fittings.png">
+                                        <img src="img/categories/pipeline-fittings-mobile.png" alt="Фото категории товара">
+                                    </picture>
                                 </a>
-                            </div>
-                            <div class="col-4">
+                            </div><div class="col-lg-4 col-6">
                                 <a href="" class="categories__card">
                                     <span class="categories__card-name">Соединительные <br> муфты для труб</span>
-                                    <span class="categories__card-image">
-                                        <img src="img/categories/pipe-couplings.png" alt="Фото категории товара">
-                                    </span>
+                                    <picture class="categories__card-image">
+                                        <source media="(min-width: 575.98px)" srcset="img/categories/pipe-couplings.png">
+                                        <img src="img/categories/pipe-couplings-mobile.png" alt="Фото категории товара">
+                                    </picture>
                                 </a>
-                            </div>
-                            <div class="col-4">
+                            </div><div class="col-lg-4 col-6">
                                 <a href="" class="categories__card">
                                     <span class="categories__card-name">Грувлочные <br> соединения труб</span>
-                                    <span class="categories__card-image">
-                                        <img src="img/categories/grooved-pipe-connections.png" alt="Фото категории товара">
-                                    </span>
+                                    <picture class="categories__card-image">
+                                        <source media="(min-width: 575.98px)" srcset="img/categories/grooved-pipe-connections.png">
+                                        <img src="img/categories/grooved-pipe-connections-mobile.png" alt="Фото категории товара">
+                                    </picture>
                                 </a>
                             </div>
                         </div>
@@ -546,9 +565,9 @@
                 <section class="benefits">
                     <div class="container">
                         <h2 class="benefits__title title">Производим и реализуем только качественные материалы, ведь на кону ваш комфорт и наша репутация</h2>
-                        <div class="benefits__body">
-                            <div class="row">
-                                <div class="col-sm-4">
+                        <div class="benefits__content swiper">
+                            <div class="swiper-wrapper">
+                                <div class="col-lg-4 col-md-6 swiper-slide">
                                     <div class="card">
                                         <div class="card__icon">
                                             <img src="img/icons/production.svg" alt="Иконка">
@@ -556,7 +575,7 @@
                                         <div class="card__caption">Собственное производство</div>
                                         <div class="card__description">Мы создаем продукцию, отвечающую вашим требованиям. Контроль на всех этапах гарантирует качество, гибкость и&nbsp;доступные цены для клиентов.</div>
                                     </div>
-                                </div><div class="col-sm-4">
+                                </div><div class="col-lg-4 col-md-6 swiper-slide">
                                     <div class="card">
                                         <div class="card__icon">
                                             <img src="img/icons/original.svg" alt="Иконка">
@@ -564,7 +583,7 @@
                                         <div class="card__caption">100% оригинальная продукция</div>
                                         <div class="card__description">Соответствующая стандартам. Сертифицирована, проходит контроль, гарантирует надежность. Ваше доверие — наш приоритет.</div>
                                     </div>
-                                </div><div class="col-sm-4">
+                                </div><div class="col-lg-4 col-md-6 swiper-slide">
                                     <div class="card">
                                         <div class="card__icon">
                                             <img src="img/icons/distributor.svg" alt="Иконка">
@@ -572,7 +591,7 @@
                                         <div class="card__caption">Эксклюзивный дистрибьютор</div>
                                         <div class="card__description">Предлагаем уникальную продукцию с&nbsp;гарантией качества. Наши партнеры доверяют нам, а клиенты получают лучшие решения на рынке.</div>
                                     </div>
-                                </div><div class="col-sm-4">
+                                </div><div class="col-lg-4 col-md-6 swiper-slide">
                                     <div class="card">
                                         <div class="card__icon">
                                             <img src="img/icons/air-delivery.svg" alt="Иконка">
@@ -580,7 +599,7 @@
                                         <div class="card__caption">Доставка в любую точку мира</div>
                                         <div class="card__description">Наша логистическая система отлажена до&nbsp;мелочей, что позволяет гарантировать своевременность и сохранность грузов. Доставим ваш заказ быстро и надежно.</div>
                                     </div>
-                                </div><div class="col-sm-4">
+                                </div><div class="col-lg-4 col-md-6 swiper-slide">
                                     <div class="card">
                                         <div class="card__icon">
                                             <img src="img/icons/bus-delivery.svg" alt="Иконка">
@@ -588,7 +607,7 @@
                                         <div class="card__caption">Бесплатная доставка в ТК</div>
                                         <div class="card__description">Это делает сотрудничество с нами еще выгоднее. Вы экономите на логистике, а ваш заказ оперативно отправляется в любой регион. Удобно, быстро и без лишних затрат!</div>
                                     </div>
-                                </div><div class="col-sm-4">
+                                </div><div class="col-lg-4 col-md-6 swiper-slide">
                                     <div class="card">
                                         <div class="card__icon">
                                             <img src="img/icons/sales.svg" alt="Иконка">
@@ -598,6 +617,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="benefits__scrollbar swiper-scrollbar"></div>
                         </div>
                     </div>
                 </section>
@@ -635,9 +655,7 @@
                 </div>
                 <div class="objects">
                     <div class="container">
-                        <div class="objects__header">
-                            <a href="" class="objects__btn btn btn-primary">Все объекты</a>
-                        </div>
+                        <a href="" class="objects__btn btn btn-primary">Все объекты</a>
                         <div class="objects__slider swiper">
                             <div class="swiper-wrapper">
                                 <div class="objects__slide swiper-slide">
@@ -738,8 +756,14 @@
                                 </div>
                             </div>
                             <div class="objects__slider-controls">
-                                <button type="button" class="objects__slider-prev btn btn-white icon-prev">Предыдущие объекты</button>
-                                <button type="button" class="objects__slider-next btn btn-white icon-next">Следующие объекты</button>
+                                <button type="button" class="objects__slider-prev btn btn-white icon-prev">
+                                    <span class="pc-only">Предыдущие объекты</span>
+                                    <span class="mobile-only">Предыдущий</span>
+                                </button>
+                                <button type="button" class="objects__slider-next btn btn-white icon-next">
+                                    <span class="pc-only">Следующие объекты</span>
+                                    <span class="mobile-only">Следующий</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -779,7 +803,7 @@
                 <section class="delivery">
                     <div class="container">
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-lg-8">
                                 <div class="delivery__banner">
                                     <div class="delivery__label">Доставка</div>
                                     <h2 class="delivery__title title">Доставка в любой регион: <br> удобно, оперативно, надежно</h2>
@@ -790,10 +814,11 @@
                                     <a href="" class="delivery__btn btn btn-primary">Подробнее о доставке</a>
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <div class="delivery__image">
-                                    <img src="img/delivery-img.jpg" class="cover-image" alt="Доставка материалов">
-                                </div>
+                            <div class="col-lg-4">
+                                <picture class="delivery__image">
+                                    <source media="(min-width: 991.98px)" srcset="img/delivery-img.jpg">
+                                    <img src="img/delivery-img-mobile.png" class="cover-image" alt="Доставка материалов">
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -801,33 +826,35 @@
                 <div class="reviews">
                     <div class="container">
                         <div class="row">
-                            <div class="col-7">
+                            <div class="col-lg-7">
                                 <div class="reviews__content">
-                                    <ul class="reviews__list">
-                                        <li class="reviews__item">
-                                            <div class="reviews__item-logo">
-                                                <img src="img/logotypes/airplane-logo.svg" alt="Airplane">
-                                            </div>
-                                            <div class="reviews__item-caption">Самолет Девелопмент</div>
-                                            <blockquote class="reviews__item-text">
-                                                <p>ООО «Самолёт Девелопмент» выражает благодарность коллективу компании ООО «Смартекс Групп» за плодотворное сотрудничество в сфере поставок чугунной трубы SML на объект строительства КА «Спутник».</p>
-                                                <p>Чёткое выполнение договорных обязательств по поставке качественной продукции позволяет нашей компании обеспечить бесперебойную работу строительного объекта. Надеемся на продолжение успешного сотрудничества, а так же на дальнейшее увеличение достигнутых показателей совместной работы.</p>
-                                            </blockquote>
-                                        </li>
-                                        <li class="reviews__item">
-                                            <div class="reviews__item-logo">
-                                                <img src="img/logotypes/ant-yapi.svg" alt="Airplane">
-                                            </div>
-                                            <div class="reviews__item-caption">Ant Yapi</div>
-                                            <blockquote class="reviews__item-text">
-                                                Выражаем благодарность коллективу компании Смартекс за своевременные поставки высококачественных строительных материалов. Хотим отметить высокий профессиональный уровень
-                                            </blockquote>
-                                        </li>
-                                    </ul>
-                                    <button type="button" class="reviews__btn btn btn-primary">Смотреть все отзывы</button>
+                                    <div class="reviews__items swiper">
+                                        <ul class="swiper-wrapper">
+                                            <li class="reviews__item swiper-slide">
+                                                <div class="reviews__item-logo">
+                                                    <img src="img/logotypes/airplane-logo.svg" alt="Airplane">
+                                                </div>
+                                                <div class="reviews__item-caption">Самолет Девелопмент</div>
+                                                <blockquote class="reviews__item-text">
+                                                    <p>ООО «Самолёт Девелопмент» выражает благодарность коллективу компании ООО «Смартекс Групп» за плодотворное сотрудничество в сфере поставок чугунной трубы SML на объект строительства КА «Спутник».</p>
+                                                    <p>Чёткое выполнение договорных обязательств по поставке качественной продукции позволяет нашей компании обеспечить бесперебойную работу строительного объекта. Надеемся на продолжение успешного сотрудничества, а так же на дальнейшее увеличение достигнутых показателей совместной работы.</p>
+                                                </blockquote>
+                                            </li>
+                                            <li class="reviews__item swiper-slide">
+                                                <div class="reviews__item-logo">
+                                                    <img src="img/logotypes/ant-yapi.svg" alt="Airplane">
+                                                </div>
+                                                <div class="reviews__item-caption">Ant Yapi</div>
+                                                <blockquote class="reviews__item-text">
+                                                    Выражаем благодарность коллективу компании Смартекс за своевременные поставки высококачественных строительных материалов. Хотим отметить высокий профессиональный уровень
+                                                </blockquote>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="" class="reviews__btn btn btn-primary">Смотреть все отзывы</a>
                                 </div>
                             </div>
-                            <div class="col-5">
+                            <div class="col-lg-5">
                                 <div class="reviews__widget">
                                     <img src="img/widget.png" alt="widget">
                                 </div>
@@ -838,27 +865,27 @@
                 <div class="teasers">
                     <div class="container">
                         <div class="teaser">
-                            <div class="teaser__header">
-                                <a href="" class="teaser__title title">Чугунные трубы</a>
-                                <a href="" aria-label="Перейти в категорию" class="teaser__btn icon-arrow"></a>
-                            </div>
+                            <a href="" class="teaser__title title">Чугунные трубы</a>
                             <div class="teaser__body">
                                 <p class="teaser__description">Чугунные трубы — надежность на 50+ лет! Прочные, пожаробезопасные, устойчивые к коррозии. Современные технологии устранили старые <br> недостатки, а удобный монтаж делает их идеальным выбором.</p>
-                                <div class="teaser__categories">
-                                    <a href="" class="teaser__category">от 50 до 300 диаметра</a>
+                                <div class="teaser__actions">
+                                    <div class="teaser__categories">
+                                        <a href="" class="teaser__category">от 50 до 300 диаметра</a>
+                                    </div>
+                                    <a href="" aria-label="Перейти в категорию" class="teaser__btn icon-arrow"></a>
                                 </div>
                             </div>
                         </div>
                         <div class="teaser">
-                            <div class="teaser__header">
-                                <a href="" class="teaser__title title">Канализационные трубы</a>
-                                <a href="" aria-label="Перейти в категорию" class="teaser__btn icon-arrow"></a>
-                            </div>
+                            <a href="" class="teaser__title title">Канализационные трубы</a>
                             <div class="teaser__body">
                                 <p class="teaser__description">Каталог Смартекс предлагает надежные системы канализации: чугунные трубы Smart SML, бесшумные Ostendorf Skolan dB, уличные Ostendorf KG и другие. Решения для любых задач — от коттеджей до промышленных объектов.</p>
-                                <div class="teaser__categories">
-                                    <a href="" class="teaser__category">Smart SML</a>
-                                    <a href="" class="teaser__category">Ostendorf</a>
+                                <div class="teaser__actions">
+                                    <div class="teaser__categories">
+                                        <a href="" class="teaser__category">Smart SML</a>
+                                        <a href="" class="teaser__category">Ostendorf</a>
+                                    </div>
+                                    <a href="" aria-label="Перейти в категорию" class="teaser__btn icon-arrow"></a>
                                 </div>
                             </div>
                         </div>
@@ -982,51 +1009,57 @@
                 <div class="container">
                     <div class="footer__main">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-md-4">
                                 <a href="/" class="footer__logo">
                                     <img src="img/logo-white.png" alt="Логотип">
                                 </a>
-                                <div class="footer__caption">Для клиентов</div>
-                                <div class="footer__contacts">
-                                    <div class="footer__contacts-links">
-                                        <a href="tel:88007700033" class="footer__contacts-link icon-info">8-800-770-00-33</a>
-                                        <a href="tel:+74955140990" class="footer__contacts-link icon-info">+7-495-514-09-90</a>
+                                <div class="footer__caption icon-chevron">Для клиентов</div>
+                                <div class="footer__accordion">
+                                    <div class="footer__contacts">
+                                        <div class="footer__contacts-links">
+                                            <a href="tel:88007700033" class="footer__contacts-link icon-info">8-800-770-00-33</a>
+                                            <a href="tel:+74955140990" class="footer__contacts-link icon-info">+7-495-514-09-90</a>
+                                        </div>
+                                        <a href="" class="footer__link">Заказать звонок</a>
+                                        <address class="footer__address">Москва, д. Десна, ул. Строительная, д. 11с1</address>
+                                        <a href="" class="footer__link">Посмотреть на карте</a>
+                                        <a href="mailto:info@smartex-group.com" class="footer__email">info@smartex-group.com</a>
                                     </div>
-                                    <a href="" class="footer__link">Заказать звонок</a>
-                                    <address class="footer__address">Москва, д. Десна, ул. Строительная, д. 11с1</address>
-                                    <a href="" class="footer__link">Посмотреть на карте</a>
-                                    <a href="mailto:info@smartex-group.com" class="footer__email">info@smartex-group.com</a>
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <div class="footer__caption">Меню</div>
-                                <nav class="footer__menu">
-                                    <ul class="footer__menu-list">
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">О компании</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Каталог</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Доставка</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Объекты</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Бренды</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Отзывы</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Для проектировщиков</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Контакты</a></li>
-                                    </ul>
-                                </nav>
+                            <div class="col-md-4">
+                                <div class="footer__caption icon-chevron">Меню</div>
+                                <div class="footer__accordion">
+                                    <nav class="footer__menu">
+                                        <ul class="footer__menu-list">
+                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">О компании</a></li>
+                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Каталог</a></li>
+                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Доставка</a></li>
+                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Объекты</a></li>
+                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Бренды</a></li>
+                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Отзывы</a></li>
+                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Для проектировщиков</a></li>
+                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Контакты</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
-                            <div class="col-4">
-                                <div class="footer__caption">Каталог</div>
-                                <nav class="footer__menu">
-                                    <ul class="footer__menu-list">
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Чугунные безраструбные трубы SML</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Противопожарное оборудование</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Трапы, воронки, лотки</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Крепежные системы</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Полимерные трубы</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Трубопроводная арматура</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Соединительные муфты для труб</a></li>
-                                        <li class="footer__menu-item"><a href="" class="footer__menu-link">Грувлочные соединения труб</a></li>
-                                    </ul>
-                                </nav>
+                            <div class="col-md-4">
+                                <div class="footer__caption icon-chevron">Каталог</div>
+                                <div class="footer__accordion">
+                                    <nav class="footer__menu">
+                                        <ul class="footer__menu-list">
+                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Чугунные безраструбные трубы SML</a></li>
+                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Противопожарное оборудование</a></li>
+                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Трапы, воронки, лотки</a></li>
+                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Крепежные системы</a></li>
+                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Полимерные трубы</a></li>
+                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Трубопроводная арматура</a></li>
+                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Соединительные муфты для труб</a></li>
+                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Грувлочные соединения труб</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1036,105 +1069,21 @@
                     <div class="footer__public">Предложение не является публичной офертой. Цены на сайте и при оформлении заказа могут отличаться. Информация на сайте о товаре носит рекламный характер и расценивается как приглашение делать оферты на основании п.1 ст. 437 Гражданского кодекса РФ.</div>
                     <div class="footer__bottom">
                         <a href="" class="footer__privacy">Политика в отношении обработки персональных данных</a>
-                        <div class="footer__copyright">2012— 2024 ©️ Все права защищены</div>
+                        <div class="footer__copyright">2012— 2024 © Все права защищены</div>
                         <a href="" class="footer__prod">
                             <img src="img/prod-logo.png" alt="Moscow Dynamics Logotype">
                             Разработка сайта — Moscow Dynamics
                         </a>
                     </div>
             </footer>
-            <div id="question" class="popup popup--large">
-                <div class="popup__content">
-                    <div class="popup__image">
-                        <img src="img/question-modal.jpg" class="cover-image" alt="Фото">
-                    </div>
-                    <form action="#" class="popup__form">
-                        <h3 class="popup__form-title">Задать нам вопрос</h3>
-                        <div class="popup__form-fields">
-                            <label class="popup__form-field popup__form-field--large form__field">
-                                <input type="text" name="name" data-required class="form__control" placeholder="">
-                                <span class="form__field-placeholder">Ваше имя</span>
-                            </label>
-                            <label class="popup__form-field form__field">
-                                <input type="tel" name="phone" data-required class="form__control" placeholder="">
-                                <span class="form__field-placeholder">Телефон</span>
-                            </label>
-                            <label class="popup__form-field form__field">
-                                <input type="email" name="email" data-required class="form__control" placeholder="">
-                                <span class="form__field-placeholder">Email</span>
-                            </label>
-                            <label class="popup__form-field popup__form-field--large form__field">
-                                <textarea name="message" class="form__control" placeholder=""></textarea>
-                                <span class="form__field-placeholder">Ваш вопрос или предложение...</span>
-                            </label>
-                            <label class="form__file popup__form-field--large">
-                                <input type="file" name="file" class="form__file-input" hidden>
-                                <span class="form__file-btn icon-clip">Прикрепить (до 10 мб.)</span>
-                            </label>
-                        </div>
-                        <div class="popup__form-footer">
-                            <label class="form__checkbox">
-                                <input type="checkbox" name="agree" data-required checked class="form__checkbox-input" hidden>
-                                <span class="form__checkbox-text">Я даю согласие на <a href="">обработку персональных данных</a></span>
-                            </label>
-                            <button type="submit" class="form__btn btn btn-primary btn-sm icon-chevron-right">Отправить</button>
+            <div id="question" class="popup">
 
-                        </div>
-                    </form>
-                    <button type="button" data-fancybox-close class="popup__close icon-cross"></button>
-                </div>
             </div>
-            <div id="callback" class="popup popup--large">
-                <div class="popup__content">
-                    <div class="popup__image">
-                        <img src="img/feedback-modal.jpg" class="cover-image" alt="Фото">
-                    </div>
-                    <form action="#" class="popup__form">
-                        <h3 class="popup__form-title">Заказать обратный звонок</h3>
-                        <p class="popup__form-subtitle">Наши специалисты свяжутся с вами в ближайшее время и&nbsp;ответят на вопросы, помогут решить вашу проблему</p>
-                        <div class="popup__form-fields">
-                            <label class="popup__form-field popup__form-field--large form__field">
-                                <input type="text" name="name" data-required class="form__control" placeholder="">
-                                <span class="form__field-placeholder">Ваше имя</span>
-                            </label>
-                            <label class="popup__form-field popup__form-field--large form__field">
-                                <input type="tel" name="phone" data-required class="form__control" placeholder="">
-                                <span class="form__field-placeholder">Телефон</span>
-                            </label>
-                        </div>
-                        <div class="popup__form-footer">
-                            <label class="form__checkbox">
-                                <input type="checkbox" name="agree" data-required checked class="form__checkbox-input" hidden>
-                                <span class="form__checkbox-text">Я даю согласие на <a href="">обработку персональных данных</a></span>
-                            </label>
-                            <button type="submit" class="form__btn btn btn-primary btn-sm icon-chevron-right">Отправить</button>
+            <div id="callback" class="popup">
 
-                        </div>
-                    </form>
-                    <button type="button" data-fancybox-close class="popup__close icon-cross"></button>
-                </div>
             </div>
-            <div id="success" class="popup popup--medium">
-                <div class="popup__success">
-                    <div class="popup__success-icon">
-                        <img src="img/tick-circle.svg" alt="Иконка">
-                    </div>
-                    <div class="popup__success-title">Готово!</div>
-                    <p class="popup__success-subtitle">Вы успешно отправили заявку. Наши специалисты скоро свяжутся с вами и ответят на все вопросы.</p>
-                    <button type="button" data-fancybox-close class="popup__success-btn btn btn-primary">ок, закрыть</button>
-                </div>
-            </div>
-            <div id="order-success" class="popup popup--medium">
-                <div class="popup__success">
-                    <div class="popup__success-icon">
-                        <img src="img/tick-circle.svg" alt="Иконка">
-                    </div>
-                    <div class="popup__success-title">Готово!</div>
-                    <p class="popup__success-subtitle">
-                        Заказ <a href="">№ 0012374 </a>успешно оплачен. Менеджер свяжется с вами в ближайшее время для подтверждения заказа. Вы можете отслеживать статусы заказа в своём <a href="">личном кабинете</a>.
-                    </p>
-                    <button type="button" data-fancybox-close class="popup__success-btn btn btn-primary">ок, закрыть</button>
-                </div>
+            <div id="success" class="popup">
+
             </div>
             <!-- plugins -->
             <script src="js/libs/fancybox.umd.js"></script>

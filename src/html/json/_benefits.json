@@ -1,41 +1,41 @@
 [
     {
-        "colSize": "sm-4",
+        "colSize": "lg-4 col-md-6 swiper-slide",
         "color": "default",
         "icon": "@img/icons/production.svg",
         "caption": "Собственное производство",
         "description": "Мы создаем продукцию, отвечающую вашим требованиям. Контроль на всех этапах гарантирует качество, гибкость и&nbsp;доступные цены для клиентов."
     },
     {
-        "colSize": "sm-4",
+        "colSize": "lg-4 col-md-6 swiper-slide",
         "color": "default",
         "icon": "@img/icons/original.svg",
         "caption": "100% оригинальная продукция",
         "description": "Соответствующая стандартам. Сертифицирована, проходит контроль, гарантирует надежность. Ваше доверие — наш приоритет."
     },
     {
-        "colSize": "sm-4",
+        "colSize": "lg-4 col-md-6 swiper-slide",
         "color": "default",
         "icon": "@img/icons/distributor.svg",
         "caption": "Эксклюзивный дистрибьютор",
         "description": "Предлагаем уникальную продукцию с&nbsp;гарантией качества. Наши партнеры доверяют нам, а клиенты получают лучшие решения на рынке."
     },
     {
-        "colSize": "sm-4",
+        "colSize": "lg-4 col-md-6 swiper-slide",
         "color": "default",
         "icon": "@img/icons/air-delivery.svg",
         "caption": "Доставка в любую точку мира",
         "description": "Наша логистическая система отлажена до&nbsp;мелочей, что позволяет гарантировать своевременность и сохранность грузов. Доставим ваш заказ быстро и надежно."
     },
     {
-        "colSize": "sm-4",
+        "colSize": "lg-4 col-md-6 swiper-slide",
         "color": "default",
         "icon": "@img/icons/bus-delivery.svg",
         "caption": "Бесплатная доставка в ТК",
         "description": "Это делает сотрудничество с нами еще выгоднее. Вы экономите на логистике, а ваш заказ оперативно отправляется в любой регион. Удобно, быстро и без лишних затрат!"
     },
     {
-        "colSize": "sm-4",
+        "colSize": "lg-4 col-md-6 swiper-slide",
         "color": "default",
         "icon": "@img/icons/sales.svg",
         "caption": "Гибкая система скидок",

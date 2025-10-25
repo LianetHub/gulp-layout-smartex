@@ -1,21 +1,38 @@
 .blog {
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
 	// .blog__header
 	&__header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		display: contents;
+		@media (min-width: $md4) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
 	}
 	// .blog__title
 	&__title {
 	}
 	// .blog__btn
 	&__btn {
+		order: 1;
 	}
 	// .blog__slider
 	&__slider {
 		margin-top: rem(36);
 		position: relative;
-		margin-bottom: rem(50);
+		margin-bottom: rem(24);
+		.swiper {
+			overflow: visible;
+			@media (min-width: $md4) {
+				overflow: hidden;
+			}
+		}
+		@media (min-width: $md4) {
+			margin-bottom: rem(50);
+		}
 	}
 	// .blog__prev
 	&__prev,
@@ -27,17 +44,38 @@
 
 	// .blog__prev
 	&__prev {
-		left: rem(-24);
+		display: none;
+		@media (min-width: $md4) {
+			left: rem(-12);
+			display: flex;
+		}
+		@media (min-width: $md3) {
+			left: rem(-24);
+		}
 	}
 	// .blog__next
 	&__next {
-		right: rem(-24);
+		display: none;
+		@media (min-width: $md4) {
+			display: flex;
+			right: rem(-12);
+		}
+		@media (min-width: $md3) {
+			right: rem(-24);
+		}
 	}
 	// .blog__item
 	&__item {
+		&.swiper-slide {
+			height: auto;
+			@media (max-width: $md4) {
+				width: 20.5rem;
+			}
+		}
 	}
 	// .blog__card
 	&__card {
+		min-height: 100%;
 		background: #fff;
 		display: flex;
 		flex-direction: column;
@@ -75,16 +113,21 @@
 		display: flex;
 		flex-direction: column;
 		gap: 0.75rem;
+		flex: 1 1 auto;
 	}
 	// .blog__card-name
 	&__card-name {
-		font-size: 1.25rem;
 		line-height: 120%;
 		letter-spacing: -0.025rem;
-		min-height: 7.5rem;
+		font-size: 1rem;
+		@media (min-width: $md4) {
+			min-height: 7.5rem;
+			font-size: 1.25rem;
+		}
 	}
 	// .blog__card-date
 	&__card-date {
+		margin-top: auto;
 		color: #9a9a9a;
 		font-size: 1rem;
 		font-weight: 500;
