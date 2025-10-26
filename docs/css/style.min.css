@@ -1,14 +1,14 @@
 @font-face {
-  font-family: "Roboto";
-  font-display: swap;
-  src: url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
   font-family: "icons";
   font-display: swap;
   src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -22,15 +22,15 @@
 @font-face {
   font-family: "Roboto";
   font-display: swap;
-  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
   font-display: swap;
-  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
-  font-weight: 500;
+  src: url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff");
+  font-weight: 300;
   font-style: normal;
 }
 @font-face {
@@ -38,6 +38,13 @@
   font-display: swap;
   src: url("../fonts/RobotoSlab-Bold.woff2") format("woff2"), url("../fonts/RobotoSlab-Bold.woff") format("woff");
   font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoSlab";
+  font-display: swap;
+  src: url("../fonts/RobotoSlab-Regular.woff2") format("woff2"), url("../fonts/RobotoSlab-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -52,13 +59,6 @@
   font-display: swap;
   src: url("../fonts/RobotoSlab-SemiBold.woff2") format("woff2"), url("../fonts/RobotoSlab-SemiBold.woff") format("woff");
   font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RobotoSlab";
-  font-display: swap;
-  src: url("../fonts/RobotoSlab-Regular.woff2") format("woff2"), url("../fonts/RobotoSlab-Regular.woff") format("woff");
-  font-weight: 400;
   font-style: normal;
 }
 .catalog__button::before, .breadcrumbs__item:not(:last-child)::before, [class^=icon-]:before,
@@ -77,6 +77,10 @@
 [class^=icon-]:before,
 [class*=" icon-"]:before {
   display: block;
+}
+
+.icon-design:before {
+  content: "\e91d";
 }
 
 .icon-picture:before {
@@ -1100,6 +1104,10 @@
 }
 .color-accent {
   color: #d21e44;
+}
+
+.color-grey {
+  color: #646363;
 }
 
 .title {
@@ -4349,6 +4357,37 @@ body {
   margin-top: 0.75rem;
   line-height: 120%;
 }
+.about__map {
+  position: relative;
+  border-radius: 1.875rem;
+  background: #fff;
+  padding: 0.75rem;
+}
+.about__map iframe {
+  border-radius: 1.125rem;
+  width: 100%;
+  min-height: 31.75rem;
+}
+.about__map-balloon {
+  position: absolute;
+  top: 1.75rem;
+  left: 1.75rem;
+  border-radius: 0.625rem;
+  background: #fff;
+  width: 22.25rem;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.about__map-address {
+  color: #646363;
+  font-size: 1.25rem;
+  line-height: 120%;
+}
+.about__map-image img {
+  border-radius: 0.25rem;
+}
 
 .certs-slider {
   overflow: visible;
@@ -4363,6 +4402,165 @@ body {
   border-radius: 0.5rem;
   overflow: hidden;
   height: auto;
+}
+
+.contacts {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+@media (min-width: 575.98px) {
+  .contacts {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+.contacts__column {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 575.98px) {
+  .contacts__column {
+    align-items: flex-start;
+    align-self: flex-end;
+  }
+}
+.contacts__link, .contacts__email {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0.75rem;
+  transition: color 0.3s ease;
+}
+@media (any-hover: hover) {
+  .contacts__link:hover, .contacts__email:hover {
+    color: #d21e44;
+  }
+}
+.contacts__email {
+  order: 1;
+}
+@media (min-width: 575.98px) {
+  .contacts__email {
+    order: 0;
+  }
+}
+.contacts__worktime {
+  margin-top: 0.5rem;
+  color: #8f8f8f;
+  font-size: 1rem;
+}
+.contacts__company {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.contacts__reqs-value {
+  margin-top: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.contacts__reqs {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+}
+@media (min-width: 575.98px) {
+  .contacts__reqs {
+    order: 0;
+    align-items: flex-start;
+    align-self: flex-end;
+  }
+}
+.contacts__req-download {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  color: #d21e44;
+}
+@media (min-width: 575.98px) {
+  .contacts__req-download {
+    color: #8f8f8f;
+  }
+}
+@media (any-hover: hover) {
+  .contacts__req-download:hover {
+    color: #d21e44;
+  }
+}
+.contacts__callback {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: #d21e44;
+  padding: 0.9375rem;
+  border-radius: 6.25rem;
+}
+@media (min-width: 575.98px) {
+  .contacts__callback {
+    width: auto;
+    background: transparent;
+    color: #8f8f8f;
+    padding: 0;
+    border-radius: 0;
+  }
+}
+@media (any-hover: hover) {
+  .contacts__callback:hover {
+    color: #d21e44;
+  }
+}
+
+.socials {
+  gap: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 575.98px) {
+  .socials {
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    justify-content: flex-end;
+  }
+}
+.socials__item {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6.25rem;
+  border: 0.125rem solid #d21e44;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  gap: 0.5rem;
+}
+.socials__item::before {
+  color: #d21e44;
+}
+@media (min-width: 575.98px) {
+  .socials__item::before {
+    color: #fff;
+  }
+}
+@media (min-width: 575.98px) {
+  .socials__item {
+    transition: background-color 0.3s ease;
+    color: #fff;
+    background: #d21e44;
+    border: 0;
+    border-radius: 50%;
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+}
+@media (any-hover: hover) {
+  .socials__item:hover {
+    background-color: #a51836;
+  }
 }
 
 .product__block {

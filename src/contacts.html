@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Контакты'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {})
+            <main class="page">
+                @@include('./html/_heading.html', {
+                "title": "Контакты",
+                "hasTitle": false
+                })
+                <section class="about">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-4 col-md-5">
+                                @@include('./html/_about-sidebar.html', {
+                                'active': 4
+                                })
+                            </div>
+                            <div class="col-xl-9 col-lg-8 col-md-7">
+                                <div class="about__body">
+                                    <div class="about__block white-block typography-block">
+                                        <h1>Контакты</h1>
+                                        <p class="color-grey">Вы можете связаться с нами любым удобным для вас способом</p>
+                                        <div class="contacts">
+                                            <div class="contacts__column">
+                                                <a href="tel:88007700033" class="contacts__link">8-800-770-00-33</a>
+                                                <a href="tel:+74955140990" class="contacts__link">+7-495-514-09-90</a>
+                                                <div class="contacts__worktime">Пн-Пт с 9.00 до 18.00</div>
+                                            </div>
+                                            <a href="mailto:info@smartex-group.com" class="contacts__email">info@smartex-group.com</a>
+                                            <div class="contacts__reqs">
+                                                <div class="contacts__company">ООО "Смартекс Групп"</div>
+                                                <div class="contacts__reqs-value">ИНН: 7727284742</div>
+                                                <a href="" class="contacts__req-download">Скачать реквизиты</a>
+                                            </div>
+                                            <div class="contacts__column">
+                                                <div class="contacts__socials socials">
+                                                    <a href="" class="socials__item icon-telegram"><span class="mobile-only">Telegram</span></a>
+                                                    <a href="" class="socials__item icon-whatsapp"><span class="mobile-only">WhatsApp</span></a>
+                                                </div>
+                                                <a href="#callback" class="contacts__callback" data-fancybox>Заказать звонок</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="about__map">
+                                    <div class="about__map-balloon">
+                                        <div class="about__map-caption title-sm">Адрес офиса и склада</div>
+                                        <address class="about__map-address">
+                                            Москва, д. Десна, <br>
+                                            ул. Строительная, д. 11с1
+                                        </address>
+                                        <div class="about__map-image">
+                                            <img src="@img/warehouse.jpg" alt="Фото склада">
+                                        </div>
+                                    </div>
+                                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A38c70e4a6310d1e9746504f30cbce39fba16b704ce77c70effd74a7847063d64&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>
