@@ -230,6 +230,7 @@
 		border: rem(1) solid #d9d9d9;
 		background: rgba(217, 217, 217, 0.01);
 		position: relative;
+		overflow: hidden;
 		& > img {
 			transition: transform 0.3s ease;
 		}
