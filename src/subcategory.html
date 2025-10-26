@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Каталог'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {})
+            <main class="page">
+                @@include('./html/_heading.html', {
+                "breadcrumbs": ["Каталог", "Чугунные безраструбные трубы SML"],
+                "title": "Хомуты для труб SML",
+                "hasTitle": false
+                })
+                <section class="product">
+                    <div class="container">
+                        <div class="product__block">
+                            <div class="row">
+                                <div class="col-xl-9 col-lg-8">
+                                    <div class="product__block white-block typography-block">
+                                        <h1>Хомуты для труб SML</h1>
+                                        <div class="product__cards">
+                                            <a href="" class="product__card product__card--medium">
+                                                <span class="product__card-image">
+                                                    <img src="@img/catalog/SML-Rapid-connecting-clamps1.png" alt="Изображение товара">
+                                                </span>
+                                                <span class="product__card-name">Хомуты соединительные SML Rapid</span>
+                                            </a>
+                                            <a href="" class="product__card product__card--medium">
+                                                <span class="product__card-image">
+                                                    <img src="@img/catalog/SML-Konfix-Transition-Clamps.png" alt="Изображение товара">
+                                                </span>
+                                                <span class="product__card-name"> Хомуты переходные SML Konfix</span>
+                                            </a>
+                                            <a href="" class="product__card product__card--medium">
+                                                <span class="product__card-image">
+                                                    <img src="@img/catalog/Reinforcing-clamps-SML-Kralle.png" alt="Изображение товара">
+                                                </span>
+                                                <span class="product__card-name">Хомуты усиливающие SML Kralle</span>
+                                            </a>
+                                            <a href="" class="product__card product__card--medium">
+                                                <span class="product__card-image">
+                                                    <img src="@img/catalog/Mounting-clamps-SML-Micra.png" alt="Изображение товара">
+                                                </span>
+                                                <span class="product__card-name"> Хомуты крепежные SML Micra</span>
+                                            </a>
+                                        </div>
+                                        <p>Компания «Смартекс», крупный игрок рынка инженерного оборудования с 2012 года, предлагает купить хомуты для чугунных труб SML с бесплатной доставкой по Москве и до транспортной компании. У нас вы найдёте соединительные, усиливающие, ремонтные хомуты для труб, а также переходники и фланцевые адаптеры по привлекательным ценам «прямо с завода».</p>
+                                        <div class="grey-block">
+                                            <h4>Наши пластиковые и металлические хомуты для труб соответствуют требованиям самых взыскательных профессионалов:</h4>
+                                            <ol class="sm-size">
+                                                <li>Подходят для безраструбных чугунных труб SML.</li>
+                                                <li>Устойчивость к коррозии во влажной и агрессивной среде.</li>
+                                                <li>Для широкого диапазона диаметров.</li>
+                                                <li>Качество материалов: хромированные, оцинкованные стали, в том числе стандарта W5 (нержавеющая, немагнитная сталь).</li>
+                                                <li>Выдерживают давление до 0,5 бар, в напорной системе с усиливающим хомутом — до 10 бар.</li>
+                                                <li>EPDM уплотнение, стойкое к старению и кипятку.</li>
+                                                <li>Надежные переходники для труб из разных материалов.</li>
+                                                <li>Опция визуального контроля закручивания.</li>
+                                                <li>Эргономичное закручивание хомута без специального инструмента.</li>
+                                                <li>Соответствие европейским стандартам и российскому ГОСТу.</li>
+                                                <li>Доступные цены, профессиональные консультации.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div class="product__block red-block typography-block offest-top">
+                                        <p>Хомуты для труб — не просто «расходники», от их надежности зависит долговечность системы в целом. Хомуты SML для чугунной безраструбной канализации — разумный и взвешенный выбор.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4">
+                                    @@include('./html/_download-block.html', {
+                                    "color": "white",
+                                    "xlsx": true,
+                                    "catalog": true,
+                                    "cert": true,
+                                    "revitSml": false,
+                                    "revitBlm": false,
+                                    "revitKml": false,
+                                    })
+                                    @@include('./html/_download-block.html', {
+                                    "color": "white",
+                                    "xlsx": false,
+                                    "catalog": false,
+                                    "cert": false,
+                                    "revitSml": true,
+                                    "revitBlm": false,
+                                    "revitKml": true,
+                                    })
+                                </div>
+                            </div>
+                        </div>
+
+                        @@include('./html/more-categories-slider.html')
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

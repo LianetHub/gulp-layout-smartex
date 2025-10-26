@@ -177,6 +177,10 @@
 	@extend %ic, .icon-next;
 }
 
+.swiper-scrollbar {
+	position: static !important;
+}
+
 //  old
 
 // @keyframes infiniteRotate {

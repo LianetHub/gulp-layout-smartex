@@ -115,6 +115,9 @@ body {
 }
 
 .typography-block {
+	.sm-size {
+		font-size: 1rem;
+	}
 	& p {
 		&:not(:first-child) {
 			margin-top: 0.75rem;
@@ -124,9 +127,6 @@ body {
 		}
 		line-height: 150%;
 		font-size: 1rem;
-		&.sm-size {
-			font-size: 1rem;
-		}
 		@media (min-width: $md4) {
 			font-size: 1.125rem;
 		}

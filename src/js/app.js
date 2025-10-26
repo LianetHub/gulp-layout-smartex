@@ -208,9 +208,39 @@ document.addEventListener("DOMContentLoaded", function () {
                 nextEl: '.product__categories-next',
                 prevEl: '.product__categories-prev'
             },
+            scrollbar: {
+                el: ".product__categories-scrollbar",
+            },
             breakpoints: {
                 991.98: {
                     slidesPerView: "auto",
+                }
+            }
+        });
+    }
+    if (document.querySelector('.product__categories-more-slider')) {
+
+        new Swiper('.product__categories-more-slider', {
+            watchOverflow: true,
+            spaceBetween: 20,
+            slidesPerView: "auto",
+            navigation: {
+                nextEl: '.product__categories-next',
+                prevEl: '.product__categories-prev'
+            },
+            scrollbar: {
+                el: ".product__categories-scrollbar",
+            },
+            breakpoints: {
+                767.98: {
+                    slidesPerView: 2,
+                },
+                991.98: {
+                    slidesPerView: 3,
+                },
+                1199.98: {
+                    slidesPerView: 4,
+
                 }
             }
         });

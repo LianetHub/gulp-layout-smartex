@@ -174,4 +174,30 @@
 			width: rem(860);
 		}
 	}
+	&__categories-more-slider {
+		.swiper-slide {
+			@media (max-width: $md3) {
+				width: rem(170);
+			}
+		}
+	}
+	// .product__categories-next
+	&__categories-next {
+		@media (max-width: $md4) {
+			display: none;
+		}
+	}
+
+	// .product__categories-prev
+	&__categories-prev {
+		@media (max-width: $md4) {
+			display: none;
+		}
+	}
+	&__categories-scrollbar {
+		margin-top: 1rem;
+		@media (min-width: $md4) {
+			display: none;
+		}
+	}
 }
