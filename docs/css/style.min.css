@@ -3785,6 +3785,37 @@ body {
 .delivery__block:not(:last-child) {
   margin-bottom: 1.5rem;
 }
+.delivery__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.delivery__card-logo {
+  border-radius: 0.5rem;
+  background: #fff;
+  padding: 1.25rem;
+  height: 4.5625rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 575.98px) {
+  .delivery__card-logo {
+    width: fit-content;
+  }
+}
+.delivery__card-actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.delivery__card-action {
+  color: rgba(210, 30, 68, 0.8);
+  font-size: 1rem;
+  line-height: 120%;
+}
 
 @media (max-width: 575.98px) {
   .teasers .container {
@@ -4427,6 +4458,30 @@ body {
     align-self: flex-end;
   }
 }
+.contacts__links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  row-gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.contacts__links .contacts__email,
+.contacts__links .contacts__link {
+  margin-top: 0;
+}
+.contacts__hint {
+  color: #8f8f8f;
+  font-size: 1rem;
+  order: -1;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 575.98px) {
+  .contacts__hint {
+    margin-bottom: 0rem;
+    margin-top: 0.3125rem;
+    order: 0;
+  }
+}
 .contacts__link, .contacts__email {
   font-size: 1.25rem;
   font-weight: 600;
@@ -4544,6 +4599,7 @@ body {
 @media (min-width: 575.98px) {
   .socials__item::before {
     color: #fff;
+    font-size: 1.25rem;
   }
 }
 @media (min-width: 575.98px) {

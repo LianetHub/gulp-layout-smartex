@@ -688,6 +688,39 @@
 			margin-bottom: 1.5rem;
 		}
 	}
+	// .delivery__card
+	&__card {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	// .delivery__card-logo
+	&__card-logo {
+		border-radius: 0.5rem;
+		background: #fff;
+		padding: 1.25rem;
+		height: rem(73);
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@media (min-width: $md4) {
+			width: fit-content;
+		}
+	}
+	// .delivery__card-actions
+	&__card-actions {
+		margin-top: 1rem;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+	// .delivery__card-action
+	&__card-action {
+		color: rgba(210, 30, 68, 0.8);
+		font-size: 1rem;
+		line-height: 120%;
+	}
 }
 
 .teasers {
