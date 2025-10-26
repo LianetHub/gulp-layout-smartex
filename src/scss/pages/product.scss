@@ -13,6 +13,13 @@
 				max-width: rem(728);
 			}
 		}
+		.grey-block {
+			.benefits__content {
+				background: transparent;
+				overflow: hidden;
+				margin-top: 0;
+			}
+		}
 	}
 	// .product__more-btn
 	&__more-btn {
@@ -29,9 +36,11 @@
 	}
 	// .product__image
 	&__image {
+		width: 100%;
 		& img {
 			border: rem(8) solid #f4f5f6;
 			border-radius: 1.25rem;
+			width: 100% !important;
 		}
 	}
 	// .product__cards
@@ -150,6 +159,19 @@
 		}
 		.product__card-name {
 			min-height: 3.8rem;
+		}
+	}
+	// .product__categories-content
+	&__categories-content {
+		position: relative;
+	}
+	// .product__categories-slider
+	&__categories-slider {
+	}
+	// .product__categories-block
+	&__categories-block {
+		@media (min-width: $md2) {
+			width: rem(860);
 		}
 	}
 }

@@ -150,14 +150,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // sliders
 
-    if (document.querySelector('.benefits__content')) {
-        initializeConditionalSwiper('.benefits__content', {
-            watchOverflow: true,
-            spaceBetween: 12,
-            slidesPerView: "auto",
-            scrollbar: {
-                el: '.benefits__scrollbar',
-            },
+    if (document.querySelectorAll('.benefits__content')) {
+        document.querySelectorAll('.benefits__content')?.forEach(benefitsSlider => {
+
+            const scrollBar = benefitsSlider.querySelector('.benefits__scrollbar');
+
+            initializeConditionalSwiper(benefitsSlider, {
+                watchOverflow: true,
+                spaceBetween: 12,
+                slidesPerView: "auto",
+                scrollbar: {
+                    el: scrollBar,
+                },
+            })
         })
     }
 
@@ -190,6 +195,24 @@ document.addEventListener("DOMContentLoaded", function () {
             watchOverflow: true,
             spaceBetween: 8,
             slidesPerView: "auto",
+        });
+    }
+
+    if (document.querySelector('.product__categories-slider')) {
+
+        new Swiper('.product__categories-slider', {
+            watchOverflow: true,
+            spaceBetween: 20,
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.product__categories-next',
+                prevEl: '.product__categories-prev'
+            },
+            breakpoints: {
+                991.98: {
+                    slidesPerView: "auto",
+                }
+            }
         });
     }
 

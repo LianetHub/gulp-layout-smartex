@@ -110,6 +110,73 @@
 	}
 }
 
+.gutter-1 {
+	--gutter-x: 1rem;
+	--gutter-y: 1rem;
+}
+
+.warning-block {
+	text-align: center;
+	font-size: 1.125rem;
+	padding: 1rem;
+	@media (min-width: $md4) {
+		font-size: 1.5rem;
+		line-height: 1.2;
+		padding: 1rem 6.63rem;
+	}
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	&::after {
+		display: none;
+	}
+
+	transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+	z-index: 2;
+	width: 3rem;
+	height: 3rem;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	color: #d21e44;
+	border-radius: 50%;
+	box-shadow: 0 rem(4) rem(4) rgba(40, 40, 40, 0.14);
+
+	&.swiper-button-lock {
+		display: none;
+	}
+
+	&.swiper-button--grey {
+		background: #d5d7da;
+	}
+
+	&:disabled,
+	&.swiper-button-disabled,
+	&[aria-disabled="true"] {
+		pointer-events: none;
+		opacity: 0.7;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			background: $accent;
+			color: #fff;
+		}
+	}
+}
+
+.swiper-button-prev {
+	left: rem(-26);
+	@extend %ic, .icon-prev;
+}
+.swiper-button-next {
+	right: rem(-26);
+	@extend %ic, .icon-next;
+}
+
 //  old
 
 // @keyframes infiniteRotate {
@@ -119,61 +186,6 @@
 // 	100% {
 // 		transform: rotate(0deg);
 // 	}
-// }
-
-// .swiper-button-next,
-// .swiper-button-prev {
-// 	&::after {
-// 		display: none;
-// 	}
-// 	position: relative;
-// 	left: auto;
-// 	right: auto;
-// 	bottom: auto;
-// 	top: auto;
-// 	margin: 0;
-// 	transform: none;
-// 	transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
-// 	z-index: 2;
-// 	width: 3rem;
-// 	height: 3rem;
-// 	flex-shrink: 0;
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	background: #fff;
-// 	color: #d21e44;
-// 	border-radius: 50%;
-// 	box-shadow: 0 rem(4) rem(4) rgba(40, 40, 40, 0.14);
-
-// 	&.swiper-button-lock {
-// 		display: none;
-// 	}
-
-// 	&.swiper-button--grey {
-// 		background: #d5d7da;
-// 	}
-
-// 	&:disabled,
-// 	&.swiper-button-disabled,
-// 	&[aria-disabled="true"] {
-// 		pointer-events: none;
-// 		opacity: 0.7;
-// 	}
-
-// 	@media (any-hover: hover) {
-// 		&:hover {
-// 			background: $accent;
-// 			color: #fff;
-// 		}
-// 	}
-// }
-
-// .swiper-button-prev {
-// 	@extend %ic, .icon-prev;
-// }
-// .swiper-button-next {
-// 	@extend %ic, .icon-next;
 // }
 
 // .swiper-pagination {
