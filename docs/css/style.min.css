@@ -4425,6 +4425,11 @@ body {
 .product__card--large {
   grid-column: span 30;
 }
+@media (max-width: 575.98px) {
+  .product__card--large-mobile {
+    grid-column: span 2;
+  }
+}
 @media (any-hover: hover) {
   .product__card:hover {
     color: #d21e44;
