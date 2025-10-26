@@ -133,4 +133,23 @@
 		padding: 0.25rem 0;
 		align-content: center;
 	}
+	// .product__more
+	&__more {
+		margin-top: 1.25rem;
+		display: flex;
+		width: fit-content;
+		margin-inline: auto;
+		min-width: rem(245);
+		&::before {
+			order: 1;
+		}
+	}
+	&__category {
+		&:not(:last-child) {
+			margin-bottom: rem(65);
+		}
+		.product__card-name {
+			min-height: 3.8rem;
+		}
+	}
 }

@@ -104,6 +104,12 @@
 	height: 100%;
 }
 
+.order-last-tablet {
+	@media (max-width: $md2) {
+		order: 10;
+	}
+}
+
 //  old
 
 // @keyframes infiniteRotate {
