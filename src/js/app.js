@@ -184,6 +184,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 991.98);
     }
 
+    if (document.querySelector('.objects__categories')) {
+
+        new Swiper('.objects__categories', {
+            watchOverflow: true,
+            spaceBetween: 8,
+            slidesPerView: "auto",
+        });
+    }
+
     if (document.querySelector('.blog__slider')) {
         new Swiper('.blog__slider .swiper', {
             slidesPerView: "auto",

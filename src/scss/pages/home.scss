@@ -426,6 +426,35 @@
 			order: 1;
 		}
 	}
+	// .objects__body
+	&__body {
+		overflow: hidden;
+	}
+	// .objects__categories
+	&__categories {
+		margin-bottom: 1rem;
+		overflow: visible;
+		margin-left: 0;
+	}
+	// .objects__category
+	&__category {
+		background: #f9f9f9;
+		padding: rem(10) 1rem;
+		border-radius: 0.875rem;
+		min-width: 4.3125rem;
+		width: fit-content;
+		transition: background-color 0.3s ease, color 0.3s ease;
+		&.active {
+			background: #d21e44;
+			color: #fff;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background: #d21e44;
+				color: #fff;
+			}
+		}
+	}
 }
 
 .object {

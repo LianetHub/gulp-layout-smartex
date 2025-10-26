@@ -3527,6 +3527,32 @@ body {
 .objects__slider-next::before {
   order: 1;
 }
+.objects__body {
+  overflow: hidden;
+}
+.objects__categories {
+  margin-bottom: 1rem;
+  overflow: visible;
+  margin-left: 0;
+}
+.objects__category {
+  background: #f9f9f9;
+  padding: 0.625rem 1rem;
+  border-radius: 0.875rem;
+  min-width: 4.3125rem;
+  width: fit-content;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.objects__category.active {
+  background: #d21e44;
+  color: #fff;
+}
+@media (any-hover: hover) {
+  .objects__category:hover {
+    background: #d21e44;
+    color: #fff;
+  }
+}
 
 .object__card {
   display: flex;
