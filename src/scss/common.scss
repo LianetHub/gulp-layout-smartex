@@ -97,6 +97,13 @@ body {
 // =============== MODULES ====================
 .heading {
 	padding-bottom: 0;
+	padding-top: 1rem;
+	@media (min-width: $md4) {
+		padding-top: 1.5rem;
+	}
+	& + * {
+		padding-top: 1.5rem !important;
+	}
 
 	// .heading__title
 	&__title {
@@ -111,6 +118,8 @@ body {
 	& p {
 		&:not(:first-child) {
 			margin-top: 0.75rem;
+		}
+		&:not(:last-child) {
 			margin-bottom: 0.75rem;
 		}
 		line-height: 150%;
@@ -190,12 +199,14 @@ body {
 	}
 
 	& a {
-		color: $accent;
-		text-decoration: underline;
-		transition: color 0.2s ease;
-		&:hover {
-			color: darken($accent, 10%);
-			text-decoration: none;
+		&:not([class]) {
+			color: $accent;
+			text-decoration: underline;
+			transition: color 0.2s ease;
+			&:hover {
+				color: darken($accent, 10%);
+				text-decoration: none;
+			}
 		}
 	}
 
@@ -231,6 +242,33 @@ body {
 			}
 			@media (min-width: $md2) {
 				font-size: 1.125rem;
+			}
+		}
+	}
+	& h1,
+	& h2,
+	& h3,
+	& h4,
+	& h5,
+	& h6 {
+		& a {
+			text-decoration: none;
+			color: inherit;
+			display: inline-flex;
+			gap: 1rem;
+			align-items: center;
+			&::before {
+				order: 1;
+				color: $accent;
+				transition: transform 0.3s ease;
+			}
+			@media (any-hover: hover) {
+				&:hover {
+					color: $accent;
+					&::before {
+						transform: translateX(0.5rem);
+					}
+				}
 			}
 		}
 	}
