@@ -114,6 +114,20 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
+        if (target.matches('.product__details-toggler ')) {
+            const content = target.nextElementSibling;
+
+            if (content) {
+                target.classList.toggle('active');
+                content.slideToggle()
+            }
+        }
+
+        // favortie btn
+        if (target.matches('.favorite-btn')) {
+            target.classList.toggle('active')
+        }
+
 
     })
 

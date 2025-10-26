@@ -244,6 +244,14 @@
 			color: #d21e44;
 			font-size: 1.25rem;
 		}
+		&:hover,
+		&:active {
+			background: #d21e44;
+			color: #fff;
+			&::before {
+				color: #fff;
+			}
+		}
 	}
 
 	&.btn-white {
