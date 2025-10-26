@@ -344,6 +344,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         }, 991.98)
     }
+
     if (document.querySelector('.certs-slider')) {
         new Swiper('.certs-slider', {
             slidesPerView: "auto",
@@ -352,6 +353,23 @@ document.addEventListener("DOMContentLoaded", function () {
             pagination: {
                 type: "progressbar",
                 el: ".certs-slider__progress"
+            },
+            breakpoints: {
+                767.98: {
+                    spaceBetween: 12,
+                }
+            }
+        })
+    }
+
+    if (document.querySelector('.partners-slider')) {
+        new Swiper('.partners-slider', {
+            slidesPerView: "auto",
+            spaceBetween: 8,
+            watchOverflow: true,
+            grabCursor: true,
+            scrollbar: {
+                el: ".partners-slider__scrollbar"
             },
             breakpoints: {
                 767.98: {

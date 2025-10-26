@@ -22,8 +22,8 @@
 @font-face {
   font-family: "Roboto";
   font-display: swap;
-  src: url("../fonts/Roboto-SemiBold.woff2") format("woff2"), url("../fonts/Roboto-SemiBold.woff") format("woff");
-  font-weight: 600;
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -36,22 +36,22 @@
 @font-face {
   font-family: "RobotoSlab";
   font-display: swap;
-  src: url("../fonts/RobotoSlab-Regular.woff2") format("woff2"), url("../fonts/RobotoSlab-Regular.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/RobotoSlab-Bold.woff2") format("woff2"), url("../fonts/RobotoSlab-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
   font-display: swap;
-  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
-  font-weight: 500;
+  src: url("../fonts/Roboto-SemiBold.woff2") format("woff2"), url("../fonts/Roboto-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "RobotoSlab";
   font-display: swap;
-  src: url("../fonts/RobotoSlab-Bold.woff2") format("woff2"), url("../fonts/RobotoSlab-Bold.woff") format("woff");
-  font-weight: 700;
+  src: url("../fonts/RobotoSlab-Regular.woff2") format("woff2"), url("../fonts/RobotoSlab-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -4436,8 +4436,32 @@ body {
     margin: 0;
   }
 }
+.about__block {
+  position: relative;
+  z-index: 2;
+}
 .about__block:not(:last-child) {
   margin-bottom: 1.5rem;
+}
+.about__block-btn {
+  margin-top: 1rem;
+  border-radius: 1.25rem;
+  min-width: 100%;
+}
+@media (min-width: 575.98px) {
+  .about__block-btn {
+    min-width: 13.375rem;
+  }
+}
+.about__block-btn::before {
+  order: 1;
+  transform: rotate(-90deg);
+}
+.about__image {
+  min-height: 18.75rem;
+}
+.about__image img {
+  border-radius: 1.5rem;
 }
 @media (min-width: 767.98px) {
   .about__sidebar {
@@ -4567,6 +4591,15 @@ body {
 }
 .about__map-image img {
   border-radius: 0.25rem;
+}
+.about__objects {
+  margin-top: 1.25rem;
+  position: relative;
+}
+@media (min-width: 991.98px) {
+  .about__objects .object__card-image {
+    height: 20rem;
+  }
 }
 
 .certs-slider {
@@ -4766,6 +4799,24 @@ body {
   .socials__item:hover {
     background-color: #a51836;
   }
+}
+
+.partners-slider {
+  margin-top: 1.25rem;
+}
+.partners-slider__slide {
+  width: auto;
+  height: 4.625rem;
+  padding: 0.75rem;
+  border-radius: 1.25rem;
+  display: flex;
+}
+.partners-slider__slide img {
+  height: 100%;
+  width: auto;
+}
+.partners-slider__scrollbar {
+  margin-top: 1rem;
 }
 
 .product__block {
