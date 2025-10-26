@@ -1,15 +1,15 @@
 @font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
   font-family: "icons";
   font-display: swap;
   src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
   font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  font-display: swap;
-  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
-  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -29,8 +29,15 @@
 @font-face {
   font-family: "Roboto";
   font-display: swap;
-  src: url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff");
-  font-weight: 300;
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RobotoSlab";
+  font-display: swap;
+  src: url("../fonts/RobotoSlab-Bold.woff2") format("woff2"), url("../fonts/RobotoSlab-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
@@ -45,13 +52,6 @@
   font-display: swap;
   src: url("../fonts/RobotoSlab-SemiBold.woff2") format("woff2"), url("../fonts/RobotoSlab-SemiBold.woff") format("woff");
   font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "RobotoSlab";
-  font-display: swap;
-  src: url("../fonts/RobotoSlab-Bold.woff2") format("woff2"), url("../fonts/RobotoSlab-Bold.woff") format("woff");
-  font-weight: 700;
   font-style: normal;
 }
 @font-face {
@@ -4370,6 +4370,8 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.56rem;
+  max-width: 100%;
+  width: 100%;
 }
 .product__cards:not(:first-child) {
   margin-top: 1rem;
@@ -4381,7 +4383,6 @@ body {
 }
 @media (min-width: 767.98px) {
   .product__cards {
-    gap: 1rem;
     grid-template-columns: repeat(30, 1fr);
   }
 }
@@ -4419,11 +4420,28 @@ body {
     grid-column: span 12;
   }
 }
-.product__card--medium {
-  grid-column: span 20;
+@media (min-width: 767.98px) {
+  .product__card--medium {
+    grid-column: span 10;
+  }
 }
-.product__card--large {
-  grid-column: span 30;
+@media (min-width: 1239.98px) {
+  .product__card--medium {
+    grid-column: span 20;
+  }
+}
+.product__card--medium .product__card-image {
+  padding-block: 0.75rem;
+}
+@media (min-width: 767.98px) {
+  .product__card--large {
+    grid-column: span 15;
+  }
+}
+@media (min-width: 991.98px) {
+  .product__card--large {
+    grid-column: span 30;
+  }
 }
 @media (max-width: 575.98px) {
   .product__card--large-mobile {
@@ -4443,6 +4461,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding: 0.25rem 1.5rem;
   border-radius: 1rem;
 }
 .product__card-image img {

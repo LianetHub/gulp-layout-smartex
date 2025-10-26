@@ -39,6 +39,8 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 0.56rem;
+		max-width: 100%;
+		width: 100%;
 		&:not(:first-child) {
 			margin-top: 1rem;
 			@media (min-width: $md3) {
@@ -46,7 +48,6 @@
 			}
 		}
 		@media (min-width: $md3) {
-			gap: 1rem;
 			grid-template-columns: repeat(30, 1fr);
 		}
 		@media (min-width: $md1) {
@@ -81,10 +82,23 @@
 			}
 		}
 		&--medium {
-			grid-column: span 20;
+			@media (min-width: $md3) {
+				grid-column: span 10;
+			}
+			@media (min-width: $md1) {
+				grid-column: span 20;
+			}
+			.product__card-image {
+				padding-block: 0.75rem;
+			}
 		}
 		&--large {
-			grid-column: span 30;
+			@media (min-width: $md3) {
+				grid-column: span 15;
+			}
+			@media (min-width: $md2) {
+				grid-column: span 30;
+			}
 		}
 		&--large-mobile {
 			@media (max-width: $md4) {
@@ -106,6 +120,7 @@
 		justify-content: center;
 		align-items: center;
 		overflow: hidden;
+		padding: 0.25rem 1.5rem;
 		border-radius: 1rem;
 		& img {
 			max-height: 100%;
