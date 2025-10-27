@@ -53,5 +53,64 @@
 				}
 			}
 		}
+		.product__details {
+			background: transparent;
+			border-radius: 0;
+			&:not(:last-child) {
+				border-bottom: rem(1) solid #e3e3e3;
+			}
+		}
+	}
+	&__form {
+		margin-top: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+	// .cart__total
+	&__total {
+		border-top: rem(1) solid #e3e3e3;
+		padding-top: 1.5rem;
+	}
+	// .cart__total-text
+	&__total-text {
+	}
+	// .cart__total-quantity
+	&__total-quantity {
+		font-size: 1.125rem;
+		margin-top: 0.25rem;
+		@media (min-width: $md3) {
+			margin-top: 0;
+		}
+	}
+	// .cart__total-sum
+	&__total-sum {
+		display: flex;
+		justify-content: space-between;
+		gap: 2.5rem;
+		@media (min-width: $md3) {
+			justify-content: flex-start;
+		}
+	}
+	// .cart__total-sum-text
+	&__total-sum-text {
+		display: flex;
+		flex-direction: column;
+		@media (min-width: $md3) {
+			text-align: right;
+		}
+	}
+	// .cart__total-sum-caption
+	&__total-sum-caption {
+		font-size: 1.125rem;
+	}
+	// .cart__total-sum-hint
+	&__total-sum-hint {
+		color: #6c6c6c;
+		font-size: 0.875rem;
+	}
+	// .cart__total-value
+	&__total-value {
+		font-size: 1.125rem;
 	}
 }
