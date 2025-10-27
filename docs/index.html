@@ -1,1154 +1,1171 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <title>Smartex | Главная страница</title>
 
-        <meta charset="UTF-8">
-        <meta name="format-detection" content="telephone=no">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Smartex | Главная страница</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- Open Graph  -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="/OG.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="627">
+	<meta property="og:site_name" content="">
+	<meta property="og:locale" content="ru_RU">
+	<!-- Open Graph  -->
+	<!-- favicon -->
+	<!-- <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" >
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" >
+    <link rel="shortcut icon" href="/favicon.ico" >
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" >
+    <meta name="apple-mobile-web-app-title" content="Oreshek Club" >
+    <link rel="manifest" href="/site.webmanifest" > -->
+	<!-- favicon -->
+	<!-- plugins -->
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20251027222234">
+	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20251027222234">
+	<!-- plugins -->
+	<link rel="stylesheet" href="css/reset.min.css?_v=20251027222234">
+	<link rel="stylesheet" href="css/style.min.css?_v=20251027222234">
+</head>
 
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<nav class="header__navbar menu">
+				<div class="container">
+					<div class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="/about.html" class="menu__link">О компании</a></li>
+							<li class="menu__item"><a href="/catalog.html" class="menu__link">Каталог</a></li>
+							<li class="menu__item"><a href="/delivery.html" class="menu__link">Доставка</a></li>
+							<li class="menu__item"><a href="/objects.html" class="menu__link">Объекты</a></li>
+							<li class="menu__item"><a href="/brends.html" class="menu__link">Бренды</a></li>
+							<li class="menu__item"><a href="/reviews.html" class="menu__link">Отзывы</a></li>
+							<li class="menu__item"><a href="/for-designers.html" class="menu__link">Для проектировщиков</a></li>
+							<li class="menu__item"><a href="/contacts.html" class="menu__link">Контакты</a></li>
+						</ul>
+						<address class="menu__address icon-location">Москва, д. Десна, ул. Строительная, д. 11с1</address>
+					</div>
+				</div>
+			</nav>
+			<div class="header__body">
+				<div class="container">
+					<div class="header__content">
+						<a href="/" class="header__logo">
+							<img src="img/logo.png" alt="Логотип">
+						</a>
+						<div class="header__catalog catalog">
+							<button type="button" data-catalog-toggler class="catalog__button"><span>Каталог</span></button>
+							<div class="catalog__content">
+								<div class="catalog__header">
+									<div class="catalog__header-row">
+										<button type="button" aria-label="Назад" class="catalog__back icon-arrow-right"></button>
+										<div class="catalog__current">Каталог товаров</div>
+										<button type="button" aria-label="Закрыть каталог" class="catalog__close icon-close"></button>
+									</div>
+									<form action="#" class="catalog__search">
+										<button type="submit" class="catalog__search-submit icon-search"></button>
+										<input type="text" name="s" class="catalog__search-input" placeholder="Поиск по каталогу и сайту">
+									</form>
+								</div>
+								<ul class="catalog__categories">
+									<li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right active">Чугунные безраструбные трубы SML</button></li>
+									<li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Противопожарное оборудование</button></li>
+									<li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Трапы, воронки, лотки</button></li>
+									<li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Крепежные системы</button></li>
+									<li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Полимерные трубы</button></li>
+									<li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Трубопроводная арматура</button></li>
+									<li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Соединительные муфты для труб</button></li>
+									<li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Грувлочные соединения труб</button></li>
+								</ul>
+								<div class="catalog__body">
+									<div class="catalog__block active">
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Хомуты для труб SML</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты соединительные SML Rapid</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты переходные SML Konfix</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты усиливающие SML Kralle</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты крепежные SML Micra</a></li>
+											</ul>
+										</div>
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Smart SML</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Чугунные трубы Smart SML</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие чугунные отводы Smart SML</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Длинные чугунные отводы Smart SML</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройник чугунный Smart SML</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ревизии Smart SML</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крестовины Smart SML</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки Smart SML</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники Smart SML</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Опорные трубы Smart SML</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Опорные кольца Smart SML</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Сифоны Smart SML</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Фланцы Smart SML</a></li>
+											</ul>
+										</div>
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Smart KML</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы Smart KML</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы Smart KML</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Длинные отводы Smart KML</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крестовины Smart KML</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Опоры для кронштейна стояка (Опорная труба)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Кронштейн стояка (Опорное кольцо)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ревизии</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Сифоны</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Фланцы</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки</a></li>
+											</ul>
+										</div>
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Smart BML</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы Smart BML</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Опоры для кронштейна стояка (Опорная труба)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Кронштейн стояка (Опорное кольцо)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ревизии</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Прочистные патрубки</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки</a></li>
+											</ul>
+										</div>
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Duker SML</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Чугунные трубы Duker</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы Duker</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Длинные отводы Duker</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники Duker</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ревизии Duker</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крестовины Duker</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки Duker</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники Duker</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Опоры для кронштейна стояка Duker (Опорная труба)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Кронштейны стояка Duker (Опорное кольцо)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Сифоны Duker</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Фланцы Duker</a></li>
+											</ul>
+										</div>
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Duker MLB</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы MLB</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Отводы MLB</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники MLB</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ревизии MLB</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки MLB</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники MLB</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Опорные трубы MLB</a></li>
+											</ul>
+										</div>
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Duker TML</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ревизии</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники</a></li>
+											</ul>
+										</div>
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Duker MLK-protek</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы MLK-protek</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы MLK-protek</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Длинные отводы MLK-protek</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники MLK-protek</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ревизии MLK-protek</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крестовины MLK-protek</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки MLK-protek</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники MLK-protek</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Опорная труба MLK-protek</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Опорное кольцо MLK-protek</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Сифоны MLK-protek</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Фланцы MLK-protek</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Комплектующие MLK-protek</a></li>
+											</ul>
+										</div>
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные трубы SML RSP</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Безраструбные трубы SML RSP</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="catalog__block">
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Rapidrop</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Обратные межфланцевые клапаны</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Затворы дисковые межфланцевые</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Шиберные фланцевые задвижки</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Сигнализатор потока жидкости</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Латунные шаровые краны</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Расходомеры жидкости</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тестово-дренажные краны</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Узлы управления и комплектующие</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Гибкая подводка для спринклерных оросителей</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Регулятор давления воды</a></li>
+											</ul>
+										</div>
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">S-Fire</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Обратные клапаны</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Дисковые затворы</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Задвижки</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Узлы управления и комплектующие</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Гибкие спринклерные подводки</a></li>
+											</ul>
+										</div>
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Reliable</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Reliable</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="catalog__block">
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">HL (Hutterer Lechner)</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Воронки водосточные кровельные HL (Hutterer Lechner)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трапы</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Обратные клапана</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Сифоны</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Вентиляционные клапаны канализации HL Hutterer Lechner</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Комплектующие для канализации</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Арматура для подземного ввода трубопроводов HL Hutterer Lechner</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Дополнительное оборудование</a></li>
+											</ul>
+										</div>
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">AlcaPlast</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Инсталляции</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Кнопки для инсталляций</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Сифоны для ванных</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Сифоны для моек</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Сифоны для умывальников</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Комплектующие к сифонам</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трапы / душевые лотки</a></li>
+											</ul>
+										</div>
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Татполимер</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Кровельные воронки</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Канализационные трапы</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Душевые лотки</a></li>
+											</ul>
+										</div>
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Sita</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Вакуумные системы</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Воронки для балконов и террас</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Парапетные системы</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Противопожарные воронки</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ремонтные воронки</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Самотечные системы</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Комплектующие</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="catalog__block">
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Walraven</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Блоки для термоизолированных труб</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Дюбельная техника Walraven</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крепеж для вентиляции Walraven</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крепеж для систем отопления Walraven</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крепеж для электромонтажа Walraven</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крепежная система Walraven BIS RapidRail</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крепежная система Walraven BIS RapidStrut</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Кровельные опоры и крепления Walraven для солнечных панелей</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Монтажные элементы</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Противопожарные системы</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Фиксирующие и скользящие опоры</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты без звукоизоляции</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты плаcтиковые Walraven</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты со звукоизоляцией</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">ТМС</a></li>
+											</ul>
+										</div>
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">NORMA</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты CV/CE Normaconnect</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты GRIP E Normaconnect</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты Konfix Normaconnect</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты Kralle Normaconnect</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты Rapid Normaconnect</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты Vario Pipe Normaconnect</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="catalog__block">
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Smart PEX</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы Полимерные</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Муфты QE (PPSU)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Муфты QE (Латунь)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Угольники QE (PPSU)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Угольники QE (Латунь)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники QE (PPSU)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники QE (Латунь)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки QE (PPSU)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Гильзы QE</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Комплектующие QE</a></li>
+											</ul>
+										</div>
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Полимерные трубы Girpi</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Полимерные трубы Girpi</a></li>
+											</ul>
+										</div>
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Канализационные трубы Ostendorf</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы Ostendorf HT (PPs) для внутренней канализации</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Наружная канализация KGEM Ostendorf KG</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Бесшумная канализация Ostendorf Skolan dB</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ливневая канализация Ostendorf KG 2000</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ostendorf Колодцы</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="catalog__block">
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Запорная арматура</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Компенсационные вставки</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Шаровые краны резьбовые</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Обратные клапаны</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Фильтр грубой очистки</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Кран поливочный</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Специализированные шаровые краны</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Шаровые краны фланцевые</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Дисковые затворы</a></li>
+											</ul>
+										</div>
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Радиаторная и термостатическая арматура</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Редукторы давления</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Распр. коллекторы SR латунь (водоснабжение)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Воздухоотводчики</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Узлы нижнего подключения</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Термостатические клапаны</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Резьбозажимные фитинги</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Аксессуары</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Распр. коллекторы SR нерж.сталь (отопление)</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="catalog__block">
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Соединительные муфты SmartLink и SmartQuick</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Соединительные муфты SmartLink и SmartQuick</a></li>
+											</ul>
+										</div>
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Муфты переходные SmartVario</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Муфты переходные SmartVario</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="catalog__block">
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Красные</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки грувлочные</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Колена</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крестовины грувлочные</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Муфты грувлочные</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Отводы грувлочные</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Отводы резьбовые (грувлок)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники грувлочные концентрические</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники резьбовые концентрические</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники грувлочные фланцевые</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники грувлочные переходные</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники грувлочные равносторонние</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники грувлочные резьбовые</a></li>
+											</ul>
+										</div>
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Оцинкованные</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки грувлочные</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Фитинги грувлочные (оцинкованные)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Муфты грувлочные (оцинкованные)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Отводы грувлочные (оцинкованные)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники грувлочные фланцевые (оцинкованные)</a></li>
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крестовины грувлочные (оцинкованные)</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="catalog__block">
+										<div class="catalog__brand">
+											<button type="button" class="catalog__brand-caption icon-arrow-right">Насосное оборудование Grundfos</button>
+											<ul class="catalog__brand-list">
+												<li class="catalog__brand-item"><a href="" class="catalog__brand-link">Насосное оборудование Grundfos</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<form action="#" class="header__search search">
+							<input type="text" name="s" class="search__input" placeholder="Например: WIS Дозатор 300 мл">
+							<button type="submit" class="search__btn icon-search">Найти</button>
+						</form>
+						<div class="header__actions">
+							<a href="/" class="header__action header__action--mobile icon-home">Главная</a>
+							<button type="button" data-catalog-toggler class="header__action header__action--mobile icon-search-catalog">Каталог</button>
+							<a href="/favorite.html" class="header__action icon-heart" data-quantity="1">Избранное</a>
+							<a href="/cart.html" class="header__action icon-docs" data-quantity="1">Смета</a>
+							<a href="/contacts.html" class="header__action header__action--mobile icon-contacts">Контакты</a>
+						</div>
+						<div class="header__contacts">
+							<a href="tel:88007700033" class="header__contacts-phone icon-phone-fill"></a>
+							<div class="header__contacts-header">
+								<a href="tel:88007700033" class="header__phone">8-800-770-00-33</a>
+								<div class="header__info">
+									<button type="button" class="header__info-btn icon-question-mark"></button>
+								</div>
+							</div>
+							<a href="#callback" data-fancybox class="header__callback icon-phone-alternate">
+								<span>Заказать звонок</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="promo">
+				<div class="container">
+					<div class="promo__banner">
+						<h1 class="promo__title">Оборудование для&nbsp;инженерных систем и сетей</h1>
+						<div class="promo__footer">
+							<div class="promo__description">
+								<div class="promo__description-caption">Надежность, проверенная временем — с 2012 года</div>
+								<div class="promo__description-text">Большой ассортимент под любые требования. Собственное производство и индивидуальные условия сотрудничества.</div>
+							</div>
+							<a href="/catalog.html" class="promo__btn btn btn-primary btn-large btn-rounded">В каталог</a>
+						</div>
+						<video class="promo__video" playsinline autoplay muted loop poster="img/promo-poster.jpg">
+							<source src="./files/promo.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</section>
+			<div class="categories">
+				<div class="container">
+					<div class="row">
+						<div class="col-6">
+							<a href="" class="categories__card">
+								<span class="categories__card-name">Чугунные безраструбные трубы SML</span>
+								<picture class="categories__card-image">
+									<source media="(min-width: 575.98px)" srcset="img/categories/chugunnye_bezrastrubnye_truby_sml.png">
+									<img src="img/categories/chugunnye_bezrastrubnye_truby_sml-mobile.png" alt="Фото категории товара">
+								</picture>
+							</a>
+						</div>
+						<div class="col-6">
+							<a href="" class="categories__card">
+								<span class="categories__card-name">Противопожарное оборудование</span>
+								<picture class="categories__card-image">
+									<source media="(min-width: 575.98px)" srcset="img/categories/fire-fighting-equipment.png">
+									<img src="img/categories/fire-fighting-equipment-mobile.png" alt="Фото категории товара">
+								</picture>
+							</a>
+						</div>
+						<div class="col-lg-4 col-6">
+							<a href="" class="categories__card">
+								<span class="categories__card-name">Трапы, воронки, <br> лотки</span>
+								<picture class="categories__card-image">
+									<source media="(min-width: 575.98px)" srcset="img/categories/traps_funnels_trays.png">
+									<img src="img/categories/traps_funnels_trays-mobile.png" alt="Фото категории товара">
+								</picture>
+							</a>
+						</div>
+						<div class="col-lg-4 col-6">
+							<a href="" class="categories__card">
+								<span class="categories__card-name">Крепежные <br> системы</span>
+								<picture class="categories__card-image">
+									<source media="(min-width: 575.98px)" srcset="img/categories/fastening-systems.png">
+									<img src="img/categories/fastening-systems-mobile.png" alt="Фото категории товара">
+								</picture>
+							</a>
+						</div>
+						<div class="col-lg-4 col-6">
+							<a href="" class="categories__card">
+								<span class="categories__card-name">Полимерные <br> трубы</span>
+								<picture class="categories__card-image">
+									<source media="(min-width: 575.98px)" srcset="img/categories/polymer-pipes.png">
+									<img src="img/categories/polymer-pipes-mobile.png" alt="Фото категории товара">
+								</picture>
+							</a>
+						</div>
+						<div class="col-lg-4 col-6">
+							<a href="" class="categories__card">
+								<span class="categories__card-name">Трубопроводная <br> арматура</span>
+								<picture class="categories__card-image">
+									<source media="(min-width: 575.98px)" srcset="img/categories/pipeline-fittings.png">
+									<img src="img/categories/pipeline-fittings-mobile.png" alt="Фото категории товара">
+								</picture>
+							</a>
+						</div>
+						<div class="col-lg-4 col-6">
+							<a href="" class="categories__card">
+								<span class="categories__card-name">Соединительные <br> муфты для труб</span>
+								<picture class="categories__card-image">
+									<source media="(min-width: 575.98px)" srcset="img/categories/pipe-couplings.png">
+									<img src="img/categories/pipe-couplings-mobile.png" alt="Фото категории товара">
+								</picture>
+							</a>
+						</div>
+						<div class="col-lg-4 col-6">
+							<a href="" class="categories__card">
+								<span class="categories__card-name">Грувлочные <br> соединения труб</span>
+								<picture class="categories__card-image">
+									<source media="(min-width: 575.98px)" srcset="img/categories/grooved-pipe-connections.png">
+									<img src="img/categories/grooved-pipe-connections-mobile.png" alt="Фото категории товара">
+								</picture>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="benefits">
+				<div class="container">
+					<h2 class="benefits__title title">Производим и реализуем только качественные материалы, ведь на кону ваш комфорт и наша репутация</h2>
+					<div class="benefits__content swiper">
+						<div class="swiper-wrapper">
+							<div class="col-lg-4 col-md-6 swiper-slide">
+								<div class="card">
+									<div class="card__icon">
+										<img src="img/icons/production.svg" alt="Иконка">
+									</div>
+									<div class="card__caption">Собственное производство</div>
+									<div class="card__description">Мы создаем продукцию, отвечающую вашим требованиям. Контроль на всех этапах гарантирует качество, гибкость и&nbsp;доступные цены для клиентов.</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 swiper-slide">
+								<div class="card">
+									<div class="card__icon">
+										<img src="img/icons/original.svg" alt="Иконка">
+									</div>
+									<div class="card__caption">100% оригинальная продукция</div>
+									<div class="card__description">Соответствующая стандартам. Сертифицирована, проходит контроль, гарантирует надежность. Ваше доверие — наш приоритет.</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 swiper-slide">
+								<div class="card">
+									<div class="card__icon">
+										<img src="img/icons/distributor.svg" alt="Иконка">
+									</div>
+									<div class="card__caption">Эксклюзивный дистрибьютор</div>
+									<div class="card__description">Предлагаем уникальную продукцию с&nbsp;гарантией качества. Наши партнеры доверяют нам, а клиенты получают лучшие решения на рынке.</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 swiper-slide">
+								<div class="card">
+									<div class="card__icon">
+										<img src="img/icons/air-delivery.svg" alt="Иконка">
+									</div>
+									<div class="card__caption">Доставка в любую точку мира</div>
+									<div class="card__description">Наша логистическая система отлажена до&nbsp;мелочей, что позволяет гарантировать своевременность и сохранность грузов. Доставим ваш заказ быстро и надежно.</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 swiper-slide">
+								<div class="card">
+									<div class="card__icon">
+										<img src="img/icons/bus-delivery.svg" alt="Иконка">
+									</div>
+									<div class="card__caption">Бесплатная доставка в ТК</div>
+									<div class="card__description">Это делает сотрудничество с нами еще выгоднее. Вы экономите на логистике, а ваш заказ оперативно отправляется в любой регион. Удобно, быстро и без лишних затрат!</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 swiper-slide">
+								<div class="card">
+									<div class="card__icon">
+										<img src="img/icons/sales.svg" alt="Иконка">
+									</div>
+									<div class="card__caption">Гибкая система скидок</div>
+									<div class="card__description">Индивидуальный подход к каждому заказу позволяет вам получать выгодные условия сотрудничества. Чем больше объем — тем выше ваша экономия!</div>
+								</div>
+							</div>
+						</div>
+						<div class="benefits__scrollbar swiper-scrollbar"></div>
+					</div>
+				</div>
+			</section>
+			<div class="marquee">
+				<div class="container">
+					<div class="marquee__slider swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/logotypes/Smart-SML.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/Smart-BML.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/Smart-KML.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/walraven.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/HL.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/RSP.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/Autodesk.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/Grundfos.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/uponor.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/girpi.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/rapidrop.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/duker.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/Smart-Press.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/Smart-Nexus.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/Georg-Fisher.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/Alca-Plast.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/Sita.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/Stendorf.png" alt="Логотип">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="objects">
+				<div class="container">
+					<a href="" class="objects__btn btn btn-primary btn-rounded">Все объекты</a>
+					<div class="objects__slider swiper">
+						<div class="swiper-wrapper">
+							<div class="objects__slide swiper-slide">
+								<div class="row">
+									<div class="col-md-6">
+										<a href="" class="object__card object__card--large">
+											<span class="object__card-image">
+												<img src="img/objects/LCD-Theater-Quarter.jpg" class="cover-image" alt="Фото обьекта">
+											</span>
+											<span class="object__card-name icon-zoom">ЖК Театральный квартал</span>
+										</a>
+									</div>
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-12">
+												<a href="" class="object__card">
+													<span class="object__card-image">
+														<img src="img/objects/LCD-Poklonnaya-7.jpg" class="cover-image" alt="Фото обьекта">
+													</span>
+													<span class="object__card-name icon-zoom">ЖК Поклонная 7</span>
+												</a>
+											</div>
+											<div class="col-12">
+												<a href="" class="object__card">
+													<span class="object__card-image">
+														<img src="img/objects/LCD-Ostrov.jpg" class="cover-image" alt="Фото обьекта">
+													</span>
+													<span class="object__card-name icon-zoom">ЖК Остров</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="objects__slide swiper-slide">
+								<div class="row">
+									<div class="col-md-6">
+										<a href="" class="object__card object__card--large">
+											<span class="object__card-image">
+												<img src="img/objects/LCD-Spanish-Quarters.jpg" class="cover-image" alt="Фото обьекта">
+											</span>
+											<span class="object__card-name icon-zoom">ЖК Испанские кварталы</span>
+										</a>
+									</div>
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-12">
+												<a href="" class="object__card">
+													<span class="object__card-image">
+														<img src="img/objects/LCD-Green-Boulevard.jpg" class="cover-image" alt="Фото обьекта">
+													</span>
+													<span class="object__card-name icon-zoom">ЖК Зеленый бульвар, Владивосток</span>
+												</a>
+											</div>
+											<div class="col-12">
+												<a href="" class="object__card">
+													<span class="object__card-image">
+														<img src="img/objects/LCD-Vremya.jpg" class="cover-image" alt="Фото обьекта">
+													</span>
+													<span class="object__card-name icon-zoom">ЖК Время</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="objects__slide swiper-slide">
+								<div class="row">
+									<div class="col-md-6">
+										<a href="" class="object__card object__card--large">
+											<span class="object__card-image">
+												<img src="img/objects/LCD-Malaya-Pochtovaya-12.jpg" class="cover-image" alt="Фото обьекта">
+											</span>
+											<span class="object__card-name icon-zoom">ЖК Малая Почтовая 12</span>
+										</a>
+									</div>
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-12">
+												<a href="" class="object__card">
+													<span class="object__card-image">
+														<img src="img/objects/LCD-Luchi.jpg" class="cover-image" alt="Фото обьекта">
+													</span>
+													<span class="object__card-name icon-zoom">ЖК Лучи</span>
+												</a>
+											</div>
+											<div class="col-12">
+												<a href="" class="object__card">
+													<span class="object__card-image">
+														<img src="img/objects/LCD-Wings.jpg" class="cover-image" alt="Фото обьекта">
+													</span>
+													<span class="object__card-name icon-zoom">ЖК Крылья, Казань</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="objects__slider-controls">
+							<button type="button" class="objects__slider-prev btn btn-white btn-rounded icon-prev">
+								<span class="pc-only">Предыдущие объекты</span>
+								<span class="mobile-only">Предыдущий</span>
+							</button>
+							<button type="button" class="objects__slider-next btn btn-white btn-rounded icon-next">
+								<span class="pc-only">Следующие объекты</span>
+								<span class="mobile-only">Следующий</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="marquee">
+				<div class="container">
+					<div class="marquee__slider swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/logotypes/pick.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/kortros.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/a101.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/lsr.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/lider-invest.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/pr-dev.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/ingrad.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/etalon.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/level.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/glavstroy.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/mr-group.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/pioneer.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/krost.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/samolet.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/donstroy.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/renaissance.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/gals.png" alt="Логотип">
+							</div>
+							<div class="swiper-slide">
+								<img src="img/logotypes/flat-n-ko.png" alt="Логотип">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="delivery">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8">
+							<div class="delivery__banner">
+								<div class="delivery__label">Доставка</div>
+								<h2 class="delivery__title title">Доставка в любой регион: <br> удобно, оперативно, надежно</h2>
+								<div class="delivery__text">
+									<p>Осуществляем доставку по Москве, РФ, а также в Беларусь и&nbsp;Казахстан. Специалисты подберут оптимальный способ доставки, рассчитают стоимость и проконтролируют процесс.</p>
+									<p>Просто укажите адрес — мы сделаем все остальное!</p>
+								</div>
+								<a href="" class="delivery__btn btn btn-primary btn-rounded">Подробнее о доставке</a>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<picture class="delivery__image">
+								<source media="(min-width: 991.98px)" srcset="img/delivery-img.jpg">
+								<img src="img/delivery-img-mobile.png" class="cover-image" alt="Доставка материалов">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="reviews">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7">
+							<div class="reviews__content">
+								<div class="reviews__items swiper">
+									<ul class="swiper-wrapper">
+										<li class="reviews__item swiper-slide">
+											<div class="reviews__item-logo">
+												<img src="img/logotypes/airplane-logo.svg" alt="Логотип компании">
+											</div>
+											<div class="reviews__item-caption">Самолет Девелопмент</div>
+											<blockquote class="reviews__item-text">
+												<p>ООО «Самолёт Девелопмент» выражает благодарность коллективу компании ООО «Смартекс Групп» за плодотворное сотрудничество в сфере поставок чугунной трубы SML на объект строительства КА «Спутник».</p>
+												<p>Чёткое выполнение договорных обязательств по поставке качественной продукции позволяет нашей компании обеспечить бесперебойную работу строительного объекта. Надеемся на продолжение успешного сотрудничества, а так же на дальнейшее увеличение достигнутых показателей совместной работы.</p>
+											</blockquote>
+										</li>
+										<li class="reviews__item swiper-slide">
+											<div class="reviews__item-logo">
+												<img src="img/logotypes/ant-yapi.svg" alt="Логотип компании">
+											</div>
+											<div class="reviews__item-caption">Ant Yapi</div>
+											<blockquote class="reviews__item-text">
+												<p>Выражаем благодарность коллективу компании Смартекс за своевременные поставки высококачественных строительных материалов. Хотим отметить высокий профессиональный уровень</p>
+											</blockquote>
+										</li>
+									</ul>
+								</div>
+								<a href="/reviews.html" class="reviews__btn btn btn-primary btn-rounded">Смотреть все отзывы</a>
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="reviews__widget">
+								<img src="img/widget.png" alt="widget">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="teasers">
+				<div class="container">
+					<div class="teaser">
+						<a href="" class="teaser__title title">Чугунные трубы</a>
+						<div class="teaser__body">
+							<p class="teaser__description">Чугунные трубы — надежность на 50+ лет! Прочные, пожаробезопасные, устойчивые к коррозии. Современные технологии устранили старые <br> недостатки, а удобный монтаж делает их идеальным выбором.</p>
+							<div class="teaser__actions">
+								<div class="teaser__categories">
+									<a href="" class="teaser__category">от 50 до 300 диаметра</a>
+								</div>
+								<a href="" aria-label="Перейти в категорию" class="teaser__btn icon-arrow"></a>
+							</div>
+						</div>
+					</div>
+					<div class="teaser">
+						<a href="" class="teaser__title title">Канализационные трубы</a>
+						<div class="teaser__body">
+							<p class="teaser__description">Каталог Смартекс предлагает надежные системы канализации: чугунные трубы Smart SML, бесшумные Ostendorf Skolan dB, уличные Ostendorf KG и другие. Решения для любых задач — от коттеджей до промышленных объектов.</p>
+							<div class="teaser__actions">
+								<div class="teaser__categories">
+									<a href="" class="teaser__category">Smart SML</a>
+									<a href="" class="teaser__category">Ostendorf</a>
+								</div>
+								<a href="" aria-label="Перейти в категорию" class="teaser__btn icon-arrow"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="blog">
+				<div class="container">
+					<div class="blog__header">
+						<h2 class="blog__title title">Последние новости</h2>
+						<a href="/blog.html" class="blog__btn btn btn-primary btn-rounded">Все новости</a>
+					</div>
+					<div class="blog__slider">
+						<div class="swiper">
+							<ul class="swiper-wrapper">
+								<li class="blog__item  swiper-slide">
+									<a href="article.html" class="blog__card">
+										<span class="blog__card-image">
+											<img src="img/blog/01.jpg" class="cover-image" alt="Фото статьи">
+										</span>
+										<span class="blog__card-body">
+											<span class="blog__card-name">Типы запорной арматуры: как выбрать подходящее по конструкции и функциям изделие</span>
+											<span class="blog__card-date"> 01.01.2024 </span>
+										</span>
+									</a>
+								</li>
+								<li class="blog__item  swiper-slide">
+									<a href="article.html" class="blog__card">
+										<span class="blog__card-image">
+											<img src="img/blog/02.jpg" class="cover-image" alt="Фото статьи">
+										</span>
+										<span class="blog__card-body">
+											<span class="blog__card-name">Почему гудят водопроводные трубы: причины и способы решения проблемы</span>
+											<span class="blog__card-date"> 01.01.2024 </span>
+										</span>
+									</a>
+								</li>
+								<li class="blog__item  swiper-slide">
+									<a href="article.html" class="blog__card">
+										<span class="blog__card-image">
+											<img src="img/blog/01.jpg" class="cover-image" alt="Фото статьи">
+										</span>
+										<span class="blog__card-body">
+											<span class="blog__card-name">Типы запорной арматуры: как выбрать подходящее по конструкции и функциям изделие</span>
+											<span class="blog__card-date"> 01.01.2024 </span>
+										</span>
+									</a>
+								</li>
+								<li class="blog__item  swiper-slide">
+									<a href="article.html" class="blog__card">
+										<span class="blog__card-image">
+											<img src="img/blog/02.jpg" class="cover-image" alt="Фото статьи">
+										</span>
+										<span class="blog__card-body">
+											<span class="blog__card-name">Почему гудят водопроводные трубы: причины и способы решения проблемы</span>
+											<span class="blog__card-date"> 01.01.2024 </span>
+										</span>
+									</a>
+								</li>
+								<li class="blog__item  swiper-slide">
+									<a href="article.html" class="blog__card">
+										<span class="blog__card-image">
+											<img src="img/blog/01.jpg" class="cover-image" alt="Фото статьи">
+										</span>
+										<span class="blog__card-body">
+											<span class="blog__card-name">Типы запорной арматуры: как выбрать подходящее по конструкции и функциям изделие</span>
+											<span class="blog__card-date"> 01.01.2024 </span>
+										</span>
+									</a>
+								</li>
+								<li class="blog__item  swiper-slide">
+									<a href="article.html" class="blog__card">
+										<span class="blog__card-image">
+											<img src="img/blog/02.jpg" class="cover-image" alt="Фото статьи">
+										</span>
+										<span class="blog__card-body">
+											<span class="blog__card-name">Почему гудят водопроводные трубы: причины и способы решения проблемы</span>
+											<span class="blog__card-date"> 01.01.2024 </span>
+										</span>
+									</a>
+								</li>
+								<li class="blog__item  swiper-slide">
+									<a href="article.html" class="blog__card">
+										<span class="blog__card-image">
+											<img src="img/blog/01.jpg" class="cover-image" alt="Фото статьи">
+										</span>
+										<span class="blog__card-body">
+											<span class="blog__card-name">Типы запорной арматуры: как выбрать подходящее по конструкции и функциям изделие</span>
+											<span class="blog__card-date"> 01.01.2024 </span>
+										</span>
+									</a>
+								</li>
+								<li class="blog__item  swiper-slide">
+									<a href="article.html" class="blog__card">
+										<span class="blog__card-image">
+											<img src="img/blog/02.jpg" class="cover-image" alt="Фото статьи">
+										</span>
+										<span class="blog__card-body">
+											<span class="blog__card-name">Почему гудят водопроводные трубы: причины и способы решения проблемы</span>
+											<span class="blog__card-date"> 01.01.2024 </span>
+										</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="blog__prev swiper-button-prev"></div>
+						<div class="blog__next swiper-button-next"></div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__main">
+					<div class="row">
+						<div class="col-md-4">
+							<a href="/" class="footer__logo">
+								<img src="img/logo-white.png" alt="Логотип">
+							</a>
+							<div class="footer__caption icon-chevron">Для клиентов</div>
+							<div class="footer__accordion">
+								<div class="footer__contacts">
+									<div class="footer__contacts-links">
+										<a href="tel:88007700033" class="footer__contacts-link icon-info">8-800-770-00-33</a>
+										<a href="tel:+74955140990" class="footer__contacts-link icon-info">+7-495-514-09-90</a>
+									</div>
+									<a href="#callback" data-fancybox class="footer__link">Заказать звонок</a>
+									<address class="footer__address">Москва, д. Десна, ул. Строительная, д. 11с1</address>
+									<a href="" class="footer__link">Посмотреть на карте</a>
+									<a href="mailto:info@smartex-group.com" class="footer__email">info@smartex-group.com</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="footer__caption icon-chevron">Меню</div>
+							<div class="footer__accordion">
+								<nav class="footer__menu">
+									<ul class="footer__menu-list">
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">О компании</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Каталог</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Доставка</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Объекты</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Бренды</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Отзывы</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Для проектировщиков</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Контакты</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="footer__caption icon-chevron">Каталог</div>
+							<div class="footer__accordion">
+								<nav class="footer__menu">
+									<ul class="footer__menu-list">
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Чугунные безраструбные трубы SML</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Противопожарное оборудование</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Трапы, воронки, лотки</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Крепежные системы</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Полимерные трубы</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Трубопроводная арматура</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Соединительные муфты для труб</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Грувлочные соединения труб</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__text">
+					<img src="img/smartext.svg" alt="smartex">
+				</div>
+				<div class="footer__public">Предложение не является публичной офертой. Цены на сайте и при оформлении заказа могут отличаться. Информация на сайте о товаре носит рекламный характер и расценивается как приглашение делать оферты на основании п.1 ст. 437 Гражданского кодекса РФ.</div>
+				<div class="footer__bottom">
+					<a href="" class="footer__privacy">Политика в отношении обработки персональных данных</a>
+					<div class="footer__copyright">2012— 2024 © Все права защищены</div>
+					<a href="" class="footer__prod">
+						<img src="img/prod-logo.png" alt="Moscow Dynamics Logotype"> Разработка сайта — Moscow Dynamics </a>
+				</div>
+		</footer>
+		<div id="callback" class="popup">
+			<div class="popup__title title-sm">Заказать звонок</div>
+			<p class="popup__subtitle subtitle">Заполните форму, чтобы мы могли связаться с вами.</p>
+			<form action="#" class="popup__form">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form__field">
+							<input type="text" name="name" class="form__control" placeholder="">
+							<div class="form__field-placeholder">Имя</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form__field">
+							<input type="tel" name="phone" class="form__control" placeholder="">
+							<div class="form__field-placeholder">Телефон</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="form__field">
+							<textarea name="message" class="form__control" placeholder=""></textarea>
+							<div class="form__field-placeholder">Ваше сообщение</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<button type="submit" class="btn btn-primary btn-fullwidth">Отправить</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div id="success" class="popup">
+		</div> <!-- plugins -->
+		<script src="js/libs/fancybox.umd.js?_v=20251027222234"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20251027222234"></script>
+		<!-- plugins -->
+		<script src="js/app.min.js?_v=20251027222234"></script>
+	</div>
+</body>
 
-        <!-- Open Graph  -->
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="">
-        <meta property="og:description" content="">
-        <meta property="og:url" content="">
-        <meta property="og:image" content="/OG.png">
-        <meta property="og:image:width" content="1200">
-        <meta property="og:image:height" content="627">
-        <meta property="og:site_name" content="">
-        <meta property="og:locale" content="ru_RU">
-        <!-- Open Graph  -->
-
-        <!-- favicon -->
-        <!-- <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" >
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" >
-        <link rel="shortcut icon" href="/favicon.ico" >
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" >
-        <meta name="apple-mobile-web-app-title" content="Oreshek Club" >
-        <link rel="manifest" href="/site.webmanifest" > -->
-        <!-- favicon -->
-
-        <!-- plugins -->
-        <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
-        <link rel="stylesheet" href="css/libs/fancybox.min.css">
-
-        <!-- plugins -->
-
-
-        <link rel="stylesheet" href="css/reset.min.css">
-        <link rel="stylesheet" href="css/style.min.css">
-
-    </head>
-    <body>
-        <div class="wrapper">
-            <header class="header">
-                <nav class="header__navbar menu">
-                    <div class="container">
-                        <div class="menu__body">
-                            <ul class="menu__list">
-                                <li class="menu__item"><a href="/about.html" class="menu__link">О компании</a></li>
-                                <li class="menu__item"><a href="/catalog.html" class="menu__link">Каталог</a></li>
-                                <li class="menu__item"><a href="/delivery.html" class="menu__link">Доставка</a></li>
-                                <li class="menu__item"><a href="/objects.html" class="menu__link">Объекты</a></li>
-                                <li class="menu__item"><a href="/brends.html" class="menu__link">Бренды</a></li>
-                                <li class="menu__item"><a href="/reviews.html" class="menu__link">Отзывы</a></li>
-                                <li class="menu__item"><a href="/for-designers.html" class="menu__link">Для проектировщиков</a></li>
-                                <li class="menu__item"><a href="/contacts.html" class="menu__link">Контакты</a></li>
-                            </ul>
-                            <address class="menu__address icon-location">Москва, д. Десна, ул. Строительная, д. 11с1</address>
-                        </div>
-                    </div>
-                </nav>
-                <div class="header__body">
-                    <div class="container">
-                        <div class="header__content">
-                            <a href="/" class="header__logo">
-                                <img src="img/logo.png" alt="Логотип">
-                            </a>
-                            <div class="header__catalog catalog">
-                                <button type="button" data-catalog-toggler class="catalog__button"><span>Каталог</span></button>
-                                <div class="catalog__content">
-                                    <div class="catalog__header">
-                                        <div class="catalog__header-row">
-                                            <button type="button" aria-label="Назад" class="catalog__back icon-arrow-right"></button>
-                                            <div class="catalog__current">Каталог товаров</div>
-                                            <button type="button" aria-label="Закрыть каталог" class="catalog__close icon-close"></button>
-                                        </div>
-                                        <form action="#" class="catalog__search">
-                                            <button type="submit" class="catalog__search-submit icon-search"></button>
-                                            <input type="text" name="s" class="catalog__search-input" placeholder="Поиск по каталогу и сайту">
-                                        </form>
-                                    </div>
-                                    <ul class="catalog__categories">
-                                        <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right active">Чугунные безраструбные трубы SML</button></li>
-                                        <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Противопожарное оборудование</button></li>
-                                        <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Трапы, воронки, лотки</button></li>
-                                        <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Крепежные системы</button></li>
-                                        <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Полимерные трубы</button></li>
-                                        <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Трубопроводная арматура</button></li>
-                                        <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Соединительные муфты для труб</button></li>
-                                        <li class="catalog__category"><button type="button" class="catalog__category-btn icon-arrow-right">Грувлочные соединения труб</button></li>
-                                    </ul>
-                                    <div class="catalog__body">
-                                        <div class="catalog__block active">
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Хомуты для труб SML</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты соединительные SML Rapid</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты переходные SML Konfix</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты усиливающие SML Kralle</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты крепежные SML Micra</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Smart SML</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Чугунные трубы Smart SML</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие чугунные отводы Smart SML</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Длинные чугунные отводы Smart SML</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройник чугунный Smart SML</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ревизии Smart SML</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крестовины Smart SML</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки Smart SML</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники Smart SML</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Опорные трубы Smart SML</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Опорные кольца Smart SML</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Сифоны Smart SML</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Фланцы Smart SML</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Smart KML</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы Smart KML</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы Smart KML</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Длинные отводы Smart KML</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крестовины Smart KML</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Опоры для кронштейна стояка (Опорная труба)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Кронштейн стояка (Опорное кольцо)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ревизии</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Сифоны</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Фланцы</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Smart BML</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы Smart BML</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Опоры для кронштейна стояка (Опорная труба)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Кронштейн стояка (Опорное кольцо)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ревизии</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Прочистные патрубки</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Duker SML</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Чугунные трубы Duker</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы Duker</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Длинные отводы Duker</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники Duker</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ревизии Duker</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крестовины Duker</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки Duker</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники Duker</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Опоры для кронштейна стояка Duker (Опорная труба)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Кронштейны стояка Duker (Опорное кольцо)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Сифоны Duker</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Фланцы Duker</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Duker MLB</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы MLB</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Отводы MLB</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники MLB</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ревизии MLB</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки MLB</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники MLB</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Опорные трубы MLB</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Duker TML</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ревизии</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные чугунные трубы Duker MLK-protek</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы MLK-protek</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Короткие отводы MLK-protek</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Длинные отводы MLK-protek</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники MLK-protek</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ревизии MLK-protek</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крестовины MLK-protek</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки MLK-protek</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники MLK-protek</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Опорная труба MLK-protek</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Опорное кольцо MLK-protek</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Сифоны MLK-protek</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Фланцы MLK-protek</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Комплектующие MLK-protek</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Безраструбные трубы SML RSP</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Безраструбные трубы SML RSP</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="catalog__block">
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Rapidrop</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Обратные межфланцевые клапаны</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Затворы дисковые межфланцевые</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Шиберные фланцевые задвижки</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Сигнализатор потока жидкости</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Латунные шаровые краны</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Расходомеры жидкости</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тестово-дренажные краны</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Узлы управления и комплектующие</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Гибкая подводка для спринклерных оросителей</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Регулятор давления воды</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">S-Fire</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Обратные клапаны</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Дисковые затворы</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Задвижки</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Узлы управления и комплектующие</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Гибкие спринклерные подводки</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Reliable</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Reliable</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="catalog__block">
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">HL (Hutterer Lechner)</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Воронки водосточные кровельные HL (Hutterer Lechner)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трапы</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Обратные клапана</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Сифоны</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Вентиляционные клапаны канализации HL Hutterer Lechner</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Комплектующие для канализации</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Арматура для подземного ввода трубопроводов HL Hutterer Lechner</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Дополнительное оборудование</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">AlcaPlast</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Инсталляции</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Кнопки для инсталляций</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Сифоны для ванных</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Сифоны для моек</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Сифоны для умывальников</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Комплектующие к сифонам</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трапы / душевые лотки</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Татполимер</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Кровельные воронки</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Канализационные трапы</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Душевые лотки</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Sita</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Вакуумные системы</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Воронки для балконов и террас</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Парапетные системы</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Противопожарные воронки</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ремонтные воронки</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Самотечные системы</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Комплектующие</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="catalog__block">
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Walraven</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Блоки для термоизолированных труб</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Дюбельная техника Walraven</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крепеж для вентиляции Walraven</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крепеж для систем отопления Walraven</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крепеж для электромонтажа Walraven</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крепежная система Walraven BIS RapidRail</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крепежная система Walraven BIS RapidStrut</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Кровельные опоры и крепления Walraven для солнечных панелей</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Монтажные элементы</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Противопожарные системы</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Фиксирующие и скользящие опоры</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты без звукоизоляции</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты плаcтиковые Walraven</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты со звукоизоляцией</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">ТМС</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">NORMA</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты CV/CE Normaconnect</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты GRIP E Normaconnect</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты Konfix Normaconnect</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты Kralle Normaconnect</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты Rapid Normaconnect</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Хомуты Vario Pipe Normaconnect</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="catalog__block">
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Smart PEX</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы Полимерные</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Муфты QE (PPSU)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Муфты QE (Латунь)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Угольники QE (PPSU)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Угольники QE (Латунь)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники QE (PPSU)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники QE (Латунь)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки QE (PPSU)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Гильзы QE</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Комплектующие QE</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Полимерные трубы Girpi</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Полимерные трубы Girpi</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Канализационные трубы Ostendorf</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Трубы Ostendorf HT (PPs) для внутренней канализации</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Наружная канализация KGEM Ostendorf KG</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Бесшумная канализация Ostendorf Skolan dB</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ливневая канализация Ostendorf KG 2000</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Ostendorf Колодцы</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="catalog__block">
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Запорная арматура</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Компенсационные вставки</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Шаровые краны резьбовые</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Обратные клапаны</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Фильтр грубой очистки</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Кран поливочный</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Специализированные шаровые краны</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Шаровые краны фланцевые</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Дисковые затворы</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Радиаторная и термостатическая арматура</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Редукторы давления</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Распр. коллекторы SR латунь (водоснабжение)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Воздухоотводчики</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Узлы нижнего подключения</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Термостатические клапаны</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Резьбозажимные фитинги</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Аксессуары</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Распр. коллекторы SR нерж.сталь (отопление)</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="catalog__block">
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Соединительные муфты SmartLink и SmartQuick</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Соединительные муфты SmartLink и SmartQuick</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Муфты переходные SmartVario</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Муфты переходные SmartVario</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="catalog__block">
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Красные</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки грувлочные</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Колена</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крестовины грувлочные</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Муфты грувлочные</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Отводы грувлочные</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Отводы резьбовые (грувлок)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники грувлочные концентрические</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники резьбовые концентрические</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники грувлочные фланцевые</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники грувлочные переходные</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники грувлочные равносторонние</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Тройники грувлочные резьбовые</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Оцинкованные</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Заглушки грувлочные</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Фитинги грувлочные (оцинкованные)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Муфты грувлочные (оцинкованные)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Отводы грувлочные (оцинкованные)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Переходники грувлочные фланцевые (оцинкованные)</a></li>
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Крестовины грувлочные (оцинкованные)</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="catalog__block">
-                                            <div class="catalog__brand">
-                                                <button type="button" class="catalog__brand-caption icon-arrow-right">Насосное оборудование Grundfos</button>
-                                                <ul class="catalog__brand-list">
-                                                    <li class="catalog__brand-item"><a href="" class="catalog__brand-link">Насосное оборудование Grundfos</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <form action="#" class="header__search search">
-                                <input type="text" name="s" class="search__input" placeholder="Например: WIS Дозатор 300 мл">
-                                <button type="submit" class="search__btn icon-search">Найти</button>
-                            </form>
-                            <div class="header__actions">
-                                <a href="/" class="header__action header__action--mobile icon-home">Главная</a>
-                                <button type="button" data-catalog-toggler class="header__action header__action--mobile icon-search-catalog">Каталог</button>
-                                <a href="/favorite.html" class="header__action icon-heart" data-quantity="1">Избранное</a>
-                                <a href="/cart.html" class="header__action icon-docs" data-quantity="1">Смета</a>
-                                <a href="/contacts.html" class="header__action header__action--mobile icon-contacts">Контакты</a>
-                            </div>
-                            <div class="header__contacts">
-                                <a href="tel:88007700033" class="header__contacts-phone icon-phone-fill"></a>
-                                <div class="header__contacts-header">
-                                    <a href="tel:88007700033" class="header__phone">8-800-770-00-33</a>
-                                    <div class="header__info">
-                                        <button type="button" class="header__info-btn icon-question-mark"></button>
-                                    </div>
-                                </div>
-                                <a href="#callback" data-fancybox class="header__callback icon-phone-alternate">
-                                    <span>Заказать звонок</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <main class="page">
-                <section class="promo">
-                    <div class="container">
-                        <div class="promo__banner">
-                            <h1 class="promo__title">Оборудование для&nbsp;инженерных систем и сетей</h1>
-                            <div class="promo__footer">
-                                <div class="promo__description">
-                                    <div class="promo__description-caption">Надежность, проверенная временем — с 2012 года</div>
-                                    <div class="promo__description-text">Большой ассортимент под любые требования. Собственное производство и индивидуальные условия сотрудничества.</div>
-                                </div>
-                                <a href="/catalog.html" class="promo__btn btn btn-primary btn-large btn-rounded">В каталог</a>
-                            </div>
-                            <video class="promo__video" playsinline autoplay muted loop poster="img/promo-poster.jpg">
-                                <source src="./files/promo.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                </section>
-                <div class="categories">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-6">
-                                <a href="" class="categories__card">
-                                    <span class="categories__card-name">Чугунные безраструбные трубы SML</span>
-                                    <picture class="categories__card-image">
-                                        <source media="(min-width: 575.98px)" srcset="img/categories/chugunnye_bezrastrubnye_truby_sml.png">
-                                        <img src="img/categories/chugunnye_bezrastrubnye_truby_sml-mobile.png" alt="Фото категории товара">
-                                    </picture>
-                                </a>
-                            </div><div class="col-6">
-                                <a href="" class="categories__card">
-                                    <span class="categories__card-name">Противопожарное оборудование</span>
-                                    <picture class="categories__card-image">
-                                        <source media="(min-width: 575.98px)" srcset="img/categories/fire-fighting-equipment.png">
-                                        <img src="img/categories/fire-fighting-equipment-mobile.png" alt="Фото категории товара">
-                                    </picture>
-                                </a>
-                            </div><div class="col-lg-4 col-6">
-                                <a href="" class="categories__card">
-                                    <span class="categories__card-name">Трапы, воронки, <br> лотки</span>
-                                    <picture class="categories__card-image">
-                                        <source media="(min-width: 575.98px)" srcset="img/categories/traps_funnels_trays.png">
-                                        <img src="img/categories/traps_funnels_trays-mobile.png" alt="Фото категории товара">
-                                    </picture>
-                                </a>
-                            </div><div class="col-lg-4 col-6">
-                                <a href="" class="categories__card">
-                                    <span class="categories__card-name">Крепежные <br> системы</span>
-                                    <picture class="categories__card-image">
-                                        <source media="(min-width: 575.98px)" srcset="img/categories/fastening-systems.png">
-                                        <img src="img/categories/fastening-systems-mobile.png" alt="Фото категории товара">
-                                    </picture>
-                                </a>
-                            </div><div class="col-lg-4 col-6">
-                                <a href="" class="categories__card">
-                                    <span class="categories__card-name">Полимерные <br> трубы</span>
-                                    <picture class="categories__card-image">
-                                        <source media="(min-width: 575.98px)" srcset="img/categories/polymer-pipes.png">
-                                        <img src="img/categories/polymer-pipes-mobile.png" alt="Фото категории товара">
-                                    </picture>
-                                </a>
-                            </div><div class="col-lg-4 col-6">
-                                <a href="" class="categories__card">
-                                    <span class="categories__card-name">Трубопроводная <br> арматура</span>
-                                    <picture class="categories__card-image">
-                                        <source media="(min-width: 575.98px)" srcset="img/categories/pipeline-fittings.png">
-                                        <img src="img/categories/pipeline-fittings-mobile.png" alt="Фото категории товара">
-                                    </picture>
-                                </a>
-                            </div><div class="col-lg-4 col-6">
-                                <a href="" class="categories__card">
-                                    <span class="categories__card-name">Соединительные <br> муфты для труб</span>
-                                    <picture class="categories__card-image">
-                                        <source media="(min-width: 575.98px)" srcset="img/categories/pipe-couplings.png">
-                                        <img src="img/categories/pipe-couplings-mobile.png" alt="Фото категории товара">
-                                    </picture>
-                                </a>
-                            </div><div class="col-lg-4 col-6">
-                                <a href="" class="categories__card">
-                                    <span class="categories__card-name">Грувлочные <br> соединения труб</span>
-                                    <picture class="categories__card-image">
-                                        <source media="(min-width: 575.98px)" srcset="img/categories/grooved-pipe-connections.png">
-                                        <img src="img/categories/grooved-pipe-connections-mobile.png" alt="Фото категории товара">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <section class="benefits">
-                    <div class="container">
-                        <h2 class="benefits__title title">Производим и реализуем только качественные материалы, ведь на кону ваш комфорт и наша репутация</h2>
-                        <div class="benefits__content swiper">
-                            <div class="swiper-wrapper">
-                                <div class="col-lg-4 col-md-6 swiper-slide">
-                                    <div class="card">
-                                        <div class="card__icon">
-                                            <img src="img/icons/production.svg" alt="Иконка">
-                                        </div>
-                                        <div class="card__caption">Собственное производство</div>
-                                        <div class="card__description">Мы создаем продукцию, отвечающую вашим требованиям. Контроль на всех этапах гарантирует качество, гибкость и&nbsp;доступные цены для клиентов.</div>
-                                    </div>
-                                </div><div class="col-lg-4 col-md-6 swiper-slide">
-                                    <div class="card">
-                                        <div class="card__icon">
-                                            <img src="img/icons/original.svg" alt="Иконка">
-                                        </div>
-                                        <div class="card__caption">100% оригинальная продукция</div>
-                                        <div class="card__description">Соответствующая стандартам. Сертифицирована, проходит контроль, гарантирует надежность. Ваше доверие — наш приоритет.</div>
-                                    </div>
-                                </div><div class="col-lg-4 col-md-6 swiper-slide">
-                                    <div class="card">
-                                        <div class="card__icon">
-                                            <img src="img/icons/distributor.svg" alt="Иконка">
-                                        </div>
-                                        <div class="card__caption">Эксклюзивный дистрибьютор</div>
-                                        <div class="card__description">Предлагаем уникальную продукцию с&nbsp;гарантией качества. Наши партнеры доверяют нам, а клиенты получают лучшие решения на рынке.</div>
-                                    </div>
-                                </div><div class="col-lg-4 col-md-6 swiper-slide">
-                                    <div class="card">
-                                        <div class="card__icon">
-                                            <img src="img/icons/air-delivery.svg" alt="Иконка">
-                                        </div>
-                                        <div class="card__caption">Доставка в любую точку мира</div>
-                                        <div class="card__description">Наша логистическая система отлажена до&nbsp;мелочей, что позволяет гарантировать своевременность и сохранность грузов. Доставим ваш заказ быстро и надежно.</div>
-                                    </div>
-                                </div><div class="col-lg-4 col-md-6 swiper-slide">
-                                    <div class="card">
-                                        <div class="card__icon">
-                                            <img src="img/icons/bus-delivery.svg" alt="Иконка">
-                                        </div>
-                                        <div class="card__caption">Бесплатная доставка в ТК</div>
-                                        <div class="card__description">Это делает сотрудничество с нами еще выгоднее. Вы экономите на логистике, а ваш заказ оперативно отправляется в любой регион. Удобно, быстро и без лишних затрат!</div>
-                                    </div>
-                                </div><div class="col-lg-4 col-md-6 swiper-slide">
-                                    <div class="card">
-                                        <div class="card__icon">
-                                            <img src="img/icons/sales.svg" alt="Иконка">
-                                        </div>
-                                        <div class="card__caption">Гибкая система скидок</div>
-                                        <div class="card__description">Индивидуальный подход к каждому заказу позволяет вам получать выгодные условия сотрудничества. Чем больше объем — тем выше ваша экономия!</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="benefits__scrollbar swiper-scrollbar"></div>
-                        </div>
-                    </div>
-                </section>
-                <div class="marquee">
-                    <div class="container">
-                        <div class="marquee__slider swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="img/logotypes/Smart-SML.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/Smart-BML.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/Smart-KML.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/walraven.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/HL.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/RSP.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/Autodesk.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/Grundfos.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/uponor.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/girpi.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/rapidrop.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/duker.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/Smart-Press.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/Smart-Nexus.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/Georg-Fisher.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/Alca-Plast.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/Sita.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/Stendorf.png" alt="Логотип">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="objects">
-                    <div class="container">
-                        <a href="" class="objects__btn btn btn-primary btn-rounded">Все объекты</a>
-                        <div class="objects__slider swiper">
-                            <div class="swiper-wrapper">
-                                <div class="objects__slide swiper-slide">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <a href="" class="object__card object__card--large">
-                                                <span class="object__card-image">
-                                                    <img src="img/objects/LCD-Theater-Quarter.jpg" class="cover-image" alt="Фото обьекта">
-                                                </span>
-                                                <span class="object__card-name icon-zoom">ЖК Театральный квартал</span>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <a href="" class="object__card">
-                                                        <span class="object__card-image">
-                                                            <img src="img/objects/LCD-Poklonnaya-7.jpg" class="cover-image" alt="Фото обьекта">
-                                                        </span>
-                                                        <span class="object__card-name icon-zoom">ЖК Поклонная 7</span>
-                                                    </a>
-                                                </div>
-                                                <div class="col-12">
-                                                    <a href="" class="object__card">
-                                                        <span class="object__card-image">
-                                                            <img src="img/objects/LCD-Ostrov.jpg" class="cover-image" alt="Фото обьекта">
-                                                        </span>
-                                                        <span class="object__card-name icon-zoom">ЖК Остров</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="objects__slide swiper-slide">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <a href="" class="object__card object__card--large">
-                                                <span class="object__card-image">
-                                                    <img src="img/objects/LCD-Spanish-Quarters.jpg" class="cover-image" alt="Фото обьекта">
-                                                </span>
-                                                <span class="object__card-name icon-zoom">ЖК Испанские кварталы</span>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <a href="" class="object__card">
-                                                        <span class="object__card-image">
-                                                            <img src="img/objects/LCD-Green-Boulevard.jpg" class="cover-image" alt="Фото обьекта">
-                                                        </span>
-                                                        <span class="object__card-name icon-zoom">ЖК Зеленый бульвар, Владивосток</span>
-                                                    </a>
-                                                </div>
-                                                <div class="col-12">
-                                                    <a href="" class="object__card">
-                                                        <span class="object__card-image">
-                                                            <img src="img/objects/LCD-Vremya.jpg" class="cover-image" alt="Фото обьекта">
-                                                        </span>
-                                                        <span class="object__card-name icon-zoom">ЖК Время</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="objects__slide swiper-slide">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <a href="" class="object__card object__card--large">
-                                                <span class="object__card-image">
-                                                    <img src="img/objects/LCD-Malaya-Pochtovaya-12.jpg" class="cover-image" alt="Фото обьекта">
-                                                </span>
-                                                <span class="object__card-name icon-zoom">ЖК Малая Почтовая 12</span>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <a href="" class="object__card">
-                                                        <span class="object__card-image">
-                                                            <img src="img/objects/LCD-Luchi.jpg" class="cover-image" alt="Фото обьекта">
-                                                        </span>
-                                                        <span class="object__card-name icon-zoom">ЖК Лучи</span>
-                                                    </a>
-                                                </div>
-                                                <div class="col-12">
-                                                    <a href="" class="object__card">
-                                                        <span class="object__card-image">
-                                                            <img src="img/objects/LCD-Wings.jpg" class="cover-image" alt="Фото обьекта">
-                                                        </span>
-                                                        <span class="object__card-name icon-zoom">ЖК Крылья, Казань</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="objects__slider-controls">
-                                <button type="button" class="objects__slider-prev btn btn-white btn-rounded icon-prev">
-                                    <span class="pc-only">Предыдущие объекты</span>
-                                    <span class="mobile-only">Предыдущий</span>
-                                </button>
-                                <button type="button" class="objects__slider-next btn btn-white btn-rounded icon-next">
-                                    <span class="pc-only">Следующие объекты</span>
-                                    <span class="mobile-only">Следующий</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="marquee">
-                    <div class="container">
-                        <div class="marquee__slider swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="img/logotypes/pick.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/kortros.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/a101.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/lsr.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/lider-invest.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/pr-dev.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/ingrad.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/etalon.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/level.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/glavstroy.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/mr-group.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/pioneer.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/krost.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/samolet.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/donstroy.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/renaissance.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/gals.png" alt="Логотип">
-                                </div><div class="swiper-slide">
-                                    <img src="img/logotypes/flat-n-ko.png" alt="Логотип">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <section class="delivery">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <div class="delivery__banner">
-                                    <div class="delivery__label">Доставка</div>
-                                    <h2 class="delivery__title title">Доставка в любой регион: <br> удобно, оперативно, надежно</h2>
-                                    <div class="delivery__text">
-                                        <p>Осуществляем доставку по Москве, РФ, а также в Беларусь и&nbsp;Казахстан. Специалисты подберут оптимальный способ доставки, рассчитают стоимость и проконтролируют процесс.</p>
-                                        <p>Просто укажите адрес — мы сделаем все остальное!</p>
-                                    </div>
-                                    <a href="" class="delivery__btn btn btn-primary btn-rounded">Подробнее о доставке</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <picture class="delivery__image">
-                                    <source media="(min-width: 991.98px)" srcset="img/delivery-img.jpg">
-                                    <img src="img/delivery-img-mobile.png" class="cover-image" alt="Доставка материалов">
-                                </picture>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <div class="reviews">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-7">
-                                <div class="reviews__content">
-                                    <div class="reviews__items swiper">
-                                        <ul class="swiper-wrapper">
-                                            <li class="reviews__item swiper-slide">
-                                                
-                                                    <div class="reviews__item-logo">
-                                                        <img src="img/logotypes/airplane-logo.svg" alt="Логотип компании">
-                                                    </div>
-                                                    <div class="reviews__item-caption">Самолет Девелопмент</div>
-                                                    <blockquote class="reviews__item-text">
-                                                        
-                                                         <p>ООО «Самолёт Девелопмент» выражает благодарность коллективу компании ООО «Смартекс Групп» за плодотворное сотрудничество в сфере поставок чугунной трубы SML на объект строительства КА «Спутник».</p> <p>Чёткое выполнение договорных обязательств по поставке качественной продукции позволяет нашей компании обеспечить бесперебойную работу строительного объекта. Надеемся на продолжение успешного сотрудничества, а так же на дальнейшее увеличение достигнутых показателей совместной работы.</p>
-                                                            
-                                                    </blockquote>
-                                                    
-                                                
-                                            </li><li class="reviews__item swiper-slide">
-                                                
-                                                    <div class="reviews__item-logo">
-                                                        <img src="img/logotypes/ant-yapi.svg" alt="Логотип компании">
-                                                    </div>
-                                                    <div class="reviews__item-caption">Ant Yapi</div>
-                                                    <blockquote class="reviews__item-text">
-                                                        
-                                                         <p>Выражаем благодарность коллективу компании Смартекс за своевременные поставки высококачественных строительных материалов. Хотим отметить высокий профессиональный уровень</p>
-                                                            
-                                                    </blockquote>
-                                                    
-                                                
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="/reviews.html" class="reviews__btn btn btn-primary btn-rounded">Смотреть все отзывы</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="reviews__widget">
-                                    <img src="img/widget.png" alt="widget">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="teasers">
-                    <div class="container">
-                        <div class="teaser">
-                            <a href="" class="teaser__title title">Чугунные трубы</a>
-                            <div class="teaser__body">
-                                <p class="teaser__description">Чугунные трубы — надежность на 50+ лет! Прочные, пожаробезопасные, устойчивые к коррозии. Современные технологии устранили старые <br> недостатки, а удобный монтаж делает их идеальным выбором.</p>
-                                <div class="teaser__actions">
-                                    <div class="teaser__categories">
-                                        <a href="" class="teaser__category">от 50 до 300 диаметра</a>
-                                    </div>
-                                    <a href="" aria-label="Перейти в категорию" class="teaser__btn icon-arrow"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="teaser">
-                            <a href="" class="teaser__title title">Канализационные трубы</a>
-                            <div class="teaser__body">
-                                <p class="teaser__description">Каталог Смартекс предлагает надежные системы канализации: чугунные трубы Smart SML, бесшумные Ostendorf Skolan dB, уличные Ostendorf KG и другие. Решения для любых задач — от коттеджей до промышленных объектов.</p>
-                                <div class="teaser__actions">
-                                    <div class="teaser__categories">
-                                        <a href="" class="teaser__category">Smart SML</a>
-                                        <a href="" class="teaser__category">Ostendorf</a>
-                                    </div>
-                                    <a href="" aria-label="Перейти в категорию" class="teaser__btn icon-arrow"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <section class="blog">
-                    <div class="container">
-                        <div class="blog__header">
-                            <h2 class="blog__title title">Последние новости</h2>
-                            <a href="/blog.html" class="blog__btn btn btn-primary btn-rounded">Все новости</a>
-                        </div>
-                        <div class="blog__slider">
-                            <div class="swiper">
-                                <ul class="swiper-wrapper">
-                                    <li class="blog__item  swiper-slide">
-                                        <a href="article.html" class="blog__card">
-                                            <span class="blog__card-image">
-                                                <img src="img/blog/01.jpg" class="cover-image" alt="Фото статьи">
-                                            </span>
-                                            <span class="blog__card-body">
-                                                <span class="blog__card-name">Типы запорной арматуры: как выбрать подходящее по конструкции и функциям изделие</span>
-                                                <span class="blog__card-date">
-                                                    01.01.2024
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li><li class="blog__item  swiper-slide">
-                                        <a href="article.html" class="blog__card">
-                                            <span class="blog__card-image">
-                                                <img src="img/blog/02.jpg" class="cover-image" alt="Фото статьи">
-                                            </span>
-                                            <span class="blog__card-body">
-                                                <span class="blog__card-name">Почему гудят водопроводные трубы: причины и способы решения проблемы</span>
-                                                <span class="blog__card-date">
-                                                    01.01.2024
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li><li class="blog__item  swiper-slide">
-                                        <a href="article.html" class="blog__card">
-                                            <span class="blog__card-image">
-                                                <img src="img/blog/01.jpg" class="cover-image" alt="Фото статьи">
-                                            </span>
-                                            <span class="blog__card-body">
-                                                <span class="blog__card-name">Типы запорной арматуры: как выбрать подходящее по конструкции и функциям изделие</span>
-                                                <span class="blog__card-date">
-                                                    01.01.2024
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li><li class="blog__item  swiper-slide">
-                                        <a href="article.html" class="blog__card">
-                                            <span class="blog__card-image">
-                                                <img src="img/blog/02.jpg" class="cover-image" alt="Фото статьи">
-                                            </span>
-                                            <span class="blog__card-body">
-                                                <span class="blog__card-name">Почему гудят водопроводные трубы: причины и способы решения проблемы</span>
-                                                <span class="blog__card-date">
-                                                    01.01.2024
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li><li class="blog__item  swiper-slide">
-                                        <a href="article.html" class="blog__card">
-                                            <span class="blog__card-image">
-                                                <img src="img/blog/01.jpg" class="cover-image" alt="Фото статьи">
-                                            </span>
-                                            <span class="blog__card-body">
-                                                <span class="blog__card-name">Типы запорной арматуры: как выбрать подходящее по конструкции и функциям изделие</span>
-                                                <span class="blog__card-date">
-                                                    01.01.2024
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li><li class="blog__item  swiper-slide">
-                                        <a href="article.html" class="blog__card">
-                                            <span class="blog__card-image">
-                                                <img src="img/blog/02.jpg" class="cover-image" alt="Фото статьи">
-                                            </span>
-                                            <span class="blog__card-body">
-                                                <span class="blog__card-name">Почему гудят водопроводные трубы: причины и способы решения проблемы</span>
-                                                <span class="blog__card-date">
-                                                    01.01.2024
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li><li class="blog__item  swiper-slide">
-                                        <a href="article.html" class="blog__card">
-                                            <span class="blog__card-image">
-                                                <img src="img/blog/01.jpg" class="cover-image" alt="Фото статьи">
-                                            </span>
-                                            <span class="blog__card-body">
-                                                <span class="blog__card-name">Типы запорной арматуры: как выбрать подходящее по конструкции и функциям изделие</span>
-                                                <span class="blog__card-date">
-                                                    01.01.2024
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li><li class="blog__item  swiper-slide">
-                                        <a href="article.html" class="blog__card">
-                                            <span class="blog__card-image">
-                                                <img src="img/blog/02.jpg" class="cover-image" alt="Фото статьи">
-                                            </span>
-                                            <span class="blog__card-body">
-                                                <span class="blog__card-name">Почему гудят водопроводные трубы: причины и способы решения проблемы</span>
-                                                <span class="blog__card-date">
-                                                    01.01.2024
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="blog__prev swiper-button-prev"></div>
-                            <div class="blog__next swiper-button-next"></div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer__main">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a href="/" class="footer__logo">
-                                    <img src="img/logo-white.png" alt="Логотип">
-                                </a>
-                                <div class="footer__caption icon-chevron">Для клиентов</div>
-                                <div class="footer__accordion">
-                                    <div class="footer__contacts">
-                                        <div class="footer__contacts-links">
-                                            <a href="tel:88007700033" class="footer__contacts-link icon-info">8-800-770-00-33</a>
-                                            <a href="tel:+74955140990" class="footer__contacts-link icon-info">+7-495-514-09-90</a>
-                                        </div>
-                                        <a href="#callback" data-fancybox class="footer__link">Заказать звонок</a>
-                                        <address class="footer__address">Москва, д. Десна, ул. Строительная, д. 11с1</address>
-                                        <a href="" class="footer__link">Посмотреть на карте</a>
-                                        <a href="mailto:info@smartex-group.com" class="footer__email">info@smartex-group.com</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="footer__caption icon-chevron">Меню</div>
-                                <div class="footer__accordion">
-                                    <nav class="footer__menu">
-                                        <ul class="footer__menu-list">
-                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">О компании</a></li>
-                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Каталог</a></li>
-                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Доставка</a></li>
-                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Объекты</a></li>
-                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Бренды</a></li>
-                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Отзывы</a></li>
-                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Для проектировщиков</a></li>
-                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Контакты</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="footer__caption icon-chevron">Каталог</div>
-                                <div class="footer__accordion">
-                                    <nav class="footer__menu">
-                                        <ul class="footer__menu-list">
-                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Чугунные безраструбные трубы SML</a></li>
-                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Противопожарное оборудование</a></li>
-                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Трапы, воронки, лотки</a></li>
-                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Крепежные системы</a></li>
-                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Полимерные трубы</a></li>
-                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Трубопроводная арматура</a></li>
-                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Соединительные муфты для труб</a></li>
-                                            <li class="footer__menu-item"><a href="" class="footer__menu-link">Грувлочные соединения труб</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer__text">
-                        <img src="img/smartext.svg" alt="smartex">
-                    </div>
-                    <div class="footer__public">Предложение не является публичной офертой. Цены на сайте и при оформлении заказа могут отличаться. Информация на сайте о товаре носит рекламный характер и расценивается как приглашение делать оферты на основании п.1 ст. 437 Гражданского кодекса РФ.</div>
-                    <div class="footer__bottom">
-                        <a href="" class="footer__privacy">Политика в отношении обработки персональных данных</a>
-                        <div class="footer__copyright">2012— 2024 © Все права защищены</div>
-                        <a href="" class="footer__prod">
-                            <img src="img/prod-logo.png" alt="Moscow Dynamics Logotype">
-                            Разработка сайта — Moscow Dynamics
-                        </a>
-                    </div>
-            </footer>
-            <div id="callback" class="popup">
-                <div class="popup__title title-sm">Заказать звонок</div>
-                <p class="popup__subtitle subtitle">Заполните форму, чтобы мы могли связаться с вами.</p>
-                <form action="#" class="popup__form">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form__field">
-                                <input type="text" name="name" class="form__control" placeholder="">
-                                <div class="form__field-placeholder">Имя</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form__field">
-                                <input type="tel" name="phone" class="form__control" placeholder="">
-                                <div class="form__field-placeholder">Телефон</div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form__field">
-                                <textarea name="message" class="form__control" placeholder=""></textarea>
-                                <div class="form__field-placeholder">Ваше сообщение</div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-primary btn-fullwidth">Отправить</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <div id="success" class="popup">
-
-            </div>
-            <!-- plugins -->
-            <script src="js/libs/fancybox.umd.js"></script>
-            <script src="js/libs/swiper-bundle.min.js"></script>
-            <!-- plugins -->
-
-            <script src="js/app.min.js"></script>
-        </div>
-    </body>
 </html>

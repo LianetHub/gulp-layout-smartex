@@ -1,6 +1,5 @@
 "use strict";
 
-
 // init Fancybox
 
 if (typeof Fancybox !== "undefined" && Fancybox !== null) {
@@ -128,6 +127,18 @@ document.addEventListener("DOMContentLoaded", function () {
             target.classList.toggle('active')
         }
 
+        if (target.matches('.product__artilce-more')) {
+            target.classList.toggle('active');
+            target.parentNode.classList.toggle('full');
+
+            if (target.classList.contains('active')) {
+                target.textContent = "Скрыть";
+            } else {
+                target.textContent = "Показать";
+
+            }
+        }
+
 
     })
 
@@ -232,6 +243,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
     if (document.querySelector('.product__categories-more-slider')) {
 
         new Swiper('.product__categories-more-slider', {
@@ -391,6 +403,31 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         })
+    }
+
+    if (document.querySelector('.product__main-slider')) {
+        const productThumbs = new Swiper('.product__main-thumbs.swiper', {
+            spaceBetween: 16,
+            slidesPerView: 2,
+            direction: "horizontal",
+            watchSlidesProgress: true,
+            navigation: {
+                nextEl: '.product__main-next',
+                prevEl: '.product__main-prev',
+            },
+            breakpoints: {
+                575.98: {
+                    direction: 'vertical',
+                }
+            }
+        });
+
+        const productSlider = new Swiper('.product__main-slider-block.swiper', {
+            spaceBetween: 10,
+            thumbs: {
+                swiper: productThumbs,
+            },
+        });
     }
 
 
