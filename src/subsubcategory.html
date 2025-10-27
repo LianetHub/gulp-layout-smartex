@@ -91,9 +91,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product__block">
-                            <div class="product__info white-block">
+                        <div class="product__block product__block--info white-block">
+                            <div class="product__info">
                                 <div class="product__visual">
+                                    <div class="product__visual-btns">
+                                        <button class="product__visual-btn active">Картинка</button>
+                                        <button class="product__visual-btn">Чертеж</button>
+                                    </div>
                                     <a href="@img/catalog/CV-clamp.jpg" data-fancybox class="product__thumb icon-zoom-bold">
                                         <img src="@img/catalog/CV-clamp.jpg" alt="Фото товара">
                                     </a>
@@ -101,92 +105,94 @@
                                 <div class="product__content">
                                     <a href="" class="product__name title-sm color-accent">CV (W5) хомут</a>
                                     <div class="product__content-desktop">
-                                        <table class="product__table table-block">
-                                            <thead>
-                                                <tr>
-                                                    <th>Модель</th>
-                                                    <th>DN, mm</th>
-                                                    <th>SW1, mm</th>
-                                                    <th>b, mm</th>
-                                                    <th>
-                                                        <span class="icon-question-mark">Цена</span>
-                                                    </th>
-                                                    <th>Заказать</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><a href="">CV хомут DN 50</a></td>
-                                                    <td>50</td>
-                                                    <td>10</td>
-                                                    <td>48</td>
-                                                    <td>По запросу</td>
-                                                    <td>
-                                                        <div class="table-block__actions">
-                                                            <input type="number" name="quantity" class="form__control" value="1">
-                                                            <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
-                                                            <button type="button" class="favorite-btn"></button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="">CV хомут DN 70</a></td>
-                                                    <td>70</td>
-                                                    <td>10</td>
-                                                    <td>48</td>
-                                                    <td>По запросу</td>
-                                                    <td>
-                                                        <div class="table-block__actions">
-                                                            <input type="number" name="quantity" class="form__control" value="1">
-                                                            <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
-                                                            <button type="button" class="favorite-btn active"></button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="">CV хомут DN 80</a></td>
-                                                    <td>80</td>
-                                                    <td>10</td>
-                                                    <td>48</td>
-                                                    <td>По запросу</td>
-                                                    <td>
-                                                        <div class="table-block__actions">
-                                                            <input type="number" name="quantity" class="form__control" value="1">
-                                                            <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
-                                                            <button type="button" class="favorite-btn"></button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="">CV хомут DN 100</a></td>
-                                                    <td>100</td>
-                                                    <td>10</td>
-                                                    <td>54</td>
-                                                    <td>По запросу</td>
-                                                    <td>
-                                                        <div class="table-block__actions">
-                                                            <input type="number" name="quantity" class="form__control" value="1">
-                                                            <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
-                                                            <button type="button" class="favorite-btn"></button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="">CV хомут DN 125</a></td>
-                                                    <td>100</td>
-                                                    <td>10</td>
-                                                    <td>65</td>
-                                                    <td>По запросу</td>
-                                                    <td>
-                                                        <div class="table-block__actions">
-                                                            <input type="number" name="quantity" class="form__control" value="1">
-                                                            <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
-                                                            <button type="button" class="favorite-btn"></button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div class="product__table table-block">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Модель</th>
+                                                        <th>DN, mm</th>
+                                                        <th>SW1, mm</th>
+                                                        <th>b, mm</th>
+                                                        <th>
+                                                            <span class="icon-question-mark">Цена</span>
+                                                        </th>
+                                                        <th>Заказать</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="">CV хомут DN 50</a></td>
+                                                        <td>50</td>
+                                                        <td>10</td>
+                                                        <td>48</td>
+                                                        <td>По запросу</td>
+                                                        <td>
+                                                            <div class="table-block__actions">
+                                                                <input type="number" name="quantity" class="form__control" value="1">
+                                                                <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                                <button type="button" class="favorite-btn"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="">CV хомут DN 70</a></td>
+                                                        <td>70</td>
+                                                        <td>10</td>
+                                                        <td>48</td>
+                                                        <td>По запросу</td>
+                                                        <td>
+                                                            <div class="table-block__actions">
+                                                                <input type="number" name="quantity" class="form__control" value="1">
+                                                                <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                                <button type="button" class="favorite-btn active"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="">CV хомут DN 80</a></td>
+                                                        <td>80</td>
+                                                        <td>10</td>
+                                                        <td>48</td>
+                                                        <td>По запросу</td>
+                                                        <td>
+                                                            <div class="table-block__actions">
+                                                                <input type="number" name="quantity" class="form__control" value="1">
+                                                                <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                                <button type="button" class="favorite-btn"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="">CV хомут DN 100</a></td>
+                                                        <td>100</td>
+                                                        <td>10</td>
+                                                        <td>54</td>
+                                                        <td>По запросу</td>
+                                                        <td>
+                                                            <div class="table-block__actions">
+                                                                <input type="number" name="quantity" class="form__control" value="1">
+                                                                <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                                <button type="button" class="favorite-btn"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="">CV хомут DN 125</a></td>
+                                                        <td>100</td>
+                                                        <td>10</td>
+                                                        <td>65</td>
+                                                        <td>По запросу</td>
+                                                        <td>
+                                                            <div class="table-block__actions">
+                                                                <input type="number" name="quantity" class="form__control" value="1">
+                                                                <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                                <button type="button" class="favorite-btn"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                         <a href="" class="product__more btn btn-rounded btn-primary icon-chevron">Показать ещё</a>
                                     </div>
                                     <div class="product__content-mobile">
@@ -369,8 +375,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product__info white-block">
+                            <div class="product__info">
                                 <div class="product__visual">
+                                    <div class="product__visual-btns">
+                                        <button class="product__visual-btn active">Картинка</button>
+                                        <button class="product__visual-btn">Чертеж</button>
+                                    </div>
                                     <a href="@img/catalog/Rapid-S-(W2)-connecting-clamp.jpg" data-fancybox class="product__thumb icon-zoom-bold">
                                         <img src="@img/catalog/Rapid-S-(W2)-connecting-clamp.jpg" alt="Фото товара">
                                     </a>
@@ -384,92 +394,94 @@
                                         Тестирован на пожароустойчивость.
                                     </p>
                                     <div class="product__content-desktop">
-                                        <table class="product__table table-block">
-                                            <thead>
-                                                <tr>
-                                                    <th>Модель</th>
-                                                    <th>DN, mm</th>
-                                                    <th>D, mm</th>
-                                                    <th>b, mm</th>
-                                                    <th>
-                                                        <span class="icon-question-mark">Цена</span>
-                                                    </th>
-                                                    <th>Заказать</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><a href="">Rapid S (W2) хомут соединительный DN 40</a></td>
-                                                    <td>40</td>
-                                                    <td>60</td>
-                                                    <td>40</td>
-                                                    <td>По запросу</td>
-                                                    <td>
-                                                        <div class="table-block__actions">
-                                                            <input type="number" name="quantity" class="form__control" value="1">
-                                                            <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
-                                                            <button type="button" class="favorite-btn"></button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="">Rapid S (W2) хомут соединительный DN 50</a></td>
-                                                    <td>50</td>
-                                                    <td>70</td>
-                                                    <td>40</td>
-                                                    <td>По запросу</td>
-                                                    <td>
-                                                        <div class="table-block__actions">
-                                                            <input type="number" name="quantity" class="form__control" value="1">
-                                                            <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
-                                                            <button type="button" class="favorite-btn"></button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="">Rapid S (W2) хомут соединительный DN 70</a></td>
-                                                    <td>70</td>
-                                                    <td>90</td>
-                                                    <td>40</td>
-                                                    <td>По запросу</td>
-                                                    <td>
-                                                        <div class="table-block__actions">
-                                                            <input type="number" name="quantity" class="form__control" value="1">
-                                                            <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
-                                                            <button type="button" class="favorite-btn"></button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="">Rapid S (W2) хомут соединительный DN 80</a></td>
-                                                    <td>80</td>
-                                                    <td>95</td>
-                                                    <td>40</td>
-                                                    <td>По запросу</td>
-                                                    <td>
-                                                        <div class="table-block__actions">
-                                                            <input type="number" name="quantity" class="form__control" value="1">
-                                                            <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
-                                                            <button type="button" class="favorite-btn"></button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="">Rapid S (W2) хомут соединительный DN 100</a></td>
-                                                    <td>100</td>
-                                                    <td>125</td>
-                                                    <td>46</td>
-                                                    <td>По запросу</td>
-                                                    <td>
-                                                        <div class="table-block__actions">
-                                                            <input type="number" name="quantity" class="form__control" value="1">
-                                                            <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
-                                                            <button type="button" class="favorite-btn"></button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div class="product__table table-block">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Модель</th>
+                                                        <th>DN, mm</th>
+                                                        <th>D, mm</th>
+                                                        <th>b, mm</th>
+                                                        <th>
+                                                            <span class="icon-question-mark">Цена</span>
+                                                        </th>
+                                                        <th>Заказать</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="">Rapid S (W2) хомут соединительный DN 40</a></td>
+                                                        <td>40</td>
+                                                        <td>60</td>
+                                                        <td>40</td>
+                                                        <td>По запросу</td>
+                                                        <td>
+                                                            <div class="table-block__actions">
+                                                                <input type="number" name="quantity" class="form__control" value="1">
+                                                                <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                                <button type="button" class="favorite-btn"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="">Rapid S (W2) хомут соединительный DN 50</a></td>
+                                                        <td>50</td>
+                                                        <td>70</td>
+                                                        <td>40</td>
+                                                        <td>По запросу</td>
+                                                        <td>
+                                                            <div class="table-block__actions">
+                                                                <input type="number" name="quantity" class="form__control" value="1">
+                                                                <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                                <button type="button" class="favorite-btn"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="">Rapid S (W2) хомут соединительный DN 70</a></td>
+                                                        <td>70</td>
+                                                        <td>90</td>
+                                                        <td>40</td>
+                                                        <td>По запросу</td>
+                                                        <td>
+                                                            <div class="table-block__actions">
+                                                                <input type="number" name="quantity" class="form__control" value="1">
+                                                                <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                                <button type="button" class="favorite-btn"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="">Rapid S (W2) хомут соединительный DN 80</a></td>
+                                                        <td>80</td>
+                                                        <td>95</td>
+                                                        <td>40</td>
+                                                        <td>По запросу</td>
+                                                        <td>
+                                                            <div class="table-block__actions">
+                                                                <input type="number" name="quantity" class="form__control" value="1">
+                                                                <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                                <button type="button" class="favorite-btn"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="">Rapid S (W2) хомут соединительный DN 100</a></td>
+                                                        <td>100</td>
+                                                        <td>125</td>
+                                                        <td>46</td>
+                                                        <td>По запросу</td>
+                                                        <td>
+                                                            <div class="table-block__actions">
+                                                                <input type="number" name="quantity" class="form__control" value="1">
+                                                                <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                                <button type="button" class="favorite-btn"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                         <a href="" class="product__more btn btn-rounded btn-primary icon-chevron">Показать ещё</a>
                                     </div>
                                     <div class="product__content-mobile">
@@ -652,8 +664,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product__info white-block">
+                            <div class="product__info">
                                 <div class="product__visual">
+                                    <div class="product__visual-btns">
+                                        <button class="product__visual-btn active">Картинка</button>
+                                        <button class="product__visual-btn">Чертеж</button>
+                                    </div>
                                     <a href="@img/catalog/Fire-resistant-connector-BSV90.jpg" data-fancybox class="product__thumb icon-zoom-bold">
                                         <img src="@img/catalog/Fire-resistant-connector-BSV90.jpg" alt="Фото товара">
                                     </a>
@@ -661,59 +677,61 @@
                                 <div class="product__content">
                                     <a href="" class="product__name title-sm color-accent">Соединитель противопожарный BSV90</a>
                                     <div class="product__content-desktop">
-                                        <table class="product__table table-block">
-                                            <thead>
-                                                <tr>
-                                                    <th>Модель</th>
-                                                    <th>D mm</th>
-                                                    <th>DN mm</th>
-                                                    <th>A mm</th>
-                                                    <th>B mm</th>
-                                                    <th>C mm</th>
-                                                    <th>DN (отверстия) mm</th>
-                                                    <th>
-                                                        <span class="icon-question-mark">Цена</span>
-                                                    </th>
-                                                    <th>Заказать</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><a href="">Соединитель противопожарный BSV90 DN100</a></td>
-                                                    <td>100</td>
-                                                    <td>133</td>
-                                                    <td>145</td>
-                                                    <td>135</td>
-                                                    <td>140</td>
-                                                    <td>180</td>
-                                                    <td>По запросу</td>
-                                                    <td>
-                                                        <div class="table-block__actions">
-                                                            <input type="number" name="quantity" class="form__control" value="1">
-                                                            <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
-                                                            <button type="button" class="favorite-btn"></button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="">Соединитель противопожарный BSV90 DN150</a></td>
-                                                    <td>150</td>
-                                                    <td>188</td>
-                                                    <td>198</td>
-                                                    <td>150</td>
-                                                    <td>170</td>
-                                                    <td>240</td>
-                                                    <td>По запросу</td>
-                                                    <td>
-                                                        <div class="table-block__actions">
-                                                            <input type="number" name="quantity" class="form__control" value="1">
-                                                            <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
-                                                            <button type="button" class="favorite-btn"></button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div class="product__table table-block">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Модель</th>
+                                                        <th>D mm</th>
+                                                        <th>DN mm</th>
+                                                        <th>A mm</th>
+                                                        <th>B mm</th>
+                                                        <th>C mm</th>
+                                                        <th>DN (отверстия) mm</th>
+                                                        <th>
+                                                            <span class="icon-question-mark">Цена</span>
+                                                        </th>
+                                                        <th>Заказать</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="">Соединитель противопожарный BSV90 DN100</a></td>
+                                                        <td>100</td>
+                                                        <td>133</td>
+                                                        <td>145</td>
+                                                        <td>135</td>
+                                                        <td>140</td>
+                                                        <td>180</td>
+                                                        <td>По запросу</td>
+                                                        <td>
+                                                            <div class="table-block__actions">
+                                                                <input type="number" name="quantity" class="form__control" value="1">
+                                                                <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                                <button type="button" class="favorite-btn"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="">Соединитель противопожарный BSV90 DN150</a></td>
+                                                        <td>150</td>
+                                                        <td>188</td>
+                                                        <td>198</td>
+                                                        <td>150</td>
+                                                        <td>170</td>
+                                                        <td>240</td>
+                                                        <td>По запросу</td>
+                                                        <td>
+                                                            <div class="table-block__actions">
+                                                                <input type="number" name="quantity" class="form__control" value="1">
+                                                                <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                                <button type="button" class="favorite-btn"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                     <div class="product__content-mobile">
                                         <div class="product__details">
@@ -813,8 +831,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product__info white-block">
+                            <div class="product__info">
                                 <div class="product__visual">
+                                    <div class="product__visual-btns">
+                                        <button class="product__visual-btn active">Картинка</button>
+                                        <button class="product__visual-btn">Чертеж</button>
+                                    </div>
                                     <a href="@img/catalog/Rapid-S-(W2)-connecting-clamp.jpg" data-fancybox class="product__thumb icon-zoom-bold">
                                         <img src="@img/catalog/Rapid-S-(W2)-connecting-clamp.jpg" alt="Фото товара">
                                     </a>
@@ -826,92 +848,94 @@
                                         (сталь W5) и уплотнительной манжеты из EPDM резины. Обычно используется вне зданий
                                         и для подземной прокладки. Тестирован на пожароустойчивость.</p>
                                     <div class="product__content-desktop">
-                                        <table class="product__table table-block">
-                                            <thead>
-                                                <tr>
-                                                    <th>Модель</th>
-                                                    <th>DN, mm</th>
-                                                    <th>D, mm</th>
-                                                    <th>b, mm</th>
-                                                    <th>
-                                                        <span class="icon-question-mark">Цена</span>
-                                                    </th>
-                                                    <th>Заказать</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><a href="">Хомут Rapid Inox (W5) DN 50</a></td>
-                                                    <td>50</td>
-                                                    <td>70</td>
-                                                    <td>40</td>
-                                                    <td>По запросу</td>
-                                                    <td>
-                                                        <div class="table-block__actions">
-                                                            <input type="number" name="quantity" class="form__control" value="1">
-                                                            <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
-                                                            <button type="button" class="favorite-btn"></button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="">Хомут Rapid Inox (W5) DN 70</a></td>
-                                                    <td>70</td>
-                                                    <td>90</td>
-                                                    <td>40</td>
-                                                    <td>По запросу</td>
-                                                    <td>
-                                                        <div class="table-block__actions">
-                                                            <input type="number" name="quantity" class="form__control" value="1">
-                                                            <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
-                                                            <button type="button" class="favorite-btn"></button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="">Хомут Rapid Inox (W5) DN 80</a></td>
-                                                    <td>80</td>
-                                                    <td>95</td>
-                                                    <td>40</td>
-                                                    <td>По запросу</td>
-                                                    <td>
-                                                        <div class="table-block__actions">
-                                                            <input type="number" name="quantity" class="form__control" value="1">
-                                                            <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
-                                                            <button type="button" class="favorite-btn"></button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="">Хомут Rapid Inox (W5) DN 100</a></td>
-                                                    <td>100</td>
-                                                    <td>125</td>
-                                                    <td>46</td>
-                                                    <td>По запросу</td>
-                                                    <td>
-                                                        <div class="table-block__actions">
-                                                            <input type="number" name="quantity" class="form__control" value="1">
-                                                            <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
-                                                            <button type="button" class="favorite-btn"></button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="">Хомут Rapid Inox (W5) DN 125</a></td>
-                                                    <td>125</td>
-                                                    <td>147</td>
-                                                    <td>55</td>
-                                                    <td>По запросу</td>
-                                                    <td>
-                                                        <div class="table-block__actions">
-                                                            <input type="number" name="quantity" class="form__control" value="1">
-                                                            <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
-                                                            <button type="button" class="favorite-btn"></button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div class="product__table table-block">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Модель</th>
+                                                        <th>DN, mm</th>
+                                                        <th>D, mm</th>
+                                                        <th>b, mm</th>
+                                                        <th>
+                                                            <span class="icon-question-mark">Цена</span>
+                                                        </th>
+                                                        <th>Заказать</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="">Хомут Rapid Inox (W5) DN 50</a></td>
+                                                        <td>50</td>
+                                                        <td>70</td>
+                                                        <td>40</td>
+                                                        <td>По запросу</td>
+                                                        <td>
+                                                            <div class="table-block__actions">
+                                                                <input type="number" name="quantity" class="form__control" value="1">
+                                                                <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                                <button type="button" class="favorite-btn"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="">Хомут Rapid Inox (W5) DN 70</a></td>
+                                                        <td>70</td>
+                                                        <td>90</td>
+                                                        <td>40</td>
+                                                        <td>По запросу</td>
+                                                        <td>
+                                                            <div class="table-block__actions">
+                                                                <input type="number" name="quantity" class="form__control" value="1">
+                                                                <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                                <button type="button" class="favorite-btn"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="">Хомут Rapid Inox (W5) DN 80</a></td>
+                                                        <td>80</td>
+                                                        <td>95</td>
+                                                        <td>40</td>
+                                                        <td>По запросу</td>
+                                                        <td>
+                                                            <div class="table-block__actions">
+                                                                <input type="number" name="quantity" class="form__control" value="1">
+                                                                <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                                <button type="button" class="favorite-btn"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="">Хомут Rapid Inox (W5) DN 100</a></td>
+                                                        <td>100</td>
+                                                        <td>125</td>
+                                                        <td>46</td>
+                                                        <td>По запросу</td>
+                                                        <td>
+                                                            <div class="table-block__actions">
+                                                                <input type="number" name="quantity" class="form__control" value="1">
+                                                                <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                                <button type="button" class="favorite-btn"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="">Хомут Rapid Inox (W5) DN 125</a></td>
+                                                        <td>125</td>
+                                                        <td>147</td>
+                                                        <td>55</td>
+                                                        <td>По запросу</td>
+                                                        <td>
+                                                            <div class="table-block__actions">
+                                                                <input type="number" name="quantity" class="form__control" value="1">
+                                                                <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                                <button type="button" class="favorite-btn"></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                         <a href="" class="product__more btn btn-rounded btn-primary icon-chevron">Показать ещё</a>
                                     </div>
                                     <div class="product__content-mobile">

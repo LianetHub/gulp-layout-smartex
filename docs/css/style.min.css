@@ -22,15 +22,15 @@
 @font-face {
   font-family: "Roboto";
   font-display: swap;
-  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
-  font-weight: 500;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
   font-display: swap;
-  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -50,15 +50,15 @@
 @font-face {
   font-family: "RobotoSlab";
   font-display: swap;
-  src: url("../fonts/RobotoSlab-Regular.woff2") format("woff2"), url("../fonts/RobotoSlab-Regular.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/RobotoSlab-SemiBold.woff2") format("woff2"), url("../fonts/RobotoSlab-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "RobotoSlab";
   font-display: swap;
-  src: url("../fonts/RobotoSlab-SemiBold.woff2") format("woff2"), url("../fonts/RobotoSlab-SemiBold.woff") format("woff");
-  font-weight: 600;
+  src: url("../fonts/RobotoSlab-Regular.woff2") format("woff2"), url("../fonts/RobotoSlab-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 .catalog__button::before, .breadcrumbs__item:not(:last-child)::before, .favorite-btn.active::before, .favorite-btn::before, .swiper-button-next, .swiper-button-prev, [class^=icon-]:before,
@@ -4742,6 +4742,11 @@ body {
   overflow: hidden;
   margin-top: 0;
 }
+@media (max-width: 575.98px) {
+  .product__block--info {
+    margin-inline: -1rem;
+  }
+}
 .product__more-btn {
   margin-top: 1.5rem;
   margin-left: auto;
@@ -4996,11 +5001,14 @@ body {
   display: flex;
   gap: 1.5rem;
   flex-direction: column;
-  margin: 0 -1rem;
+  border-radius: 0;
+}
+.product__info:not(:last-child) {
+  margin-bottom: 3.25rem;
 }
 @media (min-width: 575.98px) {
-  .product__info {
-    margin: 0;
+  .product__info:not(:last-child) {
+    margin-bottom: 4.8125rem;
   }
 }
 @media (min-width: 991.98px) {
@@ -5015,8 +5023,32 @@ body {
 @media (min-width: 767.98px) {
   .product__visual {
     width: 13.125rem;
-    height: 12.625rem;
   }
+}
+.product__visual-btns {
+  display: flex;
+}
+.product__visual-btn {
+  background: #f6f6f6;
+  color: #808080;
+  font-size: 0.75rem;
+  padding: 0.38rem 0.75rem;
+  width: 100%;
+}
+@media (min-width: 575.98px) {
+  .product__visual-btn {
+    width: auto;
+  }
+}
+.product__visual-btn:first-child {
+  border-radius: 0.375rem 0 0 0;
+}
+.product__visual-btn:last-child {
+  border-radius: 0 0.375rem 0 0;
+}
+.product__visual-btn.active {
+  background: #d21e44;
+  color: #fff;
 }
 .product__thumb {
   border-radius: 0 0 0.625rem 0.625rem;
@@ -5026,6 +5058,10 @@ body {
   align-items: center;
   padding: 2rem;
   position: relative;
+  aspect-ratio: 1.0396039604;
+}
+.product__thumb img {
+  max-height: 100%;
 }
 .product__thumb::before {
   position: absolute;
@@ -5033,8 +5069,12 @@ body {
   right: 0.6875rem;
   color: #d21e44;
 }
-.product__content {
-  flex: 1 1 auto;
+@media (min-width: 767.98px) {
+  .product__content {
+    flex: 1 1 auto;
+    max-width: 100%;
+    overflow: hidden;
+  }
 }
 .product__desc {
   margin-top: 1rem;
@@ -5132,6 +5172,11 @@ body {
 }
 .table-block {
   width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.table-block table {
+  width: 100%;
 }
 .table-block thead tr th {
   background: #f6f6f6;
@@ -5169,6 +5214,8 @@ body {
 .table-block tbody tr td:first-child {
   text-align: left;
   padding-left: 0.75rem;
+  max-width: 11rem;
+  color: #242020;
 }
 .table-block tbody tr td a {
   transition: color 0.3s ease;

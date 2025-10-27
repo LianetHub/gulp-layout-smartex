@@ -20,6 +20,11 @@
 				margin-top: 0;
 			}
 		}
+		&--info {
+			@media (max-width: $md4) {
+				margin-inline: -1rem;
+			}
+		}
 	}
 	// .product__more-btn
 	&__more-btn {
@@ -287,9 +292,16 @@
 		display: flex;
 		gap: 1.5rem;
 		flex-direction: column;
-		margin: 0 -1rem;
+
+		border-radius: 0;
+		&:not(:last-child) {
+			margin-bottom: rem(52);
+		}
+
 		@media (min-width: $md4) {
-			margin: 0;
+			&:not(:last-child) {
+				margin-bottom: rem(77);
+			}
 		}
 		@media (min-width: $md2) {
 			align-items: flex-start;
@@ -301,7 +313,32 @@
 		flex-shrink: 0;
 		@media (min-width: $md3) {
 			width: rem(210);
-			height: rem(202);
+		}
+	}
+	// .product__visual-btns
+	&__visual-btns {
+		display: flex;
+	}
+	// .product__visual-btn
+	&__visual-btn {
+		background: #f6f6f6;
+		color: #808080;
+
+		font-size: 0.75rem;
+		padding: 0.38rem 0.75rem;
+		width: 100%;
+		@media (min-width: $md4) {
+			width: auto;
+		}
+		&:first-child {
+			border-radius: 0.375rem 0 0 0;
+		}
+		&:last-child {
+			border-radius: 0 0.375rem 0 0;
+		}
+		&.active {
+			background: $accent;
+			color: #fff;
 		}
 	}
 	// .product__thumb
@@ -314,7 +351,10 @@
 		align-items: center;
 		padding: 2rem;
 		position: relative;
-
+		aspect-ratio: math.div(210, 202);
+		& img {
+			max-height: 100%;
+		}
 		&::before {
 			position: absolute;
 			bottom: rem(11);
@@ -324,7 +364,11 @@
 	}
 	// .product__content
 	&__content {
-		flex: 1 1 auto;
+		@media (min-width: $md3) {
+			flex: 1 1 auto;
+			max-width: 100%;
+			overflow: hidden;
+		}
 	}
 	// .product__name
 	&__name {
@@ -403,8 +447,7 @@
 	}
 	// .product__details-accordion
 	&__details-accordion {
-	}
-	// .product__details-toggler
+	} // .product__details-toggler
 	&__details-toggler {
 		margin-top: 0.875rem;
 		padding: 0.875rem 0;
@@ -445,6 +488,11 @@
 
 .table-block {
 	width: 100%;
+	max-width: 100%;
+	overflow-x: auto;
+	& table {
+		width: 100%;
+	}
 	thead {
 		& tr {
 			& th {
@@ -488,6 +536,8 @@
 				&:first-child {
 					text-align: left;
 					padding-left: rem(12);
+					max-width: 11rem;
+					color: #242020;
 				}
 				& a {
 					transition: color 0.3s ease;
