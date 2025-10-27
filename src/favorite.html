@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Товар'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {})
+            <main class="page">
+                <div class="heading">
+                    <div class="container">
+                        <a href="" class="heading__back-btn icon-arrow-right">Вернуться к покупкам</a>
+                    </div>
+                </div>
+                <section class="cart">
+                    <div class="container">
+                        <div class="cart__header">
+                            <h1 class="cart__title title">Избранное</h1>
+                            <div class="cart__actions">
+                                <button type="button" class="cart__action icon-trash">Очистить избранное</button>
+                            </div>
+                        </div>
+                        <div class="cart__body white-block">
+                            <div class="product__content-desktop">
+                                <table class="product__table table-block">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Наименование</th>
+                                            <th>Артикул</th>
+                                            <th><span class="icon-question-mark">Розничная цена</span class="icon-question-mark"></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="thumb-cell">
+                                                <div class="table-block__thumb">
+                                                    <img src="@img/catalog/Truba_Smart_SML-11.png" alt="Фото товара">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-block__product">
+                                                    <div class="table-block__product-title">Заглушка с прижимными скобами S-SML DN 100</div>
+                                                    <a href="" class="table-block__product-link">Заглушки с прижимными скобами Smart SML</a>
+                                                </div>
+                                            </td>
+                                            <td>10100</td>
+                                            <td>22 222 ₽</td>
+                                            <td>
+                                                <div class="table-block__actions table-block__actions--medium">
+                                                    <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                    <button type="button" class="favorite-btn active"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="thumb-cell">
+                                                <div class="table-block__thumb">
+                                                    <img src="@img/catalog/Truba_Smart_SML-5.png" alt="Фото товара">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-block__product">
+                                                    <div class="table-block__product-title">45° Тройник S-SML DN 150x100</div>
+                                                    <a href="" class="table-block__product-link">45° Тройник</a>
+                                                </div>
+                                            </td>
+                                            <td>148955</td>
+                                            <td>По запросу</td>
+                                            <td>
+                                                <div class="table-block__actions table-block__actions--medium">
+                                                    <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                    <button type="button" class="favorite-btn active"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="thumb-cell">
+                                                <div class="table-block__thumb">
+                                                    <img src="@img/catalog/Truba_Smart_SML-15.png" alt="Фото товара">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-block__product">
+                                                    <div class="table-block__product-title">RevoGrip-Knife хомут усиливающий DN 100 (10 бар)</div>
+                                                    <a href="" class="table-block__product-link">Хомуты усиливающие SML, Kniflo</a>
+                                                </div>
+                                            </td>
+                                            <td>h187to9</td>
+                                            <td>150 000 ₽</td>
+                                            <td>
+                                                <div class="table-block__actions table-block__actions--medium">
+                                                    <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                    <button type="button" class="favorite-btn active"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="thumb-cell">
+                                                <div class="table-block__thumb">
+                                                    <img src="@img/catalog/Truba_Smart_SML-8.png" alt="Фото товара">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-block__product">
+                                                    <div class="table-block__product-title">Соединитель Kniflo Connect-G DN 100</div>
+                                                    <a href="" class="table-block__product-link">Хомуты соединительные SML, Kniflo</a>
+                                                </div>
+                                            </td>
+                                            <td>156816</td>
+                                            <td>50 000 ₽</td>
+                                            <td>
+                                                <div class="table-block__actions table-block__actions--medium">
+                                                    <button type="button" class="table-block__add btn btn-primary-outline">Добавить в смету</button>
+                                                    <button type="button" class="favorite-btn active"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="product__content-mobile">
+                                <div class="product__details">
+                                    <div class="product__details-header">
+                                        <div class="product__details-thumb">
+                                            <img src="@img/catalog/Truba_Smart_SML-11.png" alt="Фото товара">
+                                        </div>
+                                        <div class="product__details-column">
+                                            <div class="product__details-sku">10100</div>
+                                            <a href="" class="product__details-name">Заглушка с прижимными скобами S-SML DN 100</a>
+                                            <a href="" class="product__details-link">Заглушки с прижимными скобами Smart SML</a>
+                                            <div class="product__details-price">
+                                                По запросу
+                                            </div>
+                                        </div>
+                                        <button type="button" class="favorite-btn active"></button>
+                                    </div>
+                                </div>
+                                <div class="product__details">
+                                    <div class="product__details-header">
+                                        <div class="product__details-thumb">
+                                            <img src="@img/catalog/Truba_Smart_SML-5.png" alt="Фото товара">
+                                        </div>
+                                        <div class="product__details-column">
+                                            <div class="product__details-sku">10100</div>
+                                            <a href="" class="product__details-name">45° Тройник S-SML DN 150x100</a>
+                                            <a href="" class="product__details-link">45° Тройник</a>
+                                            <div class="product__details-price">
+                                                По запросу
+                                            </div>
+                                        </div>
+                                        <button type="button" class="favorite-btn active"></button>
+                                    </div>
+                                </div>
+                                <div class="product__details">
+                                    <div class="product__details-header">
+                                        <div class="product__details-thumb">
+                                            <img src="@img/catalog/Truba_Smart_SML-15.png" alt="Фото товара">
+                                        </div>
+                                        <div class="product__details-column">
+                                            <div class="product__details-sku">10100</div>
+                                            <a href="" class="product__details-name">RevoGrip-Knife хомут усиливающий DN 100 (10 бар)</a>
+                                            <a href="" class="product__details-link">Хомуты усиливающие SML, Kniflo</a>
+                                            <div class="product__details-price">
+                                                По запросу
+                                            </div>
+                                        </div>
+                                        <button type="button" class="favorite-btn active"></button>
+                                    </div>
+                                </div>
+                                <div class="product__details">
+                                    <div class="product__details-header">
+                                        <div class="product__details-thumb">
+                                            <img src="@img/catalog/Truba_Smart_SML-8.png" alt="Фото товара">
+                                        </div>
+                                        <div class="product__details-column">
+                                            <div class="product__details-sku">10100</div>
+                                            <a href="" class="product__details-name">Соединитель Kniflo Connect-G DN 100</a>
+                                            <a href="" class="product__details-link">Хомуты соединительные SML, Kniflo</a>
+
+                                            <div class="product__details-price">
+                                                По запросу
+                                            </div>
+                                        </div>
+                                        <button type="button" class="favorite-btn active"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

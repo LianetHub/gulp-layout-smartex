@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Товар'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {})
+            <main class="page">
+                <div class="heading">
+                    <div class="container">
+                        <a href="" class="heading__back-btn icon-arrow-right">Вернуться к покупкам</a>
+                    </div>
+                </div>
+                <section class="cart">
+                    <div class="container">
+                        <div class="cart__header">
+                            <h1 class="cart__title title">Смета</h1>
+                            <div class="cart__actions">
+                                <button type="button" class="cart__action icon-xlsx">Скачать</button>
+                                <button type="button" class="cart__action icon-print">Распечатать</button>
+                            </div>
+                        </div>
+                        <div class="cart__body white-block">
+                            <div class="product__content-desktop">
+                                <table class="product__table table-block">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Наименование</th>
+                                            <th>Артикул</th>
+                                            <th><span class="icon-question-mark">Розничная цена</span></th>
+                                            <th>Кол-во</th>
+                                            <th>Итого</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="thumb-cell">
+                                                <div class="table-block__thumb">
+                                                    <img src="@img/catalog/Truba_Smart_SML-11.png" alt="Фото товара">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-block__product">
+                                                    <div class="table-block__product-title">Заглушка с прижимными скобами S-SML DN 100</div>
+                                                    <a href="" class="table-block__product-link">Заглушки с прижимными скобами Smart SML</a>
+                                                </div>
+                                            </td>
+                                            <td>10100</td>
+                                            <td>По запросу</td>
+                                            <td>
+                                                <div class="quantity-block">
+                                                    <button type="button" class="quantity-block__down">-</button>
+                                                    <input type="number" name="quantity" class="quantity-block__input" value="1">
+                                                    <button type="button" class="quantity-block__up">+</button>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                999 990 ₽
+                                            </td>
+                                            <td>
+                                                <div class="table-block__actions table-block__actions--small">
+                                                    <button type="button" class="favorite-btn"></button>
+                                                    <button type="button" class="table-block__remove icon-remove"></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="product__content-mobile">
+                                <div class="product__details">
+                                    <div class="product__details-header">
+                                        <div class="product__details-thumb">
+                                            <img src="@img/catalog/Truba_Smart_SML-11.png" alt="Фото товара">
+                                        </div>
+                                        <a href="" class="product__details-name">Заглушка с прижимными скобами S-SML DN 100</a>
+                                    </div>
+                                    <a href="" class="product__details-link">Заглушки с прижимными скобами Smart SML</a>
+                                    <div class="product__details-price">
+                                        <div class="product__details-text">Цена</div>
+                                        <div class="product__details-value">По запросу</div>
+                                    </div>
+                                    <div class="product__details-actions">
+                                        <div class="quantity-block">
+                                            <button type="button" class="quantity-block__down">-</button>
+                                            <input type="number" name="quantity" class="quantity-block__input" value="1">
+                                            <button type="button" class="quantity-block__up">+</button>
+                                        </div>
+                                        <button type="button" class="product__details-add btn btn-primary-outline">Добавить в смету</button>
+                                        <button type="button" class="favorite-btn"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

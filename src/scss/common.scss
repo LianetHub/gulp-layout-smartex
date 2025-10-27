@@ -112,6 +112,16 @@ body {
 			margin-top: 1.5rem;
 		}
 	}
+
+	&__back-btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		&::before {
+			transform: rotate(180deg);
+			margin-top: -0.25rem;
+		}
+	}
 }
 
 .typography-block {

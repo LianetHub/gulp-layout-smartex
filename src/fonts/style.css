@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icons';
-  src:  url('fonts/icons.eot?qypq25');
-  src:  url('fonts/icons.eot?qypq25#iefix') format('embedded-opentype'),
-    url('fonts/icons.ttf?qypq25') format('truetype'),
-    url('fonts/icons.woff?qypq25') format('woff'),
-    url('fonts/icons.svg?qypq25#icons') format('svg');
+  src:  url('fonts/icons.eot?thh605');
+  src:  url('fonts/icons.eot?thh605#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?thh605') format('truetype'),
+    url('fonts/icons.woff?thh605') format('woff'),
+    url('fonts/icons.svg?thh605#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -30,6 +30,9 @@
 }
 .icon-picture:before {
   content: "\e91c";
+}
+.icon-trash:before {
+  content: "\e91e";
 }
 .icon-contacts:before {
   content: "\e91a";
